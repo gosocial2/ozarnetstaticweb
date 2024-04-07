@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>How to Migrate a CodeIgniter 3 App to CodeIgniter 4 - Ozar</title>
+    <meta
+            name="description"
+            content="This guide details migrating from CodeIgniter3 to CodeIgniter4 using a `Book` example and introduces the CodeIgniter Wizard tool for automated code generation."
+    />
+
+    <link rel="canonical"
+          href="https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4">
+
+    <link rel="author" href="https://www.ozar.net">
+    <link rel="publisher" href="Ozar"/>
+
+
+    <meta property="og:locale" content="en"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="CodeIgniter-related articles and tutorials - How to Migrate CodeIgniter 3 to CodeIgniter 4:"/>
+    <meta property="og:description"
+          content="This comprehensive guide illustrates how to migrate a CodeIgniter3 (CI3) application to CodeIgniter4 (CI4) using a concrete example of a `Book` entity. The step-by-step tutorial covers the installation of CI4, and the migration of database configuration, controller, model, view, and routes. The article stresses the importance of understanding the fundamental differences between CI3 and CI4 and the need to modify the auto-generated code to cater to specific needs. Furthermore, it introduces the CodeIgniter Wizard, a powerful Mac tool that can automatically create CI4 models, views, and controllers by reverse-engineering an existing database, highlighting its efficiency and time-saving benefits for developers while acknowledging the limitations it may have in generating customized code."/>
+    <meta property="og:site_name" content="Ozar.net"/>
+
+    <meta property="og:url"
+          content="https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"/>
+
+    <meta property="og:image"
+          content="https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/res/kul/UpgradingCI3-CI4-normal.jpg"/>
+
+    <meta name="twitter:card"
+          content="This guide details migrating from CodeIgniter3 to CodeIgniter4 using a `Book` example and introduces the CodeIgniter Wizard tool for automated code generation.">
+    <meta name="twitter:image"
+          content="https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/res/kul/UpgradingCI3-CI4-normal.jpg">
+    <meta name="twitter:domain" content="ozar.net">
+    <meta name="twitter:site" content="@ozarnet">
+    <meta name="twitter:creator" content="@skyhan">
+
+    <meta name="twitter:url"
+          content="https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4">
+    <meta name="twitter:title" content="How to Migrate a CodeIgniter 3 App to CodeIgniter 4">
+    <meta name="twitter:description"
+          content="This comprehensive guide illustrates how to migrate a CodeIgniter3 (CI3) application to CodeIgniter4 (CI4) using a concrete example of a `Book` entity. The step-by-step tutorial covers the installation of CI4, and the migration of database configuration, controller, model, view, and routes. The article stresses the importance of understanding the fundamental differences between CI3 and CI4 and the need to modify the auto-generated code to cater to specific needs. Furthermore, it introduces the CodeIgniter Wizard, a powerful Mac tool that can automatically create CI4 models, views, and controllers by reverse-engineering an existing database, highlighting its efficiency and time-saving benefits for developers while acknowledging the limitations it may have in generating customized code.">
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"/>
+
+    <!-- Custom styles for this example -->
+    <link rel="stylesheet" href="/ozarnetstaticweb/stil/arasayfa.css?v=1712506438"/>
+
+    <!-- Render additional css -->
+    <link rel="stylesheet" href="/ozarnetstaticweb/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/ozarnetstaticweb/assets/css/goblog.css?v=1.1">
+
+    <!-- Load highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" defer></script>
+
+    <!-- Load the dark theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+    <style>
+        @media only screen and (max-width: 720px) {
+            img {
+                width: 100%;
+            }
+        }
+
+        pre code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-left: 3px solid #f36d33;
+            color: #666;
+            page-break-inside: avoid;
+            font-family: monospace !important;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 1.6em;
+            /* max-width: 100%;
+           overflow: auto;
+           padding: 1em 1.5em;
+           display: block;
+           word-wrap: unset; */
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2035820168336712"
+            crossorigin="anonymous"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/blog"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "PHP Category",
+                    "item": "https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/blog/web-development-php"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "CodeIgniter Category",
+                    "item": "https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/blog/web-development-php/codeigniter"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Migrating CI3 to CI4",
+                    "item": "https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"
+                }
+            ]
+        }
+    </script>
+
+    <script type="application/ld+json">{
+        "@context": "https:\/\/schema.org",
+        "@graph": [
+            {
+                "@type": "Organization"
+            },
+            {
+                "@type": "WebSite",
+                "about": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
+                "name": "Ozar - Digital Products and Services Website",
+                "alternateName": "Ozar.net Website",
+                "url": "https:\/\/www.ozar.net",
+                "headline": "Tech-savvy becomes you with Ozar products and services",
+                "dateModified": "2023-07-24T23:43:06+0300",
+                "inLanguage": "en",
+                "publisher": "Ozar",
+                "provider": "Ozar.net",
+                "copyrightHolder": "Ozar",
+                "copyrightYear": 2020,
+                "sdPublisher": {
+                    "@type": "Organization",
+                    "name": "Ozar",
+                    "legalName": "Ozar",
+                    "alternateName": "Ozar.net",
+                    "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
+                    "url": "https:\/\/www.ozar.net",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
+                        "name": "Ozar Logo",
+                        "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
+                        "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
+                    },
+                    "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
+                    "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
+                    "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
+                    "areaServed": "Worldwide",
+                    "foundingDate": 2020,
+                    "founder": {
+                        "@type": "Person",
+                        "name": "Gökhan Ozar",
+                        "@id": "https:\/\/gokhan.ozar.net"
+                    },
+                    "sameAs": [
+                        "https:\/\/twitter.com\/ozarnet"
+                    ],
+                    "@id": "https:\/\/www.ozar.net#initiative"
+                },
+                "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
+                "sdDatePublished": "2023-07-24T23:43:06+0300",
+                "sameAs": "https:\/\/www.ozar.net",
+                "audience": {
+                    "@type": "Audience",
+                    "name": "CodeIgniter Developers",
+                    "alternateName": "CodeIgniter Programmers",
+                    "audienceType": "PHP Programmers"
+                },
+                "@id": "https:\/\/www.ozar.net#website"
+            },
+            {
+                "@type": "WebPage",
+                "url": "https:\/\/www.ozar.net\/blog\/web-development-php\/codeigniter\/how-to-migrate-codeigniter-3-to-codeigniter-4",
+                "name": "How to Migrate a CodeIgniter 3 App to CodeIgniter 4",
+                "description": "This comprehensive guide illustrates how to migrate a CodeIgniter3 (CI3) application to CodeIgniter4 (CI4) using a concrete example of a `Book` entity. The step-by-step tutorial covers the installation of CI4, and the migration of database configuration, controller, model, view, and routes. The article stresses the importance of understanding the fundamental differences between CI3 and CI4 and the need to modify the auto-generated code to cater to specific needs. Furthermore, it introduces the CodeIgniter Wizard, a powerful Mac tool that can automatically create CI4 models, views, and controllers by reverse-engineering an existing database, highlighting its efficiency and time-saving benefits for developers while acknowledging the limitations it may have in generating customized code.",
+                "isPartOf": "https:\/\/www.ozar.net#website",
+                "dateModified": "2023-07-30T10:18:21+0300",
+                "inLanguage": "en",
+                "potentialAction": {
+                    "@type": "ReadAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "name": "url",
+                        "url": "https:\/\/www.ozar.net\/blog\/web-development-php\/codeigniter\/how-to-migrate-codeigniter-3-to-codeigniter-4"
+                    }
+                },
+                "image": "https:\/\/www.ozar.net\/res\/kul\/UpgradingCI3-CI4-normal.jpg",
+                "keywords": "CodeIgniter3, CodeIgniter4, Migration, Database Configuration, Routes, PHP Framework, Web Development, Application Migration, CodeIgniter Upgrade, Wizard",
+                "@id": "https:\/\/www.ozar.net\/blog\/web-development-php\/codeigniter\/how-to-migrate-codeigniter-3-to-codeigniter-4#webpage"
+            },
+            {
+                "@type": "BlogPosting",
+                "author": "Ozar",
+                "datePublished": "2023-07-09T16:38:00+0300",
+                "dateModified": "2023-07-30T10:18:21+0300",
+                "headline": "How to Migrate a CodeIgniter 3 App to CodeIgniter 4",
+                "image": "https:\/\/www.ozar.net\/res\/kul\/UpgradingCI3-CI4-normal.jpg",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Ozar",
+                    "legalName": "Ozar",
+                    "alternateName": "Ozar.net",
+                    "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
+                    "url": "https:\/\/www.ozar.net",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
+                        "name": "Ozar Logo",
+                        "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
+                        "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
+                    },
+                    "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
+                    "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
+                    "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
+                    "areaServed": "Worldwide",
+                    "foundingDate": 2020,
+                    "founder": {
+                        "@type": "Person",
+                        "name": "Gökhan Ozar",
+                        "@id": "https:\/\/gokhan.ozar.net"
+                    },
+                    "sameAs": [
+                        "https:\/\/twitter.com\/ozarnet"
+                    ],
+                    "@id": "https:\/\/www.ozar.net#initiative"
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "url": "https:\/\/www.ozar.net\/blog\/web-development-php\/codeigniter\/how-to-migrate-codeigniter-3-to-codeigniter-4",
+                    "name": "How to Migrate a CodeIgniter 3 App to CodeIgniter 4",
+                    "description": "This comprehensive guide illustrates how to migrate a CodeIgniter3 (CI3) application to CodeIgniter4 (CI4) using a concrete example of a `Book` entity. The step-by-step tutorial covers the installation of CI4, and the migration of database configuration, controller, model, view, and routes. The article stresses the importance of understanding the fundamental differences between CI3 and CI4 and the need to modify the auto-generated code to cater to specific needs. Furthermore, it introduces the CodeIgniter Wizard, a powerful Mac tool that can automatically create CI4 models, views, and controllers by reverse-engineering an existing database, highlighting its efficiency and time-saving benefits for developers while acknowledging the limitations it may have in generating customized code.",
+                    "isPartOf": "https:\/\/www.ozar.net#website",
+                    "dateModified": "2023-07-30T10:18:21+0300",
+                    "inLanguage": "en",
+                    "potentialAction": {
+                        "@type": "ReadAction",
+                        "target": {
+                            "@type": "EntryPoint",
+                            "name": "url",
+                            "url": "https:\/\/www.ozar.net\/blog\/web-development-php\/codeigniter\/how-to-migrate-codeigniter-3-to-codeigniter-4"
+                        }
+                    },
+                    "image": "https:\/\/www.ozar.net\/res\/kul\/UpgradingCI3-CI4-normal.jpg",
+                    "keywords": "CodeIgniter3, CodeIgniter4, Migration, Database Configuration, Routes, PHP Framework, Web Development, Application Migration, CodeIgniter Upgrade, Wizard",
+                    "@id": "https:\/\/www.ozar.net\/blog\/web-development-php\/codeigniter\/how-to-migrate-codeigniter-3-to-codeigniter-4#webpage"
+                },
+                "description": "This comprehensive guide illustrates how to migrate a CodeIgniter3 (CI3) application to CodeIgniter4 (CI4) using a concrete example of a `Book` entity. The step-by-step tutorial covers the installation of CI4, and the migration of database configuration, controller, model, view, and routes. The article stresses the importance of understanding the fundamental differences between CI3 and CI4 and the need to modify the auto-generated code to cater to specific needs. Furthermore, it introduces the CodeIgniter Wizard, a powerful Mac tool that can automatically create CI4 models, views, and controllers by reverse-engineering an existing database, highlighting its efficiency and time-saving benefits for developers while acknowledging the limitations it may have in generating customized code.",
+                "about": "Explore the step-by-step migration process from CodeIgniter3 to CodeIgniter4, touching upon controllers, models, views, and routes. The tutorial also introduces the CodeIgniter Wizard, a significant time-saving tool for Mac users that automates CI4 code generation through reverse-engineering of existing databases, streamlining the migration process.",
+                "url": "https:\/\/www.ozar.net\/blog\/web-development-php\/codeigniter\/how-to-migrate-codeigniter-3-to-codeigniter-4\/blog\/web-development-php\/codeigniter\/how-to-migrate-ci3-to-ci4"
+            }
+        ]
+    }</script>
+</head>
+
+<body>
+<!-- Hero -->
+<div class="hero" data-theme="dark">
+    <nav class="container-fluid flex-nav">
+
+        <ul id="logo-container">
+            <li id="ozarLogoHeading" class="logo">
+                <a href="/ozarnetstaticweb/" class="contrast" title="Ozar Home Page"><span>Ozar</span></a>
+            </li>
+        </ul>
+
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="nav-links">
+            <li>
+                <a href="/ozarnetstaticweb/">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/ozarnetstaticweb/about">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="/ozarnetstaticweb/products">
+                    Products
+                </a>
+            </li>
+            <li>
+                <a href="/ozarnetstaticweb/blog">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="/ozarnetstaticweb/contact">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <details role="list" dir="rtl">
+                    <summary aria-haspopup="listbox" role="link" class="contrast">Dil</summary>
+                    <ul role="listbox">
+                        <li>
+                            English
+                        </li>
+                        <li>
+                            <a href="/ozarnetstaticweb/tr" title="view_this_website_inTürkçe ">
+                                Türkçe </a>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details role="list" dir="rtl">
+                    <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+                    <ul role="listbox">
+                        <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                        <li><a href="#" data-theme-switcher="light">Light</a></li>
+                        <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+
+    </nav>
+    <header class="container">
+        <hgroup>
+            <!-- <h1>Ozar</h1> -->
+            <h1>How to Migrate a CodeIgniter 3 App to CodeIgniter 4</h1>
+            <h2>A Step-by-Step Tutorial for a CI3-toCI4 Upgrade</h2>
+        </hgroup>
+    </header>
+
+</div>
+<!-- ./ Hero --><!-- Main -->
+<main class="container" data-layout="subPageRightSidebarLayout">
+    <div class="grid">
+
+        <section>
+
+
+            <!-- Content -->
+            <article class="box post" data-cache-id="blog__web_development_php__codeigniter__how_to_migrate_ci3_to_ci4">
+                <a href="#" class="image featured">
+                    <img href="/ozarnetstaticweb/res/kul/migrating-from-ci3-to-ci4-large.jpg"
+                         alt="A Step-by-Step Tutorial for a CI3-toCI4 Upgrade"/>
+                </a>
+                <header>
+
+                    <p>
+                        <b>This guide details migrating from CodeIgniter3 to CodeIgniter4 using a `Book` example and
+                            introduces the CodeIgniter Wizard tool for automated code generation.</b>
+                    </p>
+                    <small style="font-size: medium">
+                        <i>
+                            published on
+                            <span id="articleDate">
+                                9 Jul 2023                            </span>
+                        </i>
+                        in <span class="blog-cat-pill">CodeIgniter</span><span class="blog-cat-pill"> PHP</span>
+                    </small>
+                </header>
+
+                <section>
+                    <p>
+                        <picture>
+                            <source type="image/jpeg" srcset="/res/kul/revising-ci-wizard-code.jpg"/>
+                            <img href="/ozarnetstaticweb/res/kul/revising-ci-wizard-code.jpg"
+                                 alt="Upgrading from CI3 to-CI4" class="page-wide"/></picture>
+                    </p>
+                    <p>Moving your applications from CodeIgniter 3 (CI3) to CodeIgniter 4 (CI4) might appear daunting at
+                        first glance, but don't fret - it's a manageable process. Upgrading your CodeIgniter3 (CI3)
+                        project to CodeIgniter4 (CI4) requires a systematic process because of the extensive changes
+                        that were introduced in CI4. This article provides a <em>to-the-point</em> tutorial on how to
+                        migrate a typical CI3 application to CI4, using <code>Book</code> and <code>BookModel</code> as
+                        examples.</p>
+
+                    <p><strong>Step 1: Installation of CodeIgniter4</strong> The first step is installing CodeIgniter4.
+                        You can do this by downloading it directly from the official website or using composer with the
+                        command:</p>
+
+                    <pre><code
+                            class="language-bash">composer create-project codeigniter4/appstarter your_project_name</code></pre>
+                    <br>
+                    <p><strong>Step 2: Migrate the Database Configuration</strong> You need to set up the database in
+                        <code>app/Config/Database.php</code>. For instance, let's migrate a typical CI3 database setup
+                        in <code>application/config/database.php</code> to CI4.</p>
+                    <p>CI3:</p>
+
+                    <pre><code class="language-php">$db['default'] = array(
+	'dsn'	=&gt; '',
+	'hostname' =&gt; 'localhost',
+	'username' =&gt; 'root',
+	'password' =&gt; 'password',
+	'database' =&gt; 'bookDatabase',
+	'dbdriver' =&gt; 'mysqli',
+);
+</code></pre>
+                    <br>
+
+                    <p>CI4:</p>
+
+                    <pre><code class="language-php">public $default = [
+	'DSN'      =&gt; '',
+	'hostname' =&gt; 'localhost',
+	'username' =&gt; 'root',
+	'password' =&gt; 'password',
+	'database' =&gt; 'bookDatabase',
+	'DBDriver' =&gt; 'MySQLi',
+];
+</code></pre>
+                    <br>
+
+                    <!--more-->
+
+                    <p><strong>Step 3: Migrate the Controller</strong> We will now migrate our
+                        <code>BookController.php</code> from CI3 to CI4. Here's a basic CI3 controller: <br>
+                        <br>
+                        CI3:</p>
+
+                    <pre><code class="language-php">class Book extends CI_Controller {
+
+	public function view($id)
+	{
+		$this-&gt;load-&gt;model('book_model');
+		$data['book_item'] = $this-&gt;book_model-&gt;get_book($id);
+		$this-&gt;load-&gt;view('book/view', $data);
+	}
+}
+</code></pre>
+                    <br>
+
+                    <p>CI4:</p>
+
+                    <pre><code class="language-php">namespace App\Controllers;
+
+use App\Models\BookModel;
+use CodeIgniter\Controller;
+
+class Book extends Controller
+{
+	protected $bookModel;
+
+	public function __construct()
+	{
+		$this-&gt;bookModel = new BookModel();
+	}
+
+	public function view($id)
+	{
+		$data['bookItem'] = $this-&gt;bookModel-&gt;getBook($id);
+		return view('book/view', $data);
+	}
+}
+</code></pre>
+
+                    <p>&nbsp;</p>
+
+                    <p><strong>Step 4: Migrate the Model</strong> Models in CI4 provide more powerful query builder
+                        support, better validation, and automatic database connection. Here's how to migrate your <code>Book_model.php</code>
+                        to <code>BookModel.php</code>: CI3:</p>
+
+                    <pre><code class="language-php">class Book_model extends CI_Model {
+
+	public function get_book($id)
+	{
+		$query = $this-&gt;db-&gt;get_where('book', array('id' =&gt; $id));
+		return $query-&gt;row_array();
+	}
+}
+</code></pre>
+
+                    <br>
+
+                    <p>CI4:</p>
+
+                    <pre><code class="language-php">namespace App\Models;
+
+use CodeIgniter\Model;
+
+class BookModel extends Model
+{
+	protected $table      = 'book';
+	protected $primaryKey = 'id';
+
+	public function getBook($id)
+	{
+		return $this-&gt;where(['id' =&gt; $id])-&gt;first();
+	}
+}
+</code></pre>
+
+                    <br>
+                    <p><strong>Step 5: Migrate the View</strong> Views in CI4 function similarly to those in CI3.
+                        However, the syntax for loading views has changed slightly. Here's a CI3 view being migrated to
+                        CI4: CI3:</p>
+
+                    <pre><code class="language-php">
+&lt;h2&gt;&lt;?php echo $book_item['title'] ?&gt;&lt;/h2&gt;
+</code></pre>
+
+                    <br>
+
+                    <p>CI4:</p>
+
+                    <pre><code class="language-php">
+&lt;h2&gt;&lt;?= $bookItem['title'] ?&gt;&lt;/h2&gt;
+</code></pre>
+
+
+                    <p><strong>Step 6: Update the Routes</strong> In CI3, routes were defined in <code>application/config/routes.php</code>.
+                        In CI4, routes are placed in <code>app/Config/Routes.php</code>. CI3:</p>
+
+                    <pre><code class="language-php">$route['book/(:any)'] = 'book/view/$1';</code></pre>
+                    <br>
+
+                    <p>CI4:</p>
+
+                    <pre><code class="language-php">$routes-&gt;get('book/(:segment)', 'Book::view/$1');</code></pre>
+                    <br>
+
+                    <p>If you have a Mac with macOS 10.13 or later, you can use <a href="/ozarnetstaticweb/products"
+                                                                                   title="Ozar Products">CodeIgniter
+                        Wizard for Mac</a> to automatically create CI4 models, views and controllers, even separate
+                        entity classes reverse-engineering your existing database. This would especially save you the
+                        time to manually porting your CI3 models and their form validation logic as well as the base
+                        CRUD operations.</p>
+
+                    <p>For those who do not already know, <a href="/ozarnetstaticweb/products"
+                                                             title="Ozar Products feat. CodeIgniter Wizard">CodeIgniter
+                        Wizard</a> is a powerful tool for developers who prefer a graphical user interface (GUI) over
+                        writing code manually. It can automatically generate models, views, and controllers for
+                        CodeIgniter 4 applications, speeding up development time significantly. Not only does it reverse
+                        engineer an existing database to create entity classes, but it also provides CRUD scaffolding
+                        and form validation rules.</p>
+
+                    <p>Even though it offers a convenient way to create applications, the auto-generated code may not
+                        always meet all your requirements. Thus, knowing how to manually migrate from CI3 to CI4 is
+                        still a valuable skill. Additionally, some developers prefer to code by hand to have more
+                        control and understanding of their application's structure and behaviour.<br/><br/>
+                        <picture>
+                            <source type="image/jpeg" srcset="/res/kul/UpgradingCI3-CI4-normal.jpg"/>
+                            <img href="/ozarnetstaticweb/res/kul/UpgradingCI3-CI4-normal.jpg"
+                                 alt="Migrating from CI3 to CI4" class="page-wide"></picture>
+                    </p>
+
+                    <p>Let's see how to use CodeIgniter Wizard to migrate our example <code>Book</code> entity from CI3
+                        to CI4:</p>
+
+                    <ol>
+
+                        <li>
+
+                            <p><strong>Install CodeIgniter Wizard</strong>: Download the latest version from the
+                                official website and install it on your Mac.</p>
+
+                        </li>
+
+                        <li>
+
+                            <p><strong>Connect to your database</strong>: Open CodeIgniter Wizard and enter your
+                                database credentials to connect. You should see a list of your tables appear.</p>
+
+                        </li>
+
+                        <li>
+
+                            <p><strong>Generate Entity Class</strong>: Select your <code>Book</code> table and click on
+                                "Generate Entity Class". CodeIgniter Wizard will automatically create a PHP class with
+                                properties that correspond to the fields of your <code>Book</code> table.</p>
+
+                        </li>
+
+                        <li>
+
+                            <p><strong>Generate Model</strong>: Next, click on "Generate Model" to create a <code>BookModel</code>
+                                class. The generated class will extend <code>CodeIgniter\Model</code> and include
+                                methods for the CRUD operations.</p>
+
+                        </li>
+
+                        <li>
+
+                            <p><strong>Generate Controller</strong>: Click on "Generate Controller" to create a <code>Book</code>
+                                controller with methods for viewing, creating, updating, and deleting books.</p>
+
+                        </li>
+
+                        <li>
+
+                            <p><strong>Generate Views</strong>: Finally, click on "Generate Views" to create views for
+                                the different operations. You'll get separate view files for the list, create, edit, and
+                                view details.</p>
+
+                        </li>
+
+                    </ol>
+
+                    <p>CodeIgniter Wizard can be a significant time saver for migrating your CI3 application to CI4.
+                        Even if all of the generated code may not suit all your needs, you can always modify it manually
+                        to achieve your desired functionality.</p>
+
+                    <p>In conclusion, while the differences between CI3 and CI4 can seem vast, once you understand the
+                        basics of migration, the process can be straightforward. CI4's new features offer a more robust
+                        and flexible framework that's better suited to modern web development. This guide provides a
+                        concrete starting point for migrating your applications from CI3 to CI4. However, each
+                        application is unique, and some may require additional steps. For more complex applications, the
+                        official CodeIgniter4 user guide is an excellent resource.</p>
+
+
+                </section>
+
+
+                <section style="margin-bottom: 20px;">
+                    <header>
+                        <h5>Share this on</h5>
+                    </header>
+                    <div class="post-share" style="padding-bottom: 30px;">
+                        <!--include Social Share -->
+                        <ul class="share-box">
+                            <li class="share-li-lg">
+                                <a href="javascript:void(0)"
+                                   onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4', 'Share This Post', 'width=640,height=450');return false"
+                                   class="social-btn-lg facebook">
+                                    <i class="fab fa-facebook-square"></i>
+                                    <span>facebook</span>
+                                </a>
+                            </li>
+
+                            <li class="share-li-lg">
+                                <a href="javascript:void(0)"
+                                   onclick="window.open('https://twitter.com/share?url=https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4&amp;text=How to Migrate a CodeIgniter 3 App to CodeIgniter 4', 'Share This Post', 'width=640,height=450');return false"
+                                   class="social-btn-lg twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>twitter</span>
+                                </a>
+                            </li>
+                            <li class="share-li-sm">
+                                <a href="javascript:void(0)"
+                                   onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4', 'Share This Post', 'width=640,height=450');return false"
+                                   class="social-btn-sm facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="share-li-sm">
+                                <a href="javascript:void(0)"
+                                   onclick="window.open('https://twitter.com/share?url=https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4&amp;text=How to Migrate a CodeIgniter 3 App to CodeIgniter 4', 'Share This Post', 'width=640,height=450');return false"
+                                   class="social-btn-sm twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                   onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4&amp;title=How+to+Migrate+a+CodeIgniter+3+App+to+CodeIgniter+4', 'Share This Post', 'width=720,height=450');return false;"
+                                   class="social-btn-sm linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="li-whatsapp">
+                                <a href="https://api.whatsapp.com/send?text=How to Migrate a CodeIgniter 3 App to CodeIgniter 4 - https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4"
+                                   class="social-btn-sm whatsapp"
+                                   target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                   onclick="window.open('http://pinterest.com/pin/create/button/?url=https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4&amp;media=https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4res/kul/UpgradingCI3-CI4-normal.jpg', 'Share This Post', 'width=640,height=450');return false"
+                                   class="social-btn-sm pinterest">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)" id="printArticle" class="social-btn-sm btn-print">
+                                    <i class="fas fa-print"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </section>
+                <section id="comments">
+                    <h3>Comments</h3>
+                    <h4>What others think</h4>
+                    <div id="response" class="comment-response">
+                        <p>Commenting for new users is temporarily disabled.</p>
+                    </div>
+
+                    <div id="userComments" class="comments" style="margin-top: 2em;" data-current-pid="">
+                        <ul class="comment-list">
+                            <li id="yorum_15" class="row">
+                                <div class="comment-left">
+                                    <img src="https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/res/img/jenerikuye.png.jpg"
+                                         alt="Prifaj" class="user-icon">
+
+                                </div>
+                                <div class="comment-right comment-text">
+                                    <h5 class="commenter-name">Prifaj</h5> I'm curious about the CodeIgniter Wizard
+                                    tool you mentioned. It seems like a great time-saver for developers, especially for
+                                    those working on larger projects. However, I wonder how flexible it is in terms of
+                                    customization? Can it handle more complex database structures and relationships?
+                                    Also, is there a similar tool available for developers who don&#039;t use Mac?
+                                    <div id="commentFooter15" class="row comment-footer">
+                                        <div class="col-3">
+                                            <small class="comment-date">July 2023</small>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="javascript:void(0)" class="btn-reply"
+                                               onclick="bringReplyFormForComment('15');"><i class="fas fa-reply"></i>
+                                                Reply</a>
+                                        </div>
+                                    </div>
+                                    <div id="commentReply15" class="comment-reply">
+                                    </div>
+                                    <div id="userComments15" class="comments" style="margin-top: 2em;"
+                                         data-current-pid="15">
+                                        <ul class="comment-list">
+                                            <li id="yorum_16" class="row">
+                                                <div class="sub-comment-left">
+                                                    <img src="https://www.ozar.net/blog/web-development-php/codeigniter/how-to-migrate-codeigniter-3-to-codeigniter-4/res/img/jenerikuye.png.jpg"
+                                                         alt="Ozar" class="user-icon">
+
+                                                </div>
+                                                <div class="sub-comment-right comment-text">
+                                                    <h5 class="commenter-name">Ozar</h5> CodeIgniter Wizard - as
+                                                    mentioned in the blog post - is designed to speed up the development
+                                                    process by automatically generating models, views, and controllers
+                                                    for CodeIgniter 4 applications. It can reverse engineer an existing
+                                                    database to create entity classes, provide CRUD scaffolding, and
+                                                    form validation rules. This suggests a certain level of flexibility
+                                                    and capability to handle complex database structures and
+                                                    relationships.
+
+                                                    However, the extent of its customization capabilities and its
+                                                    ability to handle more complex scenarios would depend on the
+                                                    specific features of CodeIgniter Wizard such that up to the current
+                                                    versions:
+
+                                                    1- All views it creates are Bootstrap-5 based.
+                                                    2- It creates separate files for form fields which could be swapped
+                                                    between different layout templates
+                                                    3- List views are currently and exclusively based on datatables.net
+                                                    with supporting both server-side (for lazy-loading) and front-end
+                                                    only loading and pagination.
+                                                    <div id="commentFooter16" class="row comment-footer">
+                                                        <div class="col-3">
+                                                            <small class="comment-date">July 2023</small>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="javascript:void(0)" class="btn-reply"
+                                                               onclick="bringReplyFormForComment('16');"><i
+                                                                    class="fas fa-reply"></i> Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <div id="commentReply16" class="comment-reply">
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div><!--//#userComments -->
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div><!--//#userComments -->
+                </section>
+
+            </article>
+
+            <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2035820168336712"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-2035820168336712"
+                 data-ad-slot="7936913033"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+        </section>
+
+        <aside>
+
+            <article class="box">
+                <h3>Blog Categories</h3>
+                <p style="margin-top: -1em; margin-bottom: 0.75em">The official Ozar blog covers tech topics such as</p>
+                <ul class="divided">
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/dealing-with-databases">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/web-development-php/codeigniter">
+                            <strong> CodeIgniter </strong> </a>
+                    </li>
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/development-on-macos">
+                            Development on macOS                        </strong>                    </a>
+                    </li>
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/mac-apps">
+                            Mac Apps                        </strong>                    </a>
+                    </li>
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/web-development-php">
+                            PHP                        </strong>                    </a>
+                    </li>
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/tech-books">
+                            Tech Books                        </strong>                    </a>
+                    </li>
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/web-development-php">
+                            Web Development                        </strong>                    </a>
+                    </li>
+                </ul>
+                <footer>
+                    <a href="/ozarnetstaticweb/blog" title="Ozar Blog" class="button-sm">See All »</a>
+                </footer>
+            </article>
+
+            <article class="box">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2035820168336712"
+                        crossorigin="anonymous"></script>
+                <!-- OzarNetBlogSidebar -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2035820168336712"
+                     data-ad-slot="4836370304"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </article>
+
+            <article class="box">
+
+                <h3>Recent News and Articles</h3>
+
+                <p style="margin-top: -1em; margin-bottom: 0.75em">From our latest stories, news, and tutorials...</p>
+                <ul class="divided">
+                    <li>
+                        <a class="section-title"
+                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"
+                           title="CodeIgniter-related articles and tutorials - How to Migrate CodeIgniter 3 to CodeIgniter 4:">
+                            Migrating CI3 to CI4</a>
+                    </li>
+                    <li>
+                        <a class="section-title"
+                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4"
+                           title="CodeIgniter-related articles and tutorials - The Difference between Entities and Models in CodeIgniter 4.x">
+                            Entities vs Models in CI4</a>
+                    </li>
+                    <li>
+                        <a class="section-title"
+                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/wizard2-is-here"
+                           title="CodeIgniter-related articles and tutorials - CodeIgniter Wizard 2 Is Here">
+                            CodeIgniter Wizard 2 Is Here</a>
+                    </li>
+                    <li>
+                        <a class="section-title"
+                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/ci4-production-deployment"
+                           title="A Step-by-Step Guide on How to Deploy CodeIgniter 4 Projects to Production">
+                            Deploying Your CI 4 app to Production</a>
+                    </li>
+
+                    <li>
+                        <a class="section-title"
+                           href="/ozarnetstaticweb/blog/mac-apps/parallel-search-now-speaks-french"
+                           title="Mac Apps - Parallel Search now speaks French">
+                            Parallel Search in French</a>
+                    </li>
+
+                    <li>
+                        <a class="section-title" href="/ozarnetstaticweb/blog/mac-apps/introducing-parallel-search"
+                           title="Mac Apps - Introducing Parallel Search Deluxe for Mac">
+                            Introducing Parallel Search</a>
+                    </li>
+                    <li>
+                        <a class="section-title"
+                           href="/ozarnetstaticweb/blog/web-development-php/how-to-install-php8-macos-big-sur-with-homebrew"
+                           title="Web Development / PHP - How to Install PHP 8 to macOS Using Homebrew">
+                            Install PHP 8 on macOS w/Homebrew</a>
+                    </li>
+
+                    <li>
+                        <a class="section-title"
+                           href="/ozarnetstaticweb/blog/tech-books/beginning-coding-with-javascript-interactive-book-published-in-turkish"
+                           title="Tech Books - Beginning Coding and Programming with JavaScript">
+                            Beginning Coding and Programming JS</a>
+                    </li>
+                </ul>
+            </article>
+
+
+            <article class="box">
+                <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2035820168336712"
+                        crossorigin="anonymous"></script>
+                <!-- OzarNetBlogSidebar -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2035820168336712"
+                     data-ad-slot="4836370304"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </article>
+
+
+        </aside>
+    </div>
+</main>
+<!-- ./ Main -->
+
+<!-- SVG Icons -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="white" style="display: none;">
+    <symbol id="twitterIcon" class="bi-twitter" viewBox="0 0 24 24">
+        <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+    </symbol>
+    <symbol id="youtubeIcon" class="bi-youtube" viewBox="0 0 24 24">
+        <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+    </symbol>
+</svg>
+
+<!-- Footer -->
+<footer id="footer" class="container">
+    <div class="grid">
+        <div class="col">
+            <section>
+
+                <h3 class="footer-subtopic">Recent Insights, News or Tutorials</h3>
+
+                <ul class="dates">
+                    <li>
+                        <small><span class="date"><strong>09 Jul 2023</strong></span></small>
+                        <h4 style="margin-bottom: 0.1em; font-size: 1.1em"><a
+                                href="/ozarnetstaticweb/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"
+                                title="CodeIgniter-related articles and tutorials - How to Migrate CodeIgniter 3 to CodeIgniter 4:">How
+                            to Migrate a CodeIgniter 3 App to CodeIgniter 4</a></h4>
+                        <p style="margin-top: 0.1em">This guide details migrating from CodeIgniter3 to CodeIgniter4
+                            using a `Book` example and introduces the CodeIgniter Wizard tool for automated code
+                            generation.</p>
+                    </li>
+                    <li>
+                        <small><span class="date"><strong>26 Mar 2023</strong></span></small>
+                        <h4 style="margin-bottom: 0.1em; font-size: 1.1em"><a
+                                href="/ozarnetstaticweb/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4"
+                                title="CodeIgniter-related articles and tutorials - The Difference between Entities and Models in CodeIgniter 4.x">The
+                            Difference Between Entities and Models in CodeIgniter4.x</a></h4>
+                        <p style="margin-top: 0.1em">Learn the difference between entities and models in CodeIgniter 4.x
+                            and how they are distinct from other programming frameworks.</p>
+                    </li>
+                    <li>
+                        <small><span class="date"><strong>03 Sep 2022</strong></span></small>
+                        <h4 style="margin-bottom: 0.1em; font-size: 1.1em"><a
+                                href="/ozarnetstaticweb/blog/web-development-php/codeigniter/wizard2-is-here"
+                                title="CodeIgniter-related articles and tutorials - CodeIgniter Wizard 2 Is Here">CodeIgniter
+                            Wizard 2 Is Here</a></h4>
+                        <p style="margin-top: 0.1em">CodeIgniter Wizard 2 has been released with lots of new features
+                            added like auth, i18n, file uploads, automatic image resizing, auto-generation of
+                            slugs...</p>
+                    </li>
+                </ul>
+            </section>
+        </div><!-- // .col -->
+
+        <div class="col">
+            <section>
+                <h3 class="footer-subtopic">Related Websites</h3>
+
+                <ul class="divided">
+                    <li><a href="https://www.ozar.net/products/codeigniterwizard/?ref=tld">CodeIgniter Wizard's
+                        Dedicated
+                        Website</a></li>
+                    <li><a href="https://gozmosis.blogspot.com">GOZmosis Blog</a></li>
+
+                </ul>
+            </section>
+
+            <section>
+
+                <h3 class="footer-subtopic">Other Sites on Ozar.net</h3>
+
+                <ul class="divided">
+                    <li><a href="https://maclord.ozar.net/?ref=tld">Maclord - tips and tricks on using Apple
+                        products</a></li>
+                    <li><a href="https://devblog.ozar.net/?ref=tld">Ozar.net Developer Blog (is back)</a></li>
+                </ul>
+            </section>
+
+            <section>
+
+                <h3 class="footer-subtopic">Ozar also on</h3>
+
+                <p>Social Networks like</p>
+
+
+                <a class="icon go-twitter" href="https://twitter.com/ozarnet">
+                    <svg class="bi-twitter2" width="60" height="60" fill="white">
+                        <use xlink:href="#twitterIcon"/>
+                    </svg>
+                    <span class="label">Twitter</span>
+                </a>
+                &nbsp; | &nbsp;
+                <a class="icon go-youtube"
+                   href="https://www.youtube.com/@ozardigital">
+                    <svg class="bi-youtube2" width="60" height="60" fill="white"
+                         style="margin-left: 0.3475em; margin-top: 0.35em;">
+                        <use xlink:href="#youtubeIcon"/>
+                    </svg>
+                    <span class="label">YouTube</span>
+                </a>
+
+
+            </section>
+        </div>
+    </div><!-- // .grid -->
+    <section id="copyright">
+        <nav class="container-fluid flex-nav">
+            <small>
+                <ul class="links">
+                    <li>&copy; 2017-2024 by Ozar. All rights reserved.</li>
+                    <li><a href="/ozarnetstaticweb/privacy">Privacy Policy</a></li>
+                    <li><a href="/ozarnetstaticweb/terms">Terms of Use</a></li>
+                    <li><a href="/ozarnetstaticweb/disclaimer">Disclaimer</a></li>
+
+                    <li>Website CMS powered by <a href="/ozarnetstaticweb/products">CodeIgniter Wizard</a></li>
+
+                </ul>
+            </small>
+        </nav>
+    </section>
+</footer>
+<!-- Minimal theme switcher -->
+<script href="/ozarnetstaticweb/betik/minimal-theme-switcher.js" defer></script>
+
+<script href="/ozarnetstaticweb/assets/js/jquery.min.js"></script>
+
+<script type="module">
+
+    var andac = '5d1b9eab65a10558cf1eb38ea9e26cb4';
+
+    function webpSupported() {
+        let elem = document.createElement('canvas');
+
+        if (!!(elem.getContext && elem.getContext('2d'))) {
+// was able or not to get WebP representation
+            return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+        } else {
+// very old browser like IE 8, canvas not supported
+            return false;
+        }
+    }
+
+    function checkWebp(feature) {
+        var kTestImages = {
+            lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+            lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
+            alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
+            animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
+        };
+        const img = new Image();
+        return new Promise(function (resolve, reject) {
+            img.onload = function () {
+                resolve((img.width > 0) && (img.height > 0));
+            };
+            img.onerror = function () {
+                reject(feature + ' not supported');
+            };
+            img.src = "data:image/webp;base64," + kTestImages[feature];
+        });
+    }
+
+    document.getElementById('nav-icon').addEventListener('click', function () {
+        this.classList.toggle('open');
+        document.getElementById('nav-links').classList.toggle('open');
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        let webSupported = webpSupported();
+        if (!webSupported) {
+            checkWebp('lossy').then(function (supported) {
+                webSupported = true;
+                console.log("webp is supported alright!")
+            }, function () {
+                webSupported = false;
+                console.log("webp is not supported by your browser.")
+            });
+        }
+
+        const hero = document.querySelector('.hero');
+
+        const htmlElement = document.querySelector('html');
+        if (!webpSupported) {
+
+            const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '/res/pexels-bongkarn-thanyakij-3759098.jpg' : '/res/pexels-bongkarn-thanyakij-darker.jpg';
+            /*
+            if (htmlElement && htmlElement.getAttribute('data-theme') === 'light') {
+            imageUrl = '/res/pexels-bongkarn-thanyakij-3759098.jpg';
+            } */
+            if (hero) {
+                hero.style.backgroundImage = "url(" + imageUrl + ")";
+            }
+        }
+    });
+
+
+    // hljs.highlightAll();
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((el) => {
+            hljs.highlightElement(el);
+        });
+    });
+
+
+    var probFld = null;
+    var commentFormIsValid = false;
+    var andac = '5d1b9eab65a10558cf1eb38ea9e26cb4';
+
+    function bringReplyFormForComment(cid) {
+        console.log('huh?');
+    }
+
+
+    $(document).ready(function () {
+
+        $(".comment-right").on("click", "form.visible-sub-comment button.button-cancel", function () {
+            $('form.visible-sub-comment').remove();
+        });
+
+        function animasyonuBaslat() {
+            $('#cSubmitter').after('<img id="loading" href="/ozarnetstaticweb/res/loading.gif" style="display: block; float: right">');
+        }
+
+        function animasyonuDurdur() {
+            $('#loading').fadeOut('slow').remove();
+        }
+
+        let idSuffix = '';
+
+        function commentFormIsValidWith(fields = [], theForm = null) {
+            if (theForm == undefined || theForm == null) {
+                theForm = $('#commentForm');
+            }
+            if (!Array.isArray(fields) || fields.length === 0) {
+                if (theForm.length) {
+// fields = theForm.find(':input'); // çalışıyor except including submit button
+                    fields = theForm.find(':input:not([type=button]):not([type=submit]):not([type=reset])');
+                } else {
+                    return false;
+                }
+            }
+
+            let nrOfMissingReqs = 0;
+            let allValid = true;
+            let requiredExplanations = ['This entry is required.', 'This one is also required.', 'Well, this one\'s required, too.', 'This one as well.'];
+
+            $(fields).each(function (i, ele) {
+                let valid = true;
+                let invalidMsg = '';
+                if ($(ele).attr('type') !== 'url' && ele.name !== 'commenter_url' && $(ele).attr('type') !== 'hidden' && $(ele).attr('type') !== 'submit' && ele.name !== 'your_web_url') {
+                    if ($(ele).val().length < 1) {
+                        valid = false;
+                        invalidMsg = requiredExplanations[nrOfMissingReqs];
+                        nrOfMissingReqs++;
+                    }
+                    if (ele.name == 'commenter_name' && !ele.value.match(/^[A-zÀ-Ÿ\'\´\s-]*$/g)) {
+                        valid = false;
+                        invalidMsg = 'Please' + (invalidMsg.length > 1 ? ' also' : '') + ' enter valid first and last names consisting of only alphabetical letters.';
+                    } else if (($(ele).attr('type') == 'email' || ele.name == 'commenter_email') && (ele.value.length < 5 || (ele.value.length > 4 && !isEmail(ele.value)))) {
+                        valid = false;
+                        invalidMsg += ' Please' + (invalidMsg.length > 1 ? ' also' : '') + ' enter a valid e-mail address.';
+                    }
+                } else if (($(ele).attr('type') == 'url' || ele.name == 'commenter_url') && (ele.value.length > 0 && !isUrlValid(ele.value))) {
+                    valid = false;
+                    invalidMsg += ' Please enter a valid web site address, or just leave it blank.';
+                }
+                if ($(ele).attr('type') == 'url' || ele.name == 'commenter_url') {
+                    let [a, b, c, d, e] = [$(ele).attr('type') == 'url', ele.name == 'commenter_url', ele.value.length > 0, ele.value.length < 5, !isUrlValid(ele.value)];
+                    const allRules4UrlFld = ((a || b) && (c && (d || e)));
+                    if (allRules4UrlFld) {
+                        valid = false;
+                        invalidMsg += ' Please enter a valid web site address, or just leave it blank.';
+                    }
+                }
+
+                if (valid == false) {
+                    $(ele).addClass('invalid');
+                    if ($(ele).hasClass('valid'))
+                        $(ele).removeClass('valid');
+                    const feedbackJqElem = $('#' + $(ele).attr('name') + 'Feedback');
+                    if (feedbackJqElem === undefined || feedbackJqElem == null || feedbackJqElem.length == 0) {
+                        const theFeedbackContent = '<p id="' + $(ele).attr('name') + 'Feedback" class="feedback-invalid">' + invalidMsg + '</p>';
+                        $(ele).after(theFeedbackContent);
+                    } else {
+                        feedbackJqElem.html(invalidMsg);
+                    }
+                    $('#' + ele.name + 'valid_check_mark').remove();
+                    allValid = false;
+                } else {
+                    if ($(ele).hasClass('invalid'))
+                        $(ele).removeClass('invalid');
+                    if ($(ele).val().length)
+                        $(ele).addClass('valid');
+                }
+            });
+            if ((allValid && fields.length > 2) || ($('#commenterName').hasClass('valid') && $('#commenterEmail').hasClass('valid') && $('#commentContent').hasClass('valid'))) {
+                enableTheCommentForm();
+            }
+            return allValid;
+        }
+
+        function enableTheCommentForm() {
+            commentFormIsValid = true;
+            $('#cSubmitter').prop('disabled', false);
+        }
+
+        function disableTheCommentForm() {
+            commentFormIsValid = false;
+            $('#cSubmitter').prop('disabled', true);
+        }
+
+        function resetTheCommentForm() {
+            const cf = document.getElementById('commentForm');
+            if (cf !== undefined && cf !== null) {
+                cf.reset()
+            }
+            /*
+            const fields = $(cf).find(':input');
+            $(fields).each(function(i, ele) {
+            removeValidationFeedbackOf($(ele));
+            });
+            */
+            $('.form-control').removeClass('valid');
+            $('.fa-check').remove();
+            $('.alert').remove();
+            animasyonuDurdur();
+        }
+
+        function removeValidationFeedbackOf(ele) { // where ele must be jQ element
+            ele.removeClass('invalid');
+            const elead = ele.attr('name');
+            $('#' + elead + 'Feedback').remove()
+        }
+
+
+        $('.form-control').on('input', function (e) {
+            removeValidationFeedbackOf($(this));
+            commentFormIsValidWith([$(this)]);
+            if (this.name == 'content' && $(this).val().length > 1 && $("#commenterName").hasClass("valid") && $("#commenterEmail").hasClass("valid")) {
+                enableTheCommentForm();
+            } else {
+                disableTheCommentForm();
+            }
+        });
+
+
+        $('.form-control').blur(function () {
+            const ele = this;
+            const tName = ele.name;
+            const what2validate = [this];
+            if (commentFormIsValidWith(what2validate)) {
+
+                const linvitem = $('#linvalid' + tName)
+                if (linvitem !== undefined && linvitem != null && linvitem.length) {
+                    linvitem.remove();
+                }
+                if ($(this).hasClass('valid') && $(this).val().length && $('#' + tName + 'valid_check_mark').length === 0) {
+                    $(this).after('<i id="' + tName + 'valid_check_mark" class="fas fa-check input-icon-right"></i>');
+// to counter edge case for textarea
+                    if (tName == 'content') {
+                        $('#' + tName + 'valid_check_mark').css('position', 'absolute');
+                    }
+                }
+            }
+        });
+
+
+        $("#commentDiv").on('keydown', '#commentContent', function (e) {
+            var keyCode = e.keyCode || e.which;
+
+            if (keyCode == 9 && $('#commenterName').length) {
+                e.preventDefault();
+                $('#commenterName').focus();
+            }
+        });
+
+// $('.comment-form').submit(function (e) {
+        $(document).on("submit", ".comment-form", function (e) {
+            e.preventDefault();
+            const theForm1 = $(this);
+            const theForm2 = $(e.target);
+            const theForm3 = e.target;
+            const theForm4 = e.relatedTarget;
+            const theForm = theForm2;
+            const formValid = commentFormIsValidWith([], theForm);
+            if (formValid) {
+
+                animasyonuBaslat();
+                disableTheCommentForm();
+
+                let data = theForm.serializeArray();
+                let pcid = theForm.find('input[name="parent_id"]').val();
+                $.ajax({
+                    type: "POST",
+                    url: "/upa/blog-comments/create",
+                    dataType: 'json',
+                    data: data,
+                    success: function (resp, textStatus, jqXHR) {
+                        console.log('OK');
+                    },
+                    error: function (xhr, status, error) {
+                        console.log('Err..');
+                    }
+                }).done((data, textStatus, jqXHR) => {
+                    const successMsg = data.successMessage;
+                    andac = data.andac;
+                    $('input[name="ozarandac"]').val(data.andac);
+
+                    resetTheCommentForm();
+                    $('.visible-sub-comment').remove();
+
+// $(this).closest('.button-cancel').after('<div class="alert alert-success"><span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span>'+successMsg+'</div>');
+                    const yeniCevap = '<div class="alert alert-success"><span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span>' + successMsg + '</div>';
+                    const yeniCevap2 = '';
+                    $('#commentReply' + pcid).html(yeniCevap);
+
+                }).fail((xhr, status, error) => {
+                    if (xhr.responseJSON.messages != undefined) {
+                        let meh = null;
+                        $.each(xhr.responseJSON.messages, (item, msg) => {
+                            if (item === 'formValidationErrorMessage') {
+                                meh = msg;
+                                $('#commentForm').prepend('<div class="alert alert-warning"><span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span>' + msg + '</div>');
+
+                            } else if (item === 'andac') {
+                                andac = msg;
+                                $('input[name="ozarandac"]').val(msg);
+                            } else if (item === 'modelErrors') {
+                                probFld = msg; // const probFld = msg; // JSON.parse(msg);
+                                for (let key in probFld) {
+                                    if (probFld.hasOwnProperty(key)) {
+                                        const fld = theForm.find(':input[name="' + key + '"]');
+                                        if (fld.length && fld.attr('type') !== 'hidden') {
+                                            fld.addClass('invalid');
+                                            fld.after('<p id="' + key + 'Feedback" class="feedback-invalid">' + probFld[key].replace('_', ' ') + '</p>');
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    } else {
+                        $('#commentForm').append('<div id="unknownErr" class="alert alert-danger"><span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span>Sorry, an unknown error has occurred.</div>');
+                    }
+                    animasyonuDurdur();
+                }); // end fail
+            } else { // form is not valid
+                const msg = 'There is an issue in your post that need to be corrected before submission:';
+                theForm.prepend('<div class="alert alert-warning"><span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span>' + msg + '</div>');
+            }
+
+        }); // end submit
+
+        $("#printArticle").on("click", function () {
+            animasyonuBaslat();
+            let theScript = document.createElement("script");
+            theScript.setAttribute("src", "/assets/js/printThis.js");
+            document.body.appendChild(theScript);
+            setTimeout(function () {
+                animasyonuDurdur();
+                $(".box.post").printThis({importCSS: true,});
+            }, 1000);
+        });
+    }); // end document ready
+
+
+    export let probFld2 = probFld;
+
+
+</script>
+
+
+</body>
+</html>

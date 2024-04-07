@@ -39,20 +39,20 @@ li#ozarLogoHeading a {
 
 /* Default (dark mode) logo */
 #ozarLogoHeading a span {
-    background: url(../res/ozar-logo-bug.png?v=2)  no-repeat left top;
+    background: url(/ozarnetstaticweb/res/ozar-logo-bug.png?v=2)  no-repeat left top;
     background-size: 89%;
 }
 
 /* Light mode logo */
 html[data-theme="light"] h1#ozarLogoHeading a span {
-    background: url(../res/ozar-logo.png)  no-repeat left top;
+    background: url(/ozarnetstaticweb/res/ozar-logo.png)  no-repeat left top;
     background-size: 80%;
 }
 
 
 .hero {
     background-color: #394046;
-    background-image: url("/res/sascha-eremin-DNQ-M93tHmA-unsplash-3000x1000.jpg");
+    background-image: url("/ozarnetstaticweb/res/sascha-eremin-DNQ-M93tHmA-unsplash-3000x1000.jpg");
     background-position: center;
     background-size: cover;
 }

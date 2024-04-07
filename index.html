@@ -162,11 +162,7 @@
                     Products
                 </a>
             </li>
-            <li>
-                <a href="books">
-                    Books
-                </a>
-            </li>
+
             <li>
                 <a href="blog">
                     Blog
@@ -526,7 +522,7 @@
         if (!webSupported) {
             checkWebp('lossy').then(function (supported) {
                 webSupported = true;
-                console.log("Actually webp is supported alright!")
+                // console.log("Actually webp is supported alright!")
             }, function () {
                 webSupported = false;
             });

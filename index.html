@@ -535,10 +535,10 @@
 
             const hero = document.querySelector('.hero');
             const htmlElement = document.querySelector('html');
-            const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '/res/pexels-bongkarn-thanyakij-3759098.jpg' : '/res/pexels-bongkarn-thanyakij-darker.jpg';
+            const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? 'res/pexels-bongkarn-thanyakij-3759098.jpg' : 'res/pexels-bongkarn-thanyakij-darker.jpg';
             /*
             if (htmlElement && htmlElement.getAttribute('data-theme') === 'light') {
-                imageUrl = '/res/pexels-bongkarn-thanyakij-3759098.jpg';
+                imageUrl = 'res/pexels-bongkarn-thanyakij-3759098.jpg';
             } */
             if (hero) {
                 hero.style.backgroundImage = "url(" + imageUrl + ")";

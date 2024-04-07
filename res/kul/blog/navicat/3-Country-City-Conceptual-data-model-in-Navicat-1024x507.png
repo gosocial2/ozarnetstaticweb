@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8"/>
+<meta name="twitter:widgets:csp" content="on"/>
+<link rel="profile" href="http://gmpg.org/xfn/11"/>
+<link rel="pingback" href="https://www.arclerit.com/xmlrpc.php"/>
+
+<title>Page not found &#8211; Arcler</title>
+<meta name='robots' content='max-image-preview:large' />
+<!-- This site has installed PayPal for WooCommerce v1.5.4 - https://www.angelleye.com/product/woocommerce-paypal-plugin/ -->
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Arcler &raquo; Feed" href="https://www.arclerit.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Arcler &raquo; Comments Feed" href="https://www.arclerit.com/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.arclerit.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='font-awesome-css' href='https://www.arclerit.com/wp-content/plugins/terms-and-conditions-popup-for-woocommerce/berocket/assets/css/font-awesome.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='kallyas-styles-css' href='https://www.arclerit.com/wp-content/themes/kallyas/style.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='page404-css-css' href='https://www.arclerit.com/wp-content/themes/kallyas/css/pages/page404.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='zn_all_g_fonts-css' href='//fonts.googleapis.com/css?family=Lato%3A100%2C300%2Cregular%2C700%2C900%7CUbuntu%3A700&#038;ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.arclerit.com/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://www.arclerit.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://www.arclerit.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=10.4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.arclerit.com/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://www.arclerit.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=7.9.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://www.arclerit.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=7.9.0' type='text/css' media='only screen and (max-width: 767px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://www.arclerit.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=7.9.0' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='wp-job-manager-job-listings-css' href='https://www.arclerit.com/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css?ver=598383a28ac5f9f156e4' type='text/css' media='all' />
+<link rel='stylesheet' id='dlm-frontend-css' href='https://www.arclerit.com/wp-content/plugins/download-monitor/assets/css/frontend.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dlm-page-addon-frontend-css' href='https://www.arclerit.com/wp-content/plugins/dlm-page-addon/assets/css/page.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='job-alerts-frontend-css' href='https://www.arclerit.com/wp-content/plugins/wp-job-manager-alerts/assets/css/frontend.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-applications-frontend-css' href='https://www.arclerit.com/wp-content/plugins/wp-job-manager-applications/assets/css/frontend.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-resume-frontend-css' href='https://www.arclerit.com/wp-content/plugins/wp-job-manager-resumes/assets/css/frontend.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hg-mailchimp-styles-css' href='https://www.arclerit.com/wp-content/themes/kallyas/framework/hogash-mailchimp/assets/css/hg-mailchimp.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='th-bootstrap-styles-css' href='https://www.arclerit.com/wp-content/themes/kallyas/css/bootstrap.min.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='th-theme-template-styles-css' href='https://www.arclerit.com/wp-content/themes/kallyas/css/template.min.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-overrides-css' href='https://www.arclerit.com/wp-content/themes/kallyas/css/plugins/kl-woocommerce.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='zion-frontend-css' href='https://www.arclerit.com/wp-content/themes/kallyas/framework/zion-builder/assets/css/znb_frontend.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='291-smart-layout.css-css' href='//www.arclerit.com/wp-content/uploads/zion-builder/cache/291-smart-layout.css?ver=116f2a808ba5c6f4148baea9abf4e77a' type='text/css' media='all' />
+<link rel='stylesheet' id='kallyas-child-css' href='https://www.arclerit.com/wp-content/themes/kallyas-child/style.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='animate.css-css' href='https://www.arclerit.com/wp-content/themes/kallyas/css/vendors/animate.min.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighterjs-css' href='https://www.arclerit.com/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=zr4eSegmoTGPxek' type='text/css' media='all' />
+<link rel='stylesheet' id='th-theme-print-stylesheet-css' href='https://www.arclerit.com/wp-content/themes/kallyas/css/print.css?ver=4.19.0' type='text/css' media='print' />
+<link rel='stylesheet' id='th-theme-options-styles-css' href='//www.arclerit.com/wp-content/uploads/zn_dynamic.css?ver=1690119843' type='text/css' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css' href='https://www.arclerit.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.1.6.3' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script type='text/javascript' src='https://www.arclerit.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='kl-recaptcha-js-extra'>
+/* <![CDATA[ */
+var zn_contact_form = {"captcha_not_filled":"Please complete the Captcha validation"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=kallyasOnloadCallback&#038;hl=en&#038;ver=1' id='kl-recaptcha-js'></script>
+<script type='text/javascript' id='__ytprefs__-js-extra'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/www.arclerit.com\/wp-admin\/admin-ajax.php","security":"898a78acc4","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/www.arclerit.com\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/www.arclerit.com\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs__\"]","epdovol":"1","version":"14.1.6.3","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":"","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=14.1.6.3' id='__ytprefs__-js'></script>
+<link rel="https://api.w.org/" href="https://www.arclerit.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.arclerit.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.arclerit.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<meta name="generator" content="WooCommerce 7.9.0" />
+<script>
+    document.cookie = "cookie_notice_accepted=true;max-age=" + 3600*24*365 + "; path=/" + ";secure;";
+    document.cookie = "cookie_notice_accepted=true;max-age=" + 3600*24*365 + "; path=/";
+    if ( ! /(^|;)\s*cca_is_eu=/.test(document.cookie) ) {  // if check prevents reload loop
+		  document.cookie = "cca_is_eu=false;max-age=" + 3600*24*364 + "; path=/";
+      var ccaURL = window.location.protocol + '//',
+      hostname = window.location.host + '/' + window.location.pathname;
+			if ( '0' === '1' ) {
+        window.location.reload( true );
+      }
+   }
+</script>
+    <!-- / HREFLANG Tags by DCGWS -->
+<!-- / HREFLANG Tags by DCGWS -->
+<style></style><style>.br_terms_cond_popup_window {border-style:solid;}.br_terms_cond_popup_window_bg{}.br_terms_cond_popup_window #TB_title {}.br_terms_cond_popup_window #TB_title #TB_ajaxWindowTitle{line-height: inherit;}.br_terms_cond_popup_window #TB_title #TB_closeWindowButton{}.br_terms_cond_popup_window #TB_title #TB_closeWindowButton,
+        .br_terms_cond_popup_window #TB_title #TB_closeWindowButton .tb-close-icon,
+        .br_terms_cond_popup_window #TB_title #TB_closeWindowButton .tb-close-icon:before,
+        .br_terms_cond_popup_window #TB_title .br_timer{}.br_terms_cond_popup_window #TB_title #TB_closeWindowButton:hover,
+        .br_terms_cond_popup_window #TB_title #TB_closeWindowButton .tb-close-icon:hover,
+        .br_terms_cond_popup_window #TB_title #TB_closeWindowButton .tb-close-icon:hover:before{}.br_terms_cond_popup_window #TB_ajaxContent {width: initial!important;background-color:#ffffff!important;}</style>		<meta name="theme-color"
+			  content="#cd2122">
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		
+		<!--[if lte IE 8]>
+		<script type="text/javascript">
+			var $buoop = {
+				vs: {i: 10, f: 25, o: 12.1, s: 7, n: 9}
+			};
+
+			$buoop.ol = window.onload;
+
+			window.onload = function () {
+				try {
+					if ($buoop.ol) {
+						$buoop.ol()
+					}
+				}
+				catch (e) {
+				}
+
+				var e = document.createElement("script");
+				e.setAttribute("type", "text/javascript");
+				e.setAttribute("src", "https://browser-update.org/update.js");
+				document.body.appendChild(e);
+			};
+		</script>
+		<![endif]-->
+
+		<!-- for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	<!-- Fallback for animating in viewport -->
+	<noscript>
+		<style type="text/css" media="screen">
+			.zn-animateInViewport {visibility: visible;}
+		</style>
+	</noscript>
+		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+
+<!-- This site is optimized with the Schema plugin v1.7.9.5 - https://schema.press -->
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "https://www.arclerit.com",
+                "name": "Home"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@id": "https://www.arclerit.com/blog/",
+                "name": "Arcler&#8217;s Blog"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@id": null,
+                "name": "Error 404: Page not found"
+            }
+        }
+    ]
+}</script>
+
+<link rel="icon" href="https://www.arclerit.com/wp-content/uploads/cropped-ArclerJustTheLogoXL-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.arclerit.com/wp-content/uploads/cropped-ArclerJustTheLogoXL-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.arclerit.com/wp-content/uploads/cropped-ArclerJustTheLogoXL-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.arclerit.com/wp-content/uploads/cropped-ArclerJustTheLogoXL-270x270.png" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-05KNF98BEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-05KNF98BEH');
+</script></head>
+
+<body  class="error404 theme-kallyas woocommerce-no-js res1170 kl-sticky-header kl-skin--light kallyas-child-theme" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+
+			<div class="support_panel support-panel" id="sliding_panel">
+				<div class="support-panel-close js-toggle-class" data-targets="#sliding_panel,#open_sliding_panel" data-target-classes="is-opened,is-toggled" data-multiple-targets="">&times;</div>				<div class="container support-panel-container">
+					<div id="custom_html-3" class="widget_text widget support-panel-widget widget_custom_html"><h3 class="widgettitle title support-panel-widgettitle">Arcler &#8211; App Development and Software Services</h3><div class="textwidget custom-html-widget"><div class="row">
+				<div class="col-sm-9">
+					<h2 class="m_title">Arcler can help you or your business</h2>
+					<div class="m_content how_to_shop">
+						<div class="row">
+							<div class="col-sm-4">
+								
+								<h3><span class="number">1</span> Boost sales </h3>
+							</div>
+							<div class="col-sm-4">
+								<h3>
+								<span class="number">2</span> Train your staff
+								</h3>
+							</div>
+							<div class="col-sm-4">
+								<h3>
+								<span class="number">3</span> Develop Apps
+								</h3>
+							</div>
+						</div>
+						<p>For details, you can visit our <a href="/services/">services</a> page, or <a href="/contact/">contact us</a> directly.</p>
+					</div><!-- end how to shop steps -->
+				</div>
+				<div class="col-sm-3">
+					<h4 class="m_title"><b>Making open-source work for you and for your business</b></h4>
+					<div class="m_content">
+					<p>By putting about a dozen of enterprise-class web applications ranging from accounting, CRM and HRM to DMS, BPM and project management, at your disposal, with on-premise or cloud hosting.</p>
+						<a href="/services/">» Find out more...</a>
+					</div>
+				</div>
+			</div></div></div><div id="woocommerce_product_search-1" class="widget support-panel-widget woocommerce widget_product_search"><h3 class="widgettitle title support-panel-widgettitle">PRODUCT SEARCH</h3>
+<div class="kl-gensearch--light">
+	<form method="get" class="woocommerce-product-search gensearch__form" role="search" action="https://www.arclerit.com/">
+		<label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+		<input type="search" id="woocommerce-product-search-field-0" class="search-field inputbox gensearch__input" placeholder="Search Products&hellip;" value="" name="s" />
+		<button type="submit" value="Search" class="gensearch__submit glyphicon glyphicon-search"></button>
+		<input type="hidden" name="post_type" value="product" />
+	</form>
+</div>
+</div><div id="woocommerce_product_categories-1" class="widget support-panel-widget woocommerce widget_product_categories"><h3 class="widgettitle title support-panel-widgettitle">PRODUCT CATEGORIES</h3><ul class="product-categories"><li class="cat-item cat-item-166 cat-parent"><a href="https://www.arclerit.com/product-category/digital/">Digital Products</a> <span class="count">(23)</span><ul class='children'>
+<li class="cat-item cat-item-60 cat-parent"><a href="https://www.arclerit.com/product-category/digital/software/">Software</a> <span class="count">(19)</span>	<ul class='children'>
+<li class="cat-item cat-item-105"><a href="https://www.arclerit.com/product-category/digital/software/database-design-development/">Database Design</a> <span class="count">(16)</span></li>
+<li class="cat-item cat-item-61"><a href="https://www.arclerit.com/product-category/digital/software/database-administration/">Database Utilities</a> <span class="count">(18)</span></li>
+<li class="cat-item cat-item-181"><a href="https://www.arclerit.com/product-category/digital/software/db-server-monitoring/">DB Server Monitoring</a> <span class="count">(1)</span></li>
+<li class="cat-item cat-item-306"><a href="https://www.arclerit.com/product-category/digital/software/navicat/">Navicat Software</a> <span class="count">(15)</span></li>
+<li class="cat-item cat-item-149"><a href="https://www.arclerit.com/product-category/digital/software/productivity/">Productivity Software</a> <span class="count">(1)</span></li>
+	</ul>
+</li>
+<li class="cat-item cat-item-147 cat-parent"><a href="https://www.arclerit.com/product-category/digital/web-hosting/">Web Hosting</a> <span class="count">(4)</span>	<ul class='children'>
+<li class="cat-item cat-item-148"><a href="https://www.arclerit.com/product-category/digital/web-hosting/managed-app-hosting/">Managed App Hosting</a> <span class="count">(1)</span></li>
+<li class="cat-item cat-item-155"><a href="https://www.arclerit.com/product-category/digital/web-hosting/managed-shared-hosting/">Managed Shared Hosting</a> <span class="count">(4)</span></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-202"><a href="https://www.arclerit.com/product-category/uncategorized/">Uncategorized</a> <span class="count">(0)</span></li>
+</ul></div><div id="woocommerce_top_rated_products-1" class="widget support-panel-widget woocommerce widget_top_rated_products"><h3 class="widgettitle title support-panel-widgettitle">MOST RATED ITEMS</h3><ul class="product_list_widget"><li>
+	
+	<a href="https://www.arclerit.com/store/6-month-basic-shared-web-hosting/">
+		<span class="kw-prodimage"><img src="https://www.arclerit.com/wp-content/uploads/Arcler-Hosting-170x160_c.jpg" title="Arcler Hosting" alt="Arcler Hosting" class="kw-prodimage-img" width="170" height="160"  /></span>		<span class="product-title">6-Month Basic Shared Web and Application Hosting</span>
+	</a>
+
+				
+	<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>&nbsp;90.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>&nbsp;60.00</bdi></span></ins>
+	</li>
+<li>
+	
+	<a href="https://www.arclerit.com/store/1-year-deluxe-managed-web-and-application-hosting/">
+		<span class="kw-prodimage"><img src="https://www.arclerit.com/wp-content/uploads/Arcler-deluxe-hosting-170x160_c.jpg" title="Arcler Deluxe Hosting" alt="Arcler Deluxe Hosting" class="kw-prodimage-img" width="170" height="160"  /></span>		<span class="product-title">1 Year Deluxe Managed Web and Application Hosting</span>
+	</a>
+
+				
+	<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>&nbsp;649.95</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>&nbsp;549.95</bdi></span></ins>
+	</li>
+<li>
+	
+	<a href="https://www.arclerit.com/store/1-year-shared-web-hosting/">
+		<span class="kw-prodimage"><img src="https://www.arclerit.com/wp-content/uploads/Arcler-Hosting-170x160_c.jpg" title="Arcler Hosting" alt="Arcler Hosting" class="kw-prodimage-img" width="170" height="160"  /></span>		<span class="product-title">1 Year Basic Shared Web and Application Hosting</span>
+	</a>
+
+				
+	<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>&nbsp;180.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>&nbsp;120.00</bdi></span></ins>
+	</li>
+</ul></div>				</div>
+			</div><!--// end #sliding_panel.support_panel -->
+			<div class="login_register_stuff">		<!-- Login/Register Modal forms - hidden by default to be opened through modal -->
+			<div id="login_panel" class="loginbox-popup auth-popup mfp-hide">
+				<div class="inner-container login-panel auth-popup-panel">
+					<h3 class="m_title_ext auth-popup-title" itemprop="alternativeHeadline" >SIGN IN TO YOUR ARCLER ACCOUNT</h3>
+					<form id="login_form" name="login_form" method="post" class="zn_form_login znhg-ajax-login-form" action="https://www.arclerit.com/wp-login.php">
+
+						<div class="zn_form_login-result"></div>
+
+						<div class="form-group kl-fancy-form">
+							<input type="text" id="kl-username" name="log" class="form-control inputbox kl-fancy-form-input kl-fw-input"
+								   placeholder="eg: james_smith"/>
+							<label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+						</div>
+
+						<div class="form-group kl-fancy-form">
+							<input type="password" id="kl-password" name="pwd" class="form-control inputbox kl-fancy-form-input kl-fw-input"
+								   placeholder="type password"/>
+							<label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+						</div>
+
+						
+						<label class="zn_remember auth-popup-remember" for="kl-rememberme">
+							<input type="checkbox" name="rememberme" id="kl-rememberme" value="forever" class="auth-popup-remember-chb"/>
+							 Remember Me						</label>
+
+						<input type="submit" id="login" name="submit_button" class="btn zn_sub_button btn-fullcolor btn-md"
+							   value="LOG IN"/>
+
+						<input type="hidden" value="login" class="" name="zn_form_action"/>
+						<input type="hidden" value="zn_do_login" class="" name="action"/>
+
+						<div class="links auth-popup-links">
+														<a href="#register_panel" class="create_account auth-popup-createacc kl-login-box auth-popup-link">CREATE AN ARCLER ACCOUNT</a> <span class="sep auth-popup-sep"></span>
+														<a href="#forgot_panel" class="kl-login-box auth-popup-link">FORGOT YOUR PASSWORD?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		<!-- end login panel -->
+				<div id="forgot_panel" class="loginbox-popup auth-popup forgot-popup mfp-hide">
+			<div class="inner-container forgot-panel auth-popup-panel">
+				<h3 class="m_title m_title_ext text-custom auth-popup-title" itemprop="alternativeHeadline" >FORGOT YOUR DETAILS?</h3>
+				<form id="forgot_form" name="login_form" method="post" class="zn_form_lost_pass" action="https://www.arclerit.com/account/lost-password/">
+					<div class="zn_form_login-result"></div>
+					<div class="form-group kl-fancy-form">
+						<input type="text" id="forgot-email" name="user_login" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="..."/>
+						<label class="kl-font-alt kl-fancy-form-label">USERNAME OR EMAIL</label>
+					</div>
+					<input type="hidden" name="wc_reset_password" value="true">
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="b9da03aa2f" /><input type="hidden" name="_wp_http_referer" value="/wp-content/uploads/3-Country-City-Conceptual-data-model-in-Navicat-1024x507.png" />					<div class="form-group">
+						<input type="submit" id="recover" name="submit" class="btn btn-block zn_sub_button btn-fullcolor btn-md" value="SEND MY DETAILS!"/>
+					</div>
+					<div class="links auth-popup-links">
+						<a href="#login_panel" class="kl-login-box auth-popup-link">AAH, WAIT, I REMEMBER NOW!</a>
+					</div>
+				</form>
+			</div>
+		</div><!-- end forgot pwd. panel -->
+		
+		<div id="register_panel" class="loginbox-popup auth-popup register-popup mfp-hide">
+			<div class="inner-container register-panel auth-popup-panel">
+				<h3 class="m_title m_title_ext text-custom auth-popup-title" itemprop="alternativeHeadline" >CREATE ACCOUNT</h3>
+
+				<form id="register_form" name="login_form" method="post" class="zn_form_login" action="https://www.arclerit.com/wp-login.php?action=register">
+					<div class="zn_form_login-result"></div>
+					<div class="form-group kl-fancy-form ">
+						<input type="text" id="reg-username" name="user_login" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type desired username"/>
+						<label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+					</div>
+					<div class="form-group kl-fancy-form">
+						<input type="text" id="reg-email" name="user_email" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="your-email@website.com"/>
+						<label class="kl-font-alt kl-fancy-form-label">EMAIL</label>
+					</div>
+						<div class="form-group kl-fancy-form">
+						<input type="password" id="reg-pass" name="user_password" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="*****"/>
+						<label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+					</div>
+					<div class="form-group kl-fancy-form">
+						<input type="password" id="reg-pass2" name="user_password2" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="*****"/>
+						<label class="kl-font-alt kl-fancy-form-label">CONFIRM PASSWORD</label>
+					</div>
+
+					            <div class="form-group kl-fancy-form">
+                <label class="znhg-gdpr-label" for="hg-gdpr-checkbox_0">
+                    <input type="checkbox" name="hg-gdpr-checkbox_0" id="hg-gdpr-checkbox_0" value="1"/>
+                    I have read and accepted <strong>Arcler</strong>'s <a rel="noopener" href="/terms-conditions/" target="_blank">terms of use</a>, and <a rel="noopener" href="https://www.arclerit.com/privacy-policy/" target="_blank">privacy policy</a>.                </label>
+            </div>
+        
+					<div class="form-group"><div class="kl-recaptcha" data-colorscheme="light" data-sitekey="6LfA5BIUAAAAACl5U3L10cZEqmKLEAW-tHe58-E7" id="zn_recaptcha_registration"></div></div>
+					<div class="form-group">
+						<input type="submit" id="signup" name="submit" class="btn zn_sub_button btn-block btn-fullcolor btn-md" value="CREATE MY ACCOUNT"/>
+					</div>
+
+					<input type="hidden" value="register" name="zn_form_action"/>
+					<input type="hidden" value="zn_do_login" name="action"/>
+
+					<div class="links auth-popup-links">
+												<a href="#login_panel" class="kl-login-box auth-popup-link">ALREADY HAVE AN ACCOUNT?</a>
+											</div>
+				</form>
+			</div>
+		</div><!-- end register panel -->
+		</div><!-- end login register stuff -->		<div id="fb-root"></div>
+		<script>(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+
+<div id="page_wrapper">
+
+<header id="header" class="site-header  style7 cta_button header--sticky header--not-sticked    headerstyle-xs--image_color  sticky-resize headerstyle--default site-header--absolute nav-th--light sheader-sh--light"   role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+	<div class="kl-header-bg "></div>	<div class="site-header-wrapper sticky-top-area">
+
+		<div class="site-header-top-wrapper topbar-style--default  sh--light">
+
+			<div class="siteheader-container container">
+
+				
+
+	
+	<div class="fxb-row site-header-row site-header-top ">
+
+		<div class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-top-left'>
+			<ul class="sh-component social-icons sc--clean topnav navRight topnav-no-hdnav"><li class="topnav-li social-icons-li"><a href="https://www.linkedin.com/company/arcler" data-zniconfam="kl-social-icons" data-zn_icon="" target="_self" class="topnav-item social-icons-item scheader-icon-" title="Arcler on LinkedIn"></a></li><li class="topnav-li social-icons-li"><a href="https://twitter.com/ArclerIT" data-zniconfam="kl-social-icons" data-zn_icon="" target="_self" class="topnav-item social-icons-item scheader-icon-" title="Arcler on Twitter"></a></li><li class="topnav-li social-icons-li"><a href="https://www.facebook.com/ArclerIT" data-zniconfam="kl-social-icons" data-zn_icon="" target="_self" class="topnav-item social-icons-item scheader-icon-" title="Arcler on Facebook"></a></li><li class="topnav-li social-icons-li"><a href="https://www.pinterest.com/ArclerIT/" data-zniconfam="kl-social-icons" data-zn_icon="" target="_self" class="topnav-item social-icons-item scheader-icon-" title="Arcler on Pinterest"></a></li><li class="topnav-li social-icons-li"><a href="https://www.instagram.com/arclerit/" data-zniconfam="kl-social-icons" data-zn_icon="" target="_self" class="topnav-item social-icons-item scheader-icon-" title="Arcler on Instagram"></a></li></ul>					</div>
+
+		<div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-top-right'>
+						<ul class="sh-component topnav navRight topnav--reg topnav-no-sc topnav-no-hdnav"><li class="topnav-li"><a href="#register_panel" class="kl-login-box topnav-item"><i class="glyphicon glyphicon-user visible-xs xs-icon"></i><span class="hidden-xs">SIGN UP</span></a></li></ul><ul class="sh-component topnav navRight topnav--log topnav-no-sc topnav-no-hdnav"><li class="topnav-li"><a href="#login_panel" class="kl-login-box topnav-item"><i class="glyphicon glyphicon-log-in visible-xs xs-icon"></i><span class="hidden-xs">LOGIN</span></a></li></ul>			<ul class="sh-component topnav navRight topnav--sliding-panel topnav-no-sc topnav-no-hdnav">
+				<li class="topnav-li">
+					<a href="#" id="open_sliding_panel" class="topnav-item open-sliding-panel js-toggle-class" data-target="#sliding_panel" data-target-class="is-opened">
+						<i class="glyphicon glyphicon-remove-circle kl-icon-white"></i>
+						<i class="glyphicon glyphicon-info-sign kl-icon-white visible-xs xs-icon"></i>
+						<span class="hidden-xs">ARCLER AT A GLANCE</span>					</a>
+				</li>
+			</ul>
+		
+		<div id="search" class="sh-component header-search headsearch--inp">
+
+			<a href="#" class="searchBtn header-search-button">
+				<span class="glyphicon glyphicon-search kl-icon-white"></span>
+			</a>
+
+			<div class="search-container header-search-container">
+				
+<form id="searchform" class="gensearch__form" action="https://www.arclerit.com/" method="get">
+	<input id="s" name="s" value="" class="inputbox gensearch__input" type="text" placeholder="SEARCH ..." />
+	<button type="submit" id="searchsubmit" value="go" class="gensearch__submit glyphicon glyphicon-search"></button>
+	</form>			</div>
+		</div>
+
+				</div>
+
+	</div><!-- /.site-header-top -->
+
+	<div class="separator site-header-separator "></div>
+
+			</div>
+		</div><!-- /.site-header-top-wrapper -->
+
+		<div class="kl-top-header site-header-main-wrapper clearfix   header-no-bottom  sh--light">
+
+			<div class="container siteheader-container ">
+
+				<div class='fxb-col fxb-basis-auto'>
+
+					
+
+<div class="fxb-row site-header-row site-header-main ">
+
+	<div class='fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto fxb-grow-0 fxb-sm-full site-header-col-left site-header-main-left'>
+				<div id="logo-container" class="logo-container  hasHoverMe logosize--no zn-original-logo">
+			<!-- Logo -->
+			<h3 class='site-logo logo ' id='logo'><a href='https://www.arclerit.com/' class='site-logo-anch'><img class="logo-img-sticky site-logo-img-sticky" src="https://www.arclerit.com/wp-content/uploads/Arcler-logo-inv-small.png"  alt="Arcler" title="an IT consulting and software services company" /><img class="logo-img site-logo-img" src="https://www.arclerit.com/wp-content/uploads/Arcler-logo-inv-small.png" width="210" height="30"  alt="Arcler" title="an IT consulting and software services company" data-mobile-logo="https://www.arclerit.com/wp-content/uploads/Arcler-logo-inv-small.png" /></a></h3>			<!-- InfoCard -->
+					</div>
+
+		<div class="separator site-header-separator visible-xs"></div>	</div>
+
+	<div class='fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-center site-header-main-center'>
+				<div class="sh-component main-menu-wrapper" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" >
+
+					<div class="zn-res-menuwrapper">
+			<a href="#" class="zn-res-trigger zn-menuBurger zn-menuBurger--3--m zn-menuBurger--anim2 " id="zn-res-trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div><!-- end responsive menu -->
+		<div id="main-menu" class="main-nav mainnav--sidepanel mainnav--active-bg mainnav--pointer-dash nav-mm--light zn_mega_wrapper "><ul id="menu-arcler-main-menu" class="main-menu main-menu-nav zn_mega_menu "><li id="menu-item-799" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-799  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="https://www.arclerit.com/" class=" main-menu-link main-menu-link-top"><span>HOME</span></a></li>
+<li id="menu-item-2258" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2258  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/about" class=" main-menu-link main-menu-link-top"><span>ABOUT US</span></a>
+<ul class="sub-menu clearfix">
+	<li id="menu-item-2087" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2087  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/about/" class=" main-menu-link main-menu-link-sub"><span>Company Overview</span></a></li>
+	<li id="menu-item-2086" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2086  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/services/process/" class=" main-menu-link main-menu-link-sub"><span>Consulting Process</span></a></li>
+	<li id="menu-item-2320" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2320  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/about/jobs/" class=" main-menu-link main-menu-link-sub"><span>Jobs at Arcler</span></a>
+	<ul class="sub-menu clearfix">
+		<li id="menu-item-2392" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2392  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.arclerit.com/about/jobs/" class=" main-menu-link main-menu-link-sub"><span>Available Positions</span></a></li>
+		<li id="menu-item-2321" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2321  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.arclerit.com/about/jobs/candidate-dashboard/" class=" main-menu-link main-menu-link-sub"><span>Arcler Candidate Dashboard</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-2259" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2259  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/services" class=" main-menu-link main-menu-link-top"><span>SERVICES</span></a>
+<ul class="sub-menu clearfix">
+	<li id="menu-item-2088" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2088  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/services/" class=" main-menu-link main-menu-link-sub"><span>Overview</span></a></li>
+	<li id="menu-item-2085" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2085  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/downloads/" class=" main-menu-link main-menu-link-sub"><span>Downloads</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1407" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1407  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="https://www.arclerit.com/store/" class=" main-menu-link main-menu-link-top"><span>STORE</span></a>
+<ul class="sub-menu clearfix">
+	<li id="menu-item-2403" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2403  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/store/" class=" main-menu-link main-menu-link-sub"><span>Products</span></a></li>
+	<li id="menu-item-2384" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2384  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/store/cart/" class=" main-menu-link main-menu-link-sub"><span>Your Shopping Cart</span></a></li>
+	<li id="menu-item-2383" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2383  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/account/" class=" main-menu-link main-menu-link-sub"><span>Your Account</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1062" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1062  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="https://www.arclerit.com/blog/" class=" main-menu-link main-menu-link-top"><span>BLOG</span></a></li>
+<li id="menu-item-2260" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2260  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/contact" class=" main-menu-link main-menu-link-top"><span>CONTACT US</span></a>
+<ul class="sub-menu clearfix">
+	<li id="menu-item-814" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-814  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/contact/" class=" main-menu-link main-menu-link-sub"><span>Submit an Inquiry</span></a></li>
+	<li id="menu-item-2319" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2319  main-menu-item-sub  menu-item-odd menu-item-depth-1"><a href="https://www.arclerit.com/contact/job-application/" class=" main-menu-link main-menu-link-sub"><span>Submit a Job Application</span></a></li>
+</ul>
+</li>
+</ul></div>		</div>
+		<!-- end main_menu -->
+			</div>
+
+	<div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right'>
+
+		<div class='fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-main-right-top'>
+									<ul class="sh-component topnav navLeft topnav--cart topnav-no-sc topnav-no-hdnav">
+				<li class="drop topnav-drop topnav-li">
+					
+					<a id="mycartbtn" class="kl-cart-button topnav-item kl-cart--icononly" href="https://www.arclerit.com/store/cart/" title="View your shopping cart">
+								<i class="glyphicon glyphicon-shopping-cart kl-cart-icon flipX-icon xs-icon" data-count="0"></i>
+						</a>
+
+					<div class="pPanel topnav-drop-panel topnav--cart-panel u-trans-all-2s">
+						<div class="inner topnav-drop-panel-inner topnav--cart-panel-inner cart-container">
+							<div class="widget_shopping_cart_content">No products in cart.</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<a href="#free-assessment-and-quote-modal"  id="ctabutton"  class="sh-component ctabutton kl-cta-ribbon " title="Free assessment and consulting form" data-lightbox="inline"  itemprop="url" >Get <strong>FREE</strong> Consulting<svg version="1.1" class="trisvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" width="14px" height="5px" viewBox="0 0 14.017 5.006" enable-background="new 0 0 14.017 5.006" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.016,0L7.008,5.006L0,0H14.016z"></path></svg></a>		</div>
+
+		
+	</div>
+
+</div><!-- /.site-header-main -->
+
+
+				</div>
+
+							</div><!-- /.siteheader-container -->
+
+		</div><!-- /.site-header-main-wrapper -->
+
+		
+
+	</div><!-- /.site-header-wrapper -->
+	</header>
+<div id="page_header" class="page-subheader maskcontainer--mask6 page-subheader--auto page-subheader--inherit-hp zn_def_header_style  psubhead-stheader--absolute sh-tcolor--light">
+
+    <div class="bgback"></div>
+
+    
+    <div class="th-sparkles"></div>
+
+    <!-- DEFAULT HEADER STYLE -->
+    <div class="ph-content-wrap">
+        <div class="ph-content-v-center">
+            <div>
+                <div class="container">
+                    <div class="row">
+                                                <div class="col-sm-6">
+                            <ul vocab="http://schema.org/" typeof="BreadcrumbList" class="breadcrumbs fixclear bread-style--black"><li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://www.arclerit.com"><span property="name">Home</span></a><meta property="position" content="1"></li><li>Error 404 </li></ul>                            <div class="clearfix"></div>
+                        </div>
+                        
+                                                <div class="col-sm-6">
+                            <div class="subheader-titles">
+                                <h2 class="subheader-maintitle" itemprop="headline" ></h2>                            </div>
+                        </div>
+                                            </div>
+                    <!-- end row -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kl-mask kl-bottommask kl-mask--mask6 kl-mask--light"><svg width="2700px" height="57px" class="svgmask" viewBox="0 0 2700 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-mask6">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g transform="translate(-1.000000, 10.000000)">
+        <path d="M0.455078125,18.5 L1,47 L392,47 L1577,35 L392,17 L0.455078125,18.5 Z" fill="#000000"></path>
+        <path d="M2701,0.313493752 L2701,47.2349598 L2312,47 L391,47 L2312,0 L2701,0.313493752 Z" fill="#f5f5f5" class="bmask-bgfill" filter="url(#filter-mask6)"  style="fill:"></path>
+        <path d="M2702,3 L2702,19 L2312,19 L1127,33 L2312,3 L2702,3 Z" fill="#cd2122" class="bmask-customfill"></path>
+    </g>
+</svg>
+</div></div>
+	<div class="error404-page">
+
+		<section id="content" class="site-content" >
+			<div class="container">
+
+				<div id="mainbody">
+
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="error404-content">
+								<h2 class="error404-content-title" itemprop="headline" ><span>404</span></h2>
+								<h3 class="error404-content-msg">The page cannot be found.</h3>
+							</div>
+
+						</div>
+
+						<div class="col-sm-12">
+							<div class="search gensearch__wrapper kl-gensearch--light">
+								
+<form id="searchform" class="gensearch__form" action="https://www.arclerit.com/" method="get">
+	<input id="s" name="s" value="" class="inputbox gensearch__input" type="text" placeholder="SEARCH ..." />
+	<button type="submit" id="searchsubmit" value="go" class="gensearch__submit glyphicon glyphicon-search"></button>
+	</form>							</div>
+						</div>
+					</div><!-- end row -->
+
+				</div><!-- end mainbody -->
+
+			</div><!-- end container -->
+		</section><!-- end #content -->
+	</div>
+
+<div class="znpb-footer-smart-area" >		<section class="zn_section eluidb1ece391  round-corners   section-sidemargins    zn_section--inlinemodal mfp-hide   section--no " id="free-assessment-and-quote-modal"  >
+
+			
+			<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+
+				<div class="row ">
+					
+		<div class="eluid4e67e6a6            col-md-12 col-sm-12   znColumnElement"  id="eluid4e67e6a6" >
+
+			
+			<div class="znColumnElement-innerWrapper-eluid4e67e6a6 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " >
+
+				<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid82cd7d7a " ><h3 class="tbk__title" itemprop="headline" >GET FREE ASSESSMENT & FREE CONSULTING</h3><h4 class="tbk__subtitle" itemprop="alternativeHeadline" >Please fill out the following form, and let Arcler help you with a suitable solution for your software consulting needs.</h4></div>
+		<div class="zn_contact_form_container contactForm cf-elm eluide9a149b5  cf--light element-scheme--light  " >
+						<form action="#" id="form_eluide9a149b5" method="post" class="zn_contact_form contact_form cf-elm-form row " data-redirect=""><div class="col-sm-6  kl-fancy-form zn_form_field zn_cf_text"><input type="text" name="zn_form_field_name1_0" id="zn_form_field_name1_0" placeholder="Please enter your name" value="" class="zn_form_input zn-field-text form-control  kl-fancy-form-input zn_validate_not_empty "/><label for="zn_form_field_name1_0" class="control-label kl-font-alt kl-fancy-form-label">NAME</label></div><div class="col-sm-6  kl-fancy-form zn_form_field zn_cf_text"><input type="text" name="zn_form_field_company1_1" id="zn_form_field_company1_1" placeholder="Please enter the name of your company" value="" class="zn_form_input zn-field-text form-control  kl-fancy-form-input zn_validate_not_empty "/><label for="zn_form_field_company1_1" class="control-label kl-font-alt kl-fancy-form-label">COMPANY</label></div><div class="col-sm-6  kl-fancy-form zn_form_field zn_cf_text"><input type="text" name="zn_form_field_email1_2" id="zn_form_field_email1_2" placeholder="Please type your email address" value="" class="zn_form_input zn-field-text form-control  kl-fancy-form-input zn_validate_not_empty "/><label for="zn_form_field_email1_2" class="control-label kl-font-alt kl-fancy-form-label">Email</label></div><div class="col-sm-6  kl-fancy-form zn_form_field zn_cf_text"><input type="text" name="zn_form_field_telephone1_3" id="zn_form_field_telephone1_3" placeholder="Optionally provide your number if you'd like us to call you" value="" class="zn_form_input zn-field-text form-control  kl-fancy-form-input zn_validate_none "/><label for="zn_form_field_telephone1_3" class="control-label kl-font-alt kl-fancy-form-label">Telephone</label></div><div class="col-sm-6  kl-fancy-form zn_form_field zn_cf_select"><label class="control-label kl-font-alt kl-fancy-form-label">NEEDED SERVICE</label><select name="zn_form_field_needed_service1_4"  id="zn_form_field_needed_service1_4" class="zn_form_input form-control form-control--light kl-fancy-form-select zn_validate_not_empty"><option value="softwareConsultingGeneral" >Software Consulting (General)</option><option value="softwareConsulting4J2EE" >Software Consulting for Java EE</option><option value="softwareConsulting4BPM" >Software Consulting for BPM</option><option value="softwareConsulting4websphere" >Software Consulting for IBM WebSphere</option><option value="softwareConsulting4ODM" >Software Consulting for IBM ODM</option><option value="(General)" ></option><option value="bespokeDevelopment" >Bespoke Software Development</option><option value="databaseMigration" >Database Migration</option><option value="webCloudHosting" >Web / Cloud Hosting</option><option value="shop" >Online Store</option><option value="turnkeyWebsite" >Turnkey Web Site</option><option value="other" >Other</option></select></div><div class="col-sm-6  kl-fancy-form zn_form_field zn_cf_select"><label class="control-label kl-font-alt kl-fancy-form-label">PROJECT SIZE</label><select name="zn_form_field_project_size1_5"  id="zn_form_field_project_size1_5" class="zn_form_input form-control form-control--light kl-fancy-form-select zn_validate_not_empty"><option value="Small" >Small / Short Term</option><option value="Medium" >Medium / Mid-Term</option><option value="Large" >Large / Long-Term</option></select></div><div class="col-sm-12  kl-fancy-form zn_form_field zn_cf_textarea"><textarea name="zn_form_field_your_enquiry1_6" class="zn_form_input form-control  kl-fancy-form-textarea zn_validate_not_empty " id="zn_form_field_your_enquiry1_6" placeholder="Please add any details you think it would be useful for us to make a correct estimation." cols="40" rows="6"></textarea><label for="zn_form_field_your_enquiry1_6" class="control-label kl-font-alt kl-fancy-form-label">YOUR ENQUIRY</label></div><div class="col-sm-12  kl-fancy-form zn_form_field zn_cf_captcha"><span class="kl-recaptcha" data-colorscheme="light" data-sitekey="6LfA5BIUAAAAACl5U3L10cZEqmKLEAW-tHe58-E7" id="zn_recaptcha_1"></span></div><div class="col-sm-12  kl-fancy-form zn_form_field zn_cf_hidden"><input type="hidden" name="zn_pb_form_submit_1" id="zn_pb_form_submit_1" value="1" class="zn_form_input zn_validate_none" /></div><p class="col-sm-12  kl-fancy-form zn_form_field zn_cf_checkbox"><input id="mailchimp_subscribe_eluide9a149b5" name="mailchimp_subscribe_eluide9a149b5" value="yes" class="zn_form_input form-control--light" type="checkbox"/><label for="mailchimp_subscribe_eluide9a149b5">Subscribe to our newsletter</label><p><div class="col-sm-12"><div class="zn_contact_ajax_response titleColor" id="zn_form_id1" ></div><div class="zn_submit_container text-left"><button class="zn_contact_submit btn btn-fullcolor btn--rounded  " type="submit">INQUIRE</button></div></div></form>
+		</div>
+
+						</div>
+			</div>
+
+			
+		</div>
+	
+				</div>
+			</div>
+
+					</section>
+
+
+		</div>	<footer id="footer" class="site-footer"  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+		<div class="container">
+			<div class="row"><div class="col-sm-4"><div id="tp_widget_recent_tweets-2" class="widget widget_tp_widget_recent_tweets"><strong>Could not authenticate you.</strong></div></div><div class="col-sm-4"><div id="zn_mailchimp-1" class="widget widget_zn_mailchimp"><div class="newsletter-signup kl-newsletter-wrapper"><h3 class="widgettitle title m_title m_title_ext text-custom">NEWSLETTER SIGNUP</h3><p>Subscribe to our mailing list, and stay up-to-date with the latest news from us.</p><div class=" js-mcForm-result dn-widgetNewsletter-result"></div><form method="post" class="js-mcForm newsletter_subscribe newsletter-signup kl-newsletter clearfix" data-url="https://www.arclerit.com/" name="newsletter_form">	<input type="text" name="mc_email" class="nl-email kl-newsletter-field form-control js-mcForm-email" value="" placeholder="your.address@email.com" />	<input type="hidden" name="mailchimp_list" class="nl-lid" value="3894b20582" />  <input type="hidden" name="nonce" value="b6c2bb5d9b" class="zn_hg_mailchimp"/>  <input type="hidden" name="action" value="hg_mailchimp_register" />	<input type="submit" name="submit" class="kl-newsletter-submit kl-font-alt btn btn-fullcolor" value="Subscribe" /></form><p>Your e-mail address is safe with us, protected with international anti-spam policies.</p>	</div><!-- end newsletter-signup --></div></div><div class="col-sm-4"><div id="text_contact-1" class="widget widget_text_contact"><h3 class="widgettitle title m_title m_title_ext text-custom">GET IN TOUCH</h3>
+		<div class="textwidget contact-details"><p>Arcler Ltd<br />
+27 Old Gloucester Street, London  WC1N 3AX  United Kingdom</p>
+<p><a href="https://goo.gl/maps/S3gNXQ65td92" target="_blank"><i class="glyphicon glyphicon-map-marker kl-icon-white"></i> Open in Google Maps</a></p>
+<p>
+Contact: <a href="https://www.arclerit.com/contact/">E-mail us here...</a></p></div>
+
+		</div></div></div><!-- end row --><div class="row"><div class="col-sm-6"></div><div class="col-sm-6"></div></div><!-- end row -->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="bottom site-footer-bottom clearfix">
+
+						<div class="zn_footer_nav-wrapper"><ul id="menu-footer-menu-bottom" class="footer_nav"><li id="menu-item-745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-745"><a href="https://www.arclerit.com/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-744"><a href="https://www.arclerit.com/terms-conditions/">Terms &#038; Conditions</a></li>
+<li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-743"><a rel="privacy-policy" href="https://www.arclerit.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>
+						<ul class="social-icons sc--normal clearfix"><li class="social-icons-li title">GET SOCIAL</li><li class="social-icons-li"><a data-zniconfam="kl-social-icons" data-zn_icon="" href="https://www.linkedin.com/company/arcler" target="_self" title="Follow Arcler on LinkedIn" class="social-icons-item scfooter-icon-"></a></li><li class="social-icons-li"><a data-zniconfam="kl-social-icons" data-zn_icon="" href="https://www.facebook.com/ArclerIT" target="_self" title="Like Arcler on Facebook" class="social-icons-item scfooter-icon-"></a></li><li class="social-icons-li"><a data-zniconfam="kl-social-icons" data-zn_icon="" href="https://twitter.com/ArclerIT" target="_self" title="Follow Arcler's tweets" class="social-icons-item scfooter-icon-"></a></li><li class="social-icons-li"><a data-zniconfam="kl-social-icons" data-zn_icon="" href="https://www.instagram.com/arclerit/" target="_self" title="Follow Arcler on Instagram" class="social-icons-item scfooter-icon-"></a></li><li class="social-icons-li"><a data-zniconfam="kl-social-icons" data-zn_icon="" href="https://www.pinterest.com/ArclerIT/" target="_self" title="See Arcler's Pins" class="social-icons-item scfooter-icon-"></a></li></ul>
+						
+							<div class="copyright footer-copyright">
+								<a href="https://www.arclerit.com" class="footer-copyright-link"><img class="footer-copyright-img" src="https://www.arclerit.com/wp-content/uploads/arcler-tiny-logo-inv.png"  width="110" height="38" alt="Arcler" /></a><p class="footer-copyright-text">© Copyright 2018-2019 by Arcler Ltd. All rights reserved.</p>							</div><!-- end copyright -->
+											</div>
+					<!-- end bottom -->
+				</div>
+			</div>
+			<!-- end row -->
+		</div>
+	</footer>
+</div><!-- end page_wrapper -->
+
+<a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop">TOP</a>
+
+<aside id="wc-terms-and-conditions-popup" style="display:none;">
+	<div class="wc-checkout-terms-popup wc-enabled-terms-button wc-enabled-terms-scroll" data-title="Terms & Conditions" data-terms_button="yes" data-terms_scroll="yes">
+		<div class="wc-checkout-terms-popup__content">
+			<h2><strong>Background</strong></h2>
+<p>This agreement applies as between you, the User of this Web Site and Arcler, the owner(s) of this Web Site. Your agreement to comply with and be bound by these terms and conditions is deemed to occur upon your first use of the Web Site. If you do not agree to be bound by these terms and conditions, you should stop using the Web Site immediately.</p>
+<ol>
+<h3>
+<li>Definitions and Interpretation</li>
+</h3>
+</ol>
+<p>In this Agreement the following terms shall have the following meanings:<br />
+</p>
+<table style="width: 96%;">
+<tbody>
+<tr>
+<td style="width: 15%; vertical-align:top; text-align: right;"><strong>“Content”</strong></td>
+<td style="width: 5%">&nbsp;</td>
+<td style="width: 80%">means any text, graphics, images, audio, video, software, data compilations and any other form of information capable of being stored in a computer that appears on or forms part of this Web Site;</td>
+</tr>
+<tr>
+<td style="width: 15%; vertical-align:top; text-align: right;"><strong>“Arcler”</strong></td>
+<td style="width: 5%">&nbsp;</td>
+<td style="width: 80%">means Arcler Ltd at 71-75 Shelton Street, Covent Garden, London WC2H 9JQ United Kingdom;</td>
+</tr>
+<tr>
+<td style="width: 15%; vertical-align:top; text-align: right;"><strong>“Service”</strong></td>
+<td style="width: 5%">&nbsp;</td>
+<td style="width: 80%">means collectively any online and/or offline facilities, tools, services or information that Arcler makes available through the Web Site, by use of the software acquired and/or purchased from the Web Site, or via its tehnical consultants working in person either now or in the future;</td>
+</tr>
+<tr>
+<td style="width: 15%; vertical-align:top; text-align: right;"><strong>“System”</strong></td>
+<td style="width: 5%">&nbsp;</td>
+<td style="width: 80%">means any online or offline information and communication system that Arcler makes available through the Web Site, and/or any software distributed by Arcler by any means - online or offline - either now or in the future. This includes, but is not limited to, web-based email, message boards, live chat facilities, email links, electronic forms and application software;</td>
+</tr>
+<tr>
+<td style="width: 15%; vertical-align:top; text-align: right;"><strong>“User” / “Users”</strong></td>
+<td style="width: 5%">&nbsp;</td>
+<td style="width: 80%">means any third party that accesses the Web Site and is not employed by Arcler and acting in the course of their employment; and</td>
+</tr>
+<tr>
+<td style="width: 15%; vertical-align:top; text-align: right;"><strong>“Web Site”</strong></td>
+<td style="width: 5%">&nbsp;</td>
+<td style="width: 80%">means the website that you are currently using (www.ArclerIT.com) and any sub-domains of this site (e.g. blog.arclerit.com) unless expressly excluded by their own terms and conditions.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ol start="2">
+<h3>
+<li>Intellectual Property</li>
+</h3>
+<ul>
+<li>All Content included on the Web Site, unless uploaded by Users, including, but not limited to, text, graphics, logos, icons, images, sound clips, video clips, data compilations, page layout, underlying code and software is the property of Arcler, our affiliates or other relevant third parties. By continuing to use the Web Site you acknowledge that such material is protected by applicable United Kingdom and International intellectual property and other relevant laws.
+</li>
+<li>Subject to sub-clause 2.3 you may not reproduce, copy, distribute, store or in any other fashion re-use material from the Web Site unless otherwise indicated on the Web Site or unless given express written permission to do so by Arcler, Ltd.
+</li>
+<li>Material from the Web Site may be re-used without written permission where any of the exceptions detailed in Chapter III of the Copyright Designs and Patents Act 1988 apply.</li>
+</ul>
+<h3>
+<li>Links to Other Web Sites</li>
+</h3>
+</ol>
+<p>This Web Site may contain links to other sites. Unless expressly stated, these sites are not under the control of Arcler or that of our affiliates. We assume no responsibility for the content of such web sites and disclaim liability for any and all forms of loss or damage arising out of the use of them. The inclusion of a link to another site on this Web Site does not imply any endorsement of the sites themselves or of those in control of them.</p>
+<ol start="4">
+<h3>
+<li>Links to this Web Site</li>
+</h3>
+</ol>
+<p>Those wishing to place a link to this Web Site on other sites may do so without prior permission.</p>
+<ol start="5">
+<h3>
+<li>Privacy</li>
+</h3>
+</ol>
+<p>Use of the Web Site is also governed by our <u>https://www.ArclerIT.com/privacy-policy</u> which is incorporated into these terms and conditions by this reference. To view the Privacy Policy, please click on the link above.</p>
+<ol start="6">
+<h3>
+<li>Disclaimers</li>
+</h3>
+<ul>
+<li>Arcler makes no warranty or representation that its Web Site(s) as well as products and services advertised and/or delivered via its Web Site(s) will meet all of your specific requirements,  that they will be fit for a particular purpose, that they will not infringe the rights of third parties, that they will be compatible with all systems, and that all information provided will be accurate. Arcler can not be held liable for any specific results from the use of its Web Site, Products and/or Services.</li>
+<li>A complete list of applicable disclaimers are published at Arcler's <a title="Arcler Disclaimer" href="https://www.arclerit.com/disclaimer/">Disclaimer</a> page on its Web Site and the terms therein apply.</li>
+</ul>
+<h3>
+<li>Availability of the Web Site</li>
+</h3>
+</ol>
+<p>The Service is provided “as is” and on an “as available” basis. We give no warranty that the Service will be free of defects and / or faults. To the maximum extent permitted by the law we provide no warranties (express or implied) of fitness for a particular purpose, accuracy of information, compatibility and satisfactory quality.</p>
+<p>Arcler accepts no liability for any disruption or non-availability of the Web Site resulting from external causes including, but not limited to, ISP equipment failure, host equipment failure, communications network failure, power failure, natural events, acts of war or legal restrictions and censorship.</p>
+<ol start="8">
+<h3>
+<li>Limitation of Liability</li>
+</h3>
+<ul>
+<li>To the maximum extent permitted by law, Arcler accepts no liability for any direct or indirect loss or damage, foreseeable or otherwise, including any indirect, consequential, special or exemplary damages arising from the use of the Web Site or any information contained therein. Users should be aware that they use the Web Site and its Content at their own risk.
+</li>
+<li>Nothing in these terms and conditions excludes or restricts Arcler’s liability for death or personal injury resulting from any negligence or fraud on the part of Arcler.
+</li>
+<li>Every effort has been made to ensure that these terms and conditions adhere strictly with the relevant provisions of the Unfair Contract Terms Act 1977. However, in the event that any of these terms are found to be unlawful, invalid or otherwise unenforceable, that term is to be deemed severed from these terms and conditions and shall not affect the validity and enforceability of the remaining terms and conditions. This term shall apply only within jurisdictions where a particular term is illegal.</li>
+</ul>
+<h3>
+<li>No Waiver</li>
+</h3>
+</ol>
+<p>In the event that any party to these Terms and Conditions fails to exercise any right or remedy contained herein, this shall not be construed as a waiver of that right or remedy.</p>
+<ol start="10">
+<h3>
+<li>Previous Terms and Conditions</li>
+</h3>
+</ol>
+<p>In the event of any conflict between these Terms and Conditions and any prior versions thereof, the provisions of these Terms and Conditions shall prevail unless it is expressly stated otherwise.</p>
+<ol start="11">
+<h3>
+<li>Notices</li>
+</h3>
+</ol>
+<p>All notices / communications shall be given to us either by post to our Premises (see address above) or by either (preferably) using the contact form on Arcler’s web site or sending an e-mail to <u>enquiries@arcler-it.com</u>. Such notice will be deemed received 10 business days after posting if sent by first class post, the day of sending if the email is received in full on a business day and on the next business day if the email is sent on a weekend or public holiday.</p>
+<ol start="12">
+<h3>
+<li>Shipping and returns</li>
+</h3>
+</ol>
+<p>If you wish to return a product you have purchased from Arcler, please email returns@arcler-it.com (or use the contact form on our web site) explaining your reasons.</p>
+<p>We cannot accept software for return unless the publisher / manufacturer agrees to take it back from us. For physical goods (which exclude digital-download-only products), we can only accept a returned product where we have authorised it with an RMA number which will be valid for 10 days from the date it was issued. Returns will be refused without a valid RMA. We will then refund the current cost of the item minus 15% or £20 (whichever is the least) as a restock fee. We will not refund the original shipping charge. The software must be in perfect, resalable condition with the shrink-wrap intact.</p>
+<ol start="13">
+<h3>
+<li>Law and Jurisdiction</li>
+</h3>
+</ol>
+<p>These terms and conditions and the relationship between you and Arcler, Ltd shall be governed by and construed in accordance with the Law of England and Wales and Arcler, Ltd and you agree to submit to the exclusive jurisdiction of the Courts of England and Wales.</p>
+		</div>
+					<div class="wc-checkout-terms-popup__footer woocommerce">
+				<input type="submit" id="wc-checkout-terms-popup__btn" class="button alt wc-checkout-terms-popup-agree" value="Agree" onclick="tb_remove()" />
+				<input type="submit" id="wc-checkout-terms-popup__btn" class="button wc-checkout-terms-popup-decline" value="Decline" onclick="tb_remove()" />
+			</div>
+			</div>
+	</aside>
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='woocommercebulkdiscount-style-css' href='https://www.arclerit.com/wp-content/plugins/woocommerce-bulk-discount/css/style.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='accordion-css-css' href='https://www.arclerit.com/wp-content/themes/kallyas/pagebuilder/elements/TH_Accordion/style.css?ver=4.19.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.9.0' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.arclerit.com\/store\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.9.0' id='wc-add-to-cart-js'></script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.7.9.0' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.9.0' id='woocommerce-js'></script>
+<script type='text/javascript' id='hg-mailchimp-js-js-extra'>
+/* <![CDATA[ */
+var hgMailchimpConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","l10n":{"error":"Error:"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/themes/kallyas/framework/hogash-mailchimp/assets/js/hg-mailchimp.js?ver=1.0.0' id='hg-mailchimp-js-js'></script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/themes/kallyas/js/plugins.min.js?ver=4.19.0' id='kallyas_vendors-js'></script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/themes/kallyas/addons/scrollmagic/scrollmagic.js?ver=4.19.0' id='scrollmagic-js'></script>
+<script type='text/javascript' id='zn-script-js-extra'>
+/* <![CDATA[ */
+var zn_do_login = {"ajaxurl":"\/wp-admin\/admin-ajax.php","add_to_cart_text":"Item Added to cart!"};
+var ZnThemeAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php","zn_back_text":"Back","zn_color_theme":"dark","res_menu_trigger":"990","top_offset_tolerance":"","logout_url":"https:\/\/www.arclerit.com\/wp-login.php?action=logout&redirect_to=https%3A%2F%2Fwww.arclerit.com&_wpnonce=0107eef7a7"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/themes/kallyas/js/znscript.min.js?ver=4.19.0' id='zn-script-js'></script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/themes/kallyas/addons/slick/slick.min.js?ver=4.19.0' id='slick-js'></script>
+<script type='text/javascript' id='zion-frontend-js-js-extra'>
+/* <![CDATA[ */
+var ZionBuilderFrontend = {"allow_video_on_mobile":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/themes/kallyas/framework/zion-builder/dist/znpb_frontend.bundle.js?ver=1.1.0' id='zion-frontend-js-js'></script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=zr4eSegmoTGPxek' id='enlighterjs-js'></script>
+<script type='text/javascript' id='enlighterjs-js-after'>
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":2,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"java","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script type='text/javascript' src='https://www.arclerit.com/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=14.1.6.3' id='__ytprefsfitvids__-js'></script>
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+
+  <symbol id="icon-znb_close-thin" viewBox="0 0 100 100">
+   <path d="m87.801 12.801c-1-1-2.6016-1-3.5 0l-33.801 33.699-34.699-34.801c-1-1-2.6016-1-3.5 0-1 1-1 2.6016 0 3.5l34.699 34.801-34.801 34.801c-1 1-1 2.6016 0 3.5 0.5 0.5 1.1016 0.69922 1.8008 0.69922s1.3008-0.19922 1.8008-0.69922l34.801-34.801 33.699 33.699c0.5 0.5 1.1016 0.69922 1.8008 0.69922 0.69922 0 1.3008-0.19922 1.8008-0.69922 1-1 1-2.6016 0-3.5l-33.801-33.699 33.699-33.699c0.89844-1 0.89844-2.6016 0-3.5z"/>
+  </symbol>
+
+
+  <symbol id="icon-znb_play" viewBox="0 0 22 28">
+   <path d="M21.625 14.484l-20.75 11.531c-0.484 0.266-0.875 0.031-0.875-0.516v-23c0-0.547 0.391-0.781 0.875-0.516l20.75 11.531c0.484 0.266 0.484 0.703 0 0.969z"></path>
+  </symbol>
+
+ </defs>
+</svg>
+</body>
+</html>
+</div>

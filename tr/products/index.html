@@ -234,7 +234,7 @@
                     <summary aria-haspopup="listbox" role="link" class="contrast">Language</summary>
                     <ul role="listbox">
                         <li>
-                            <a href="https://www.ozar.net/tr/products/">
+                            <a href="https://gosocial2.github.io/ozarnetstaticweb/products">
                                 English </a>
                         </li>
                         <li>
@@ -381,7 +381,7 @@
                                             <div class="ls__slider-item">
                                                 <!-- Image -->
                                                 <div class="ls-slider-item__img"
-                                                     style="background-image:url('../ciwres/screenshots/sliderpip/codeigniter-screenshot1-pip.jpg')">
+                                                     style="background-image:url('/ozarnetstaticweb/ciwres/screenshots/sliderpip/codeigniter-screenshot1-pip.jpg')">
                                                 </div>
                                                 <!--/ Image -->
 
@@ -393,7 +393,7 @@
                                             <div class="ls__slider-item">
                                                 <!-- Image -->
                                                 <div class="ls-slider-item__img"
-                                                     style="background-image:url('../ciwres/screenshots/sliderpip/codeigniter-screenshot2-pip.jpg')">
+                                                     style="background-image:url('/ozarnetstaticweb/ciwres/screenshots/sliderpip/codeigniter-screenshot2-pip.jpg')">
                                                 </div>
                                                 <!--/ Image -->
 
@@ -406,7 +406,7 @@
                                             <div class="ls__slider-item">
                                                 <!-- Image -->
                                                 <div class="ls-slider-item__img"
-                                                     style="background-image:url('../ciwres/screenshots/sliderpip/codeigniter-screenshot3-pip.jpg')">
+                                                     style="background-image:url('/ozarnetstaticweb/ciwres/screenshots/sliderpip/codeigniter-screenshot3-pip.jpg')">
                                                 </div>
                                                 <!--/ Image -->
 
@@ -423,7 +423,7 @@
                                             <div class="ls__slider-item">
                                                 <!-- Image -->
                                                 <div class="ls-slider-item__img"
-                                                     style="background-image:url('../ciwres/screenshots/sliderpip/codeigniter-screenshot4-pip.jpg')">
+                                                     style="background-image:url('/ozarnetstaticweb/ciwres/screenshots/sliderpip/codeigniter-screenshot4-pip.jpg')">
                                                 </div>
                                                 <!--/ Image -->
 
@@ -440,7 +440,7 @@
                                             <div class="ls__slider-item">
                                                 <!-- Image -->
                                                 <div class="ls-slider-item__img"
-                                                     style="background-image:url('../ciwres/screenshots/sliderpip/codeigniter-screenshot5-pip.jpg')">
+                                                     style="background-image:url('/ozarnetstaticweb/ciwres/screenshots/sliderpip/codeigniter-screenshot5-pip.jpg')">
                                                 </div>
                                                 <!--/ Image -->
 
@@ -458,7 +458,7 @@
                                             <div class="ls__slider-item">
                                                 <!-- Image -->
                                                 <div class="ls-slider-item__img"
-                                                     style="background-image:url('../ciwres/screenshots/sliderpip/codeigniter-screenshot6-pip.jpg')">
+                                                     style="background-image:url('/ozarnetstaticweb/ciwres/screenshots/sliderpip/codeigniter-screenshot6-pip.jpg')">
                                                 </div>
                                                 <!--/ Image -->
 
@@ -897,7 +897,7 @@
         const htmlElement = document.querySelector('html');
         if (!webpSupported) {
 
-            const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '/res/pexels-bongkarn-thanyakij-3759098.jpg' : '/res/pexels-bongkarn-thanyakij-darker.jpg';
+            const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '/ozarnetstaticweb/res/pexels-bongkarn-thanyakij-3759098.jpg' : '/ozarnetstaticweb/res/pexels-bongkarn-thanyakij-darker.jpg';
             /*
             if (htmlElement && htmlElement.getAttribute('data-theme') === 'light') {
                 imageUrl = '/res/pexels-bongkarn-thanyakij-3759098.jpg';
@@ -912,7 +912,7 @@
             const suffix = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '' : '-darker';
             const random = strings[Math.floor(Math.random() * strings.length)] + suffix + ext;
             // console.log(random);
-            const altImageUrl = '/res/' + random;
+            const altImageUrl = '/ozarnetstaticweb/res/' + random;
             hero.style.backgroundImage = "url(" + altImageUrl + ")";
         }
 

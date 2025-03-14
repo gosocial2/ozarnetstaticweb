@@ -1,0 +1,253 @@
+/* Header & Navigation */
+header.main-header {
+    background: var(--bg-primary);
+    /*border-bottom: 1px solid var(--border);*/
+    /* position: sticky;
+    top: 0; */
+    z-index: 100;
+    width: 100%;
+    /*height: 80px;*/
+}
+
+.header-sub {
+    background-image: url('../../res/sascha-eremin-DNQ-M93tHmA-unsplash-3000x1000.jpg');
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0.66rem auto;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.navbar img, #logo {
+    width: 150px;
+    height: auto;
+    /* margin-bottom: 0.3rem; */
+}
+
+/* Page specific styles */
+.page-header {
+    background: linear-gradient(135deg,
+    var(--bg-secondary) 0%,
+    var(--bg-primary) 100%
+    );
+    /* Uncomment for background image */
+    background-image: url('../../res/pexels-bongkarn-thanyakij-3759098.webp');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    padding: 2rem 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    /* height: 200px; */
+}
+
+[data-theme="dark"] .page-header {
+    background: linear-gradient(135deg,
+    var(--bg-secondary) 0%,
+    var(--brand-orange) 200%
+    );
+    background-image: url('../../res/pexels-bongkarn-thanyakij-darkest.webp');
+}
+
+.page-title {
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.page-title h1 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.page-title h2 {
+    font-size: 1.6rem;
+    color: var(--brand-orange);
+    text-align: center;
+}
+
+.main-top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Breadcrumbs positioning */
+.breadcrumbs {
+    display: block;
+    /* position: absolute; */
+    text-align: center;
+    /* padding-top: 1rem; */
+    /* right: 2rem; */
+    /* padding: 1rem 0; */
+    /* padding-right: 1rem; */
+    color: var(--link-visited);
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /*text-wrap: nowrap;*/
+}
+
+.breadcrumbs .delimeter {
+    color: gray;
+}
+
+
+.breadcrumbs a {
+    color: gray; /*var(--text-secondary); */
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: var(--brand-orange);
+}
+
+/* Full-width content layout */
+.page-content {
+    max-width: 1200px;
+    min-width: 325px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Main content container needs relative positioning for absolute breadcrumbs */
+.main-content {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    /*position: relative;*/
+}
+
+.main-content h2 {
+    font-size: 1.75rem;
+    margin: 0.25rem 0 0.25rem;
+    color: var(--text-primary);
+}
+
+.main-content h2.brand {
+    color: var(--brand-orange);
+}
+
+.main-content h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0 0.5rem;
+    /* color: var(--text-primary); */
+}
+
+.main-content h3.first-heading {
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+    /* color: var(--text-primary); */
+}
+
+.main-content h2 + h3 {
+    margin: 0 0 0.5rem;
+    color: var(--brand-orange);
+}
+
+.main-content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    text-align: justify;
+}
+
+.main-content ul,
+.main-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.main-content li {
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Content blocks with images */
+.content-block {
+    margin: 3rem 0;
+}
+
+.cover-image {
+    margin: -2rem 0 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.cover-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.product-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    /* max-width: 1220px; */
+    margin: 0 auto 4rem;
+    /* padding: 0 0; */
+}
+
+
+figure {
+    margin-bottom: 1.25rem;
+}
+
+.inline-image {
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.inline-image img, article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+}
+
+article img {
+    margin-bottom: 1.25rem;
+}
+
+img.page-wide {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* Language selector border fix for non-home pages */
+:not(.mega-hero) .language-toggle {
+    border-color: var(--border);
+}
+
+[data-theme="light"] :not(.mega-hero) .language-toggle {
+    border-color: var(--text-secondary);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title h1 {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        font-size: 1rem;
+    }
+
+    .cover-image {
+        margin: -1rem 0 1.5rem;
+        border-radius: 0;
+    }
+
+}

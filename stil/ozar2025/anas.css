@@ -1,0 +1,372 @@
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Mega Hero Section */
+.mega-hero {
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background: var(--bg-primary);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hero-video.ready {
+    opacity: 1;
+}
+
+#youtubePlayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    /*padding-top: 1rem;*/
+}
+
+h1#ozarLogoHeading a {
+    position: relative;
+    display: block;
+    width: 170px;
+    height: 42px;
+    text-indent: -99999px;
+}
+
+#ozarLogoHeading a span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: url(../../res/ozar-logo-unischeme.png?v=1) no-repeat left top;
+    background-size: 89%;
+}
+
+html[data-theme="light"] h1#ozarLogoHeading a span {
+    background: url(../../res/ozar-logo-beyaz.png) no-repeat left top;
+    background-size: 80%;
+}
+
+
+/* Navigation uni-scheme overrides */
+.mega-hero nav a {
+    color: var(--uni-nav-text);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mega-hero nav a:hover {
+    color: var(--uni-nav-text-hover);
+}
+
+.mega-hero .language-toggle {
+    color: var(--uni-nav-text);
+    border-color: var(--uni-nav-border);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mega-hero .theme-toggle {
+    color: var(--uni-theme-icon);
+}
+
+.mega-hero .theme-toggle svg {
+    stroke: var(--uni-theme-icon);
+}
+
+/* Hero Text */
+.hero-text {
+    margin: auto 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1, .hero-text h2, .hero-text h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+}
+
+.hero-text h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--brand-orange);
+}
+
+.hero-text .lead {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Headings */
+.section-heading {
+    text-align: center;
+    margin: 0.66rem 0 1.5rem;
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.product-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3.5rem;
+    max-width: 1220px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 2rem 1.5rem;
+}
+
+.newsletter-signup {
+    max-width: 1140px;
+    margin: 0 auto 3rem;
+    padding: 2rem 2rem 3rem;
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.newsletter-pitch {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    max-width: 900px;
+    margin: 1rem auto 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+    width: 400px;
+    box-sizing: border-box;
+    height: var(--input-height);
+    padding: var(--input-padding);
+    border-radius: var(--input-border-radius);
+    border: 1px solid var(--border);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.newsletter-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--brand-orange);
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: var(--text-secondary);
+}
+
+.newsletter-btn {
+    width: 120px;
+    box-sizing: border-box;
+    height: var(--input-height);
+    padding: var(--input-padding);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background: var(--brand-orange);
+    border: none;
+    border-radius: var(--input-border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+    background: #ff9b00;
+    transform: translateY(-1px);
+}
+
+div#newsletter-modal {
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .newsletter-form input[type="email"],
+    .newsletter-btn {
+        width: 100%;
+    }
+}
+
+/* Blog Section */
+.blog-posts {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    /*color: var(--text-primary);*/
+    color: var(--brand-orange);
+}
+
+.blog-post p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.blog-post .meta {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Dual Column Layout */
+/* Moved to ler.css for better responsive control */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text .lead {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mega-hero {
+        height: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="docsearch:language" content="en">
+    <title>CodeIgniter Wizard Help Introduction | Ozar CMSEOigniter</title>
+    <link rel="stylesheet" href="/ciwres/helpres/stil/bootstrap513.css">
+    <link rel="stylesheet" href="/ciwres/helpres/stil/docs.css?v=3">
+    <!-- HelpBook -->
+    <meta name="description" content="">
+    <meta name="keywords" content="what is, limitation, authentication, authorization, routes, reference, join, joined, foreign key">
+    <meta name="robots" content="keywords, anchors">
+
+    <style>
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.33rem;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        ul.sidebarlist {
+
+            list-style-type: square;
+            list-style-type: "→";
+            list-style-position: outside;
+            padding-left: 1em;
+
+            /*
+            padding-left: 0;
+            list-style: none;
+             */
+        }
+
+        ul.sidebarlist > li span {
+            display: block;
+            margin-left: -1.25em;
+        }
+
+        /*
+        .btn.d-inline-flex {
+            text-align: left;
+            padding-left: 0.5em;
+        }
+         */
+        .bd-sidebar {
+            min-width: 240px !important;
+        }
+
+
+    </style>
+    
+</head>
+<body id="products/codeigniterwizard/help2/en.lproj/index2.html">
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+    </symbol>
+</svg>
+
+<header class="navbar navbar-expand-md navbar-dark bd-navbar">
+    <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+        <a class="navbar-brand p-0 me-2" href="/products#CIWizSection" aria-label="CodeIgniter Wizard">
+            <img src="/ciwres/helpres/shrd/CIWizardIcon32.png" alt="CodeIgniter Wizard Icon" width="32" height="32"
+                 class="rounded-circle">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
+                aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
+                 viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                      d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+            </svg>
+
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="bdNavbar">
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+                <li class="nav-item col-6 col-md-auto">
+                    <a class="nav-link p-2" href="https://www.ozar.net/?r=CIWizNewHelpDocs" title="Ozar.net Website">Ozar</a>
+                </li>
+                <li class="nav-item col-6 col-md-auto">
+                    <a class="nav-link p-2" href="https://www.ozar.net/products/codeigniterwizard?r=CIWizNewHelpDocs"
+                       title="CodeIgniter Wizard Product Website">CodeIgniter Wizard</a>
+                </li>
+                <li class="nav-item col-6 col-md-auto">
+                    <a class="nav-link p-2 active" aria-current="true" href="./index2.html"
+                       title="CodeIgniter Wizard Documentation">Help Documentation</a>
+                </li>
+            </ul>
+
+            
+            <div class="clearfix" style="margin-left: auto;">
+                <a id="getCiWizLink" class="btn btn-bd-download d-lg-inline-block my-2 my-md-0"
+                   href="https://www.ozar.net/products/codeigniterwizard/buy?r=CIWizNewHelpDocs">Get CodeIgniter
+                    Wizard</a>
+                            </div>
+
+            
+            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    aria-label="Toggle theme">
+                    <span class="theme-icon-active">
+                        <svg class="bi my-1" width="16" height="16"><use href="#moon-stars-fill"></use></svg>
+                    </span>
+                <span class="theme-icon-inactive">
+                        <svg class="bi my-1" width="16" height="16"><use href="#sun-fill"></use></svg>
+                    </span>
+            </button>
+
+        </div>
+    </nav>
+</header>
+<div id="mainContainer" class="container-xxl my-md-4 bd-layout">
+
+    <aside id="sidebar" class="bd-sidebar">
+    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+        <ul class="list-unstyled mb-0 py-3 pt-md-1">
+
+
+            <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true">
+                    Getting Started
+                </button>
+
+                <div class="collapse" id="getting-started-collapse">
+                    <ul class="list-unstyled fw-normal pb-1 small">
+                        <li><a href="index2.html" class="d-inline-flex align-items-center rounded active">Introduction & Requirements</a></li>
+                        <li><a href="whatsnew3.html" class="d-inline-flex align-items-center rounded">What's New in v3.0?</a></li>
+                        <li><a href="whatsnew2.html" class="d-inline-flex align-items-center rounded">What was New in v2.x?</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn d-inline-flex rounded align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#preferences-collapse" aria-expanded="true">
+                    Initial Setup
+                </button>
+
+                <div class="collapse show" id="preferences-collapse">
+                    <ul class="list-unstyled fw-normal pb-1 small">
+                        <li><a class="d-inline-flex align-items-center rounded" href="0preferences2.html#pref"><span>Settings in Preferences</span></a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="1database2.html#registering"><span>Defining Databases</span></a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="4languages.html#tra"><span>Languages and Translation File Templates</span></a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#creating-webapp-collapse" aria-expanded="true">
+                    Creating Web Applications
+                </button>
+
+                <div class="collapse show" id="creating-webapp-collapse">
+                    <ul class="list-unstyled fw-normal pb-1 small">
+                        <li><a class="d-inline-flex align-items-center rounded" href="5creatingwebapps.html#createNewApps"><span>New Project Settings</span></a></li>
+
+                        <li><a class="d-inline-flex align-items-center rounded" href="6settings2.html#location"><span>Fine-Tuning Settings</span></a></li>
+
+                        <li><a class="d-inline-flex align-items-center rounded" href="7setup.html"><span>Setting Up Folder and Config Files</span></a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#crudgen-collapse" aria-expanded="true">
+                    Generating Code                 </button>
+
+                <div class="collapse show" id="crudgen-collapse">
+                    <ul class="list-unstyled fw-normal pb-1 small">
+
+                        <li><a class="d-inline-flex align-items-center rounded" href="8modules.html#creatingModules"><span>Generating (CRUD) Code Modules</span></a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="9modulei18n.html#singlemodule"><span>Editing Generated Translation Keys and Values</span></a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="10publishrun.html"><span>Publishing & Running Web Apps</span></a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="12developfurther.html"><span>Manually Customizing and Developing Further</span></a></li>
+                        <li><a class="d-inline-flex align-items-center rounded" href="11production.html"><span>Production Deployment</span></a></li>
+                    </ul>
+                </div>
+            </li>
+
+            
+            <li class="mb-1">
+                <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#troubleshooting-collapse" aria-expanded="true">
+                    Troubleshooting
+                </button>
+
+                <div class="collapse show" id="troubleshooting-collapse">
+                    <ul class="list-unstyled fw-normal pb-1 small">
+                        <li><a class="d-inline-flex align-items-center rounded" href="knownissues2.html">
+                                <span>Known Issues and Limitations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-inline-flex align-items-center rounded" href="faq2.html"><span>Frequently Asked Questions</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+        </ul>
+    </nav>
+</aside>
+    <main id="mainPart" class="bd-main order-1">
+        <div class="bd-intro ps-lg-4">
+            
+<div class="align-items-center">
+<h1 class="bd-title" id="content">CodeIgniter Wizard Help</h1>
+</div>
+<p class="bd-lead">Get started with CodeIgniter Wizard, the powerful MVC code generator.</p>
+        </div>
+
+        
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+        <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+        <nav id="TableOfContents">
+            <ul>
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                    <li><a href="#whatsnew">What's New?</a></li>
+                    <li><a href="#systemrequirements">System Requirements</a>
+                        <ul>
+                            <li><a href="#systemrequirements">For the Wizard</a></li>
+                            <li><a href="#phprequirements">For Generated Applications</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#limitations">Current Limitations</a></li>
+                </ul>        </nav>
+    </div>
+
+    <div class="bd-content ps-lg-4">
+        <h2><span data-preserver-spaces="true">Introduction</span></h2>
+<p><span data-preserver-spaces="true">CodeIgniter Wizard is a PHP developer utility that helps quickly generate an advanced starting point for MySQL database-driven web applications with administrative interfaces by developing the most commonly used boilerplate code for CRUD operations and HTML files.</span></p>
+<p><span data-preserver-spaces="true">Using its database-first approach, you can define a database connection, select the tables and fields you want to include in your application, and then the wizard automatically generates the necessary models, views, and controllers - even the new CodeIgniter 4&nbsp;</span><em><span data-preserver-spaces="true">entities</span></em><span data-preserver-spaces="true">, supporting standard database CRUD operations, that is, create, read, update and delete. It even automatically populates the sidebar and (dashboard) home pages with some </span><span data-preserver-spaces="true">basic</span><span data-preserver-spaces="true"> data from your modules.</span></p>
+<p><span data-preserver-spaces="true">CodeIgniter Wizard generates most of the time-consuming boilerplate code needed for the basis of the backend of most web applications </span><span data-preserver-spaces="true">which</span><span data-preserver-spaces="true"> will save you weeks if not months! You can then take the generated project and keep developing </span><span data-preserver-spaces="true">using</span><span data-preserver-spaces="true"> the base code.</span></p>
+<p><span data-preserver-spaces="true">Most </span><span data-preserver-spaces="true">important of all</span><span data-preserver-spaces="true">, you are not bound to any CodeIgniter Wizard-specific libraries or base classes to further develop your application. Every code file CodeIgniter Wizard generates is standards-based, generic, secure, re-useable, yet simply replaceable.</span></p>
+<h2 id="whatsnew">What's New in CodeIgniter Wizard?</h2>
+<p>Below is a list highlighting the important changes in CodeIgniter Wizard across new versions.</p>
+<ul>
+<li><span data-preserver-spaces="true">Version 3 brings Codeigniter Shield as the official 'auth' library for authentication and authorization, providing an alternative to the older Myth-Auth project.</span></li>
+<li><span data-preserver-spaces="true">With version 3, Bootstrap 5-based templates have been revamped to support dark mode.</span></li>
+<li><span data-preserver-spaces="true">With version 2.5, the intrinsic database driver has been replaced with a more versatile one, adding support for MySQL versions higher than 8.0 as well as MariaDB, alleviating incompatibilities with newer authentication mechanisms such as sha256_password and cached_sha256_password.</span></li>
+<li><span data-preserver-spaces="true">As of version 2.1, the</span><span data-preserver-spaces="true"> </span><span data-preserver-spaces="true">ability to add automatic UUID generation traits to your projects has been made possible.</span></li>
+<li>Starting with version 2.0 version of CodeIgniter Wizard, automatically add user authentication and authorization for your CodeIgniter projects.&nbsp;</li>
+<li>CI Wiz is in English, but you can create localized web applications with an unlimited number of languages and translations.</li>
+<li>Ability to export CSV and Excel files from list views</li>
+<li><a href="/whatsnew2.html">Many more... (See What's New in 2.0)</a></li>
+</ul>
+<h2 id="systemrequirements">System requirements for CodeIgniter Wizard</h2>
+<ul>
+<li>macOS 10.13 or later</li>
+<li>macOS 15 Sequoia recommended</li>
+<li>Minimum screen resolution of 1440x900</li>
+<li>MySQL / MariaDB 5.7 or later</li>
+</ul>
+<h2 id="phprequirements">System requirements for Generated PHP applications</h2>
+<ul>
+<li>
+<p><b>PHP and Required Extensions</b></p>
+<p>PHP version 8.1 or newer is required, with the following PHP extensions are enabled:</p>
+<ul>
+<li><span><a href="https://www.php.net/manual/en/intl.requirements.php">intl</a></span></li>
+<li><span><a href="https://www.php.net/manual/en/mbstring.requirements.php">mbstring</a></span></li>
+<li><span><a href="https://www.php.net/manual/en/json.requirements.php">json</a></span></li>
+<li><span><a href="https://www.php.net/manual/en/mysqlnd.install.php">mysqlnd</a></span><span class="Apple-converted-space">&nbsp;</span></li>
+<li><span><a href="https://www.php.net/manual/en/imagick.requirements.php">imagick</a></span> (if you use automatic image resizing following file uploads - in cases where <a href="https://codeigniter.com/user_guide/libraries/images.html">Image</a> class is set to use ImageMagickHandler)</li>
+<li><span><a href="https://www.php.net/manual/en/image.requirements.php">gd</a></span> (if you use automatic image resizing following file uploads - in cases where <a href="https://codeigniter.com/user_guide/libraries/images.html">Image</a> class is set to use GDHandler)</li>
+</ul>
+<p>Warning</p>
+<ul>
+<li><span></span>The end of life date for PHP 7.4 was November 28, 2022.</li>
+<li><span></span>The end of life date for PHP 8.0 was November 26, 2023.</li>
+<li><span></span>If you are still using PHP 7.4 or 8.0, you should upgrade immediately.</li>
+<li><span></span>The end of life date for PHP 8.1 will be December 31, 2025.</li>
+</ul>
+<p><b>Optional PHP Extensions</b><span></span></p>
+<p>The following PHP extensions should be enabled on your server:</p>
+<ul>
+<li><span><a href="https://www.php.net/manual/en/curl.requirements.php">curl</a></span> (if you use <a href="https://codeigniter.com/user_guide/libraries/curlrequest.html">CURLRequest</a>)</li>
+</ul>
+<p><span><span class="Apple-tab-span"> </span>&bull;<span class="Apple-tab-span"> </span><a href="https://www.php.net/manual/en/simplexml.requirements.php">simplexml</a></span> (if you format XML)</p>
+</li>
+<li>Access to the database server as indicated in the '.env' file or app/Config/Database. (You can specify a different database than MySQL / MariaDB via custom code outside CI Wizard.) <br />The database platforms below are supported by generated web apps using CodeIgniter 4.x.<br /><br />
+<ul>
+<li>MySQL (5.7+) via the <em>MySQLi</em> driver</li>
+<li>PostgreSQL via the <em>Postgre</em> driver</li>
+<li>SQLite3 via the <em>SQLite3</em> driver</li>
+<li>MSSQL via the <em>SQLSRV</em> driver (version 2005 and above only)</li>
+</ul>
+</li>
+</ul>
+<p>CodeIgniter Wizard will run on macOS 10.13 or later (it is also optimized for macOS 15 Sequoia), and it currently supports only MySQL / MariaDB for the database platform at design time. So you need to have access to a MySQL or MariaDB Server v.5.5 or later over either your local network or the Internet (SSH tunneling option not available). <br />Ideally, a local MySQL would be present on your Mac, however, it is not required. You can use any MySQL/MariaDB server on your network and user account to which you have direct access.</p>
+<p>CodeIgniter Wizard currently does not create database schemas and users from scratch on your database servers which you have to do by yourself either using a free GUI tool like MySQL Workbench, Sequel Ace (aka Sequel Pro), or a premium tool such as Navicat or simply by using the command line.</p>
+<p>Once you have created a database schema and a user with full privileges for that schema, you define the credentials in CodeIgniter Wizard by what is called "registering a database" so that it can read and analyze your schema.</p>
+<h2 id="limitations">Current Limitations</h2>
+<h3>Single Database</h3>
+<p>While it is possbile to configure the CodeIgniter framework itself to use multiple databases / schemas, CodeIgniter Wizard currently supports one database schema per web application. If you need to develop and deploy a web application using multiple databases and some of the entity models using one database and the others another, this is possible by manually customizing a web application previously generated with the wizard. (In fact this is how the CMS of the <a>Ozar.net website</a> currently works). More information on such a configuration is in <a href="https://codeigniter.com/user_guide/database/connecting.html#connecting-to-multiple-databases" title="Connecting to Multiple Databases from CodeIgniter">the CodeIgiter 4 documentation</a>.</p>
+<h3>Single Database Table for Module</h3>
+<p>CodeIgniter Wizard has the notion of modules in which each module corresponding to one datatabase table. There can be one MVC module for one database table. If your end web application needs both a RESTful controller and non-RESTful controller dealing with the models and entities generated from a table, becuase you cannot create two modules (meaning one model, one entity, one controller and one set of list and form views per DB table), the only way to get code for both ways is to create a duplica project in CodeIgniter Wizard, and set the controller type different than that of the first one.</p>
+<h3>Referencing vs Referenced Modules (of joined tables via foreign keys)</h3>
+<p>As of version 1.6, CodeIgniter Wizard is capable of generating all related modules when you create one module from a database table with foreign key relationships to other tables. (This setting can be turned off in Preferences). However, the wizard will create all other related modules with a RESTful Resource Controller using AJAX in list views. If you'd rather related modules do not use AJAX, you would need to edit each of them one by one and uncheck RESTFul Resource controller option.</p>
+<h3>Routing</h3>
+<p>CodeIgniter Wizard no longer leaves the app/Config/Routes.php file untouched, but optionally writes simple routes for controllers and their methods, and it no longer uses the auto-routing mechanism of CodeIgniter using class names and methods as auto-generated URIs.</p>
+<p>If you need to specify namespaces, permissions / filters for your routes, and / or group your routes, you have to do this manually by yourself, after the code is generated.</p>
+<p>While routes can be explicitly defined in CodeIgniter framework, unlike most other frameworks, there is an automatic routing system in CodeIgniter which the wizard no longer uses as stated above in order to avoid naming collisions in complex projects.</p>
+<h4>CAUTION:</h4>
+<p>Every time, you make a change in an already generated project in CodeIgniter Wizard, Routes.php is regenerated from scratch reflecting the most up-to-date state of your modules. If you manually write or update code in the routes(.php) file, your changes will be overwritten next time you publish a module (or re-publish all or any of the existing modules).</p>
+<h3>Manually Editing the Generated Code</h3>
+<p>Be sure to make manual changes after copying the generated folder to your development environment, and it is recommended that you always work on a copy.</p>
+<p>While you can edit the generated folder directly, each time you make a change to your app in CodeIgniter Wizard and re-publish the changes, all the controller, model, entity classes, and view files (as well as routes) will be <strong>over-written</strong> (risking you to lose your changes if you are directly editing them).</p>
+            </div>
+
+    
+    </main>
+</div>
+<script defer src="/ciwres/helpres/betik/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+<script type="module">
+    var sidebar = document.getElementById("sidebar"); // document.querySelector(".bd-sidebar");
+    // sidebar.classList.add("show");
+    var mainContainer = document.getElementById('mainContainer');
+    var mainPart = document.getElementById('mainPart');
+
+    var sideBarBak = sidebar.cloneNode(); // Object.assign({}, sidebar);
+    var sideBarHidden = false
+    var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'));
+    var collapseList = collapseElementList.map(function (collapseEl) {
+        return new bootstrap.Collapse(collapseEl)
+    });
+
+    var bsUnCollapse = new bootstrap.Collapse(sidebar, {
+        toggle: true
+    });
+
+        if ("HelpViewer" in window && "showTOCButton" in window.HelpViewer) {
+        const gbtn = document.getElementById('getCiWizLink');
+        remove(gbtn);
+        window.setTimeout(function () {
+            helpBookSidebar()
+        }, 1);
+    }
+
+    function helpBookSidebar() {
+        window.HelpViewer.showTOCButton(true, toggleNavigation, toggleNavigation);
+        window.HelpViewer.setTOCButton(true);
+    }
+
+    function toggleNavigation() {
+
+        
+        if (sideBarHidden) {
+            toggleAnimated(sidebar);
+            // restore(sideBarBak);
+            restoreLayoutWithSidebarSetting();
+            sideBarHidden = false;
+        } else {
+            // collapse(sidebar);
+            toggle(sidebar);
+            setLayoutWithoutSidebar();
+            sideBarHidden = true;
+                    }
+
+    }
+
+        function toggle(elem) {
+        let ele;
+        if (typeof elem == 'string') {
+            ele = document.getElementById(elemId);
+        } else {
+            ele = elem;
+        }
+        if (ele === undefined || ele == null) {
+            return;
+        }
+        if (ele.classList.contains("show")) {
+            ele.classList.remove("show")
+        } else {
+            ele.classList.add("show")
+        }
+    }
+
+    function toggleAnimated(element) {
+        const bsCollapse = new bootstrap.Collapse(element, {
+            toggle: true
+        });
+    }
+
+    function remove(element) {
+        element.parentNode.removeChild(element);
+    }
+
+    function setLayoutWithoutSidebar() {
+        mainContainer.classList.remove('bd-layout');
+        mainPart.classList.remove('bd-main');
+    }
+
+    function restoreLayoutWithSidebarSetting() {
+        mainContainer.classList.add('bd-layout');
+        mainPart.classList.add('bd-main');
+    }
+
+    function restore(element) {
+                mainContainer.classList.add('bd-layout');
+        mainPart.classList.add('bd-main');
+    }
+
+    (() => {
+        'use strict'
+
+        const getStoredTheme = () => localStorage.getItem('theme')
+        const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+        const setTheme = theme => {
+            document.documentElement.setAttribute('data-bs-theme', theme)
+            const activeThemeIcon = document.querySelector('.theme-icon-active')
+            const inactiveThemeIcon = document.querySelector('.theme-icon-inactive')
+
+            if (theme === 'dark') {
+                activeThemeIcon.style.display = 'inline-block'
+                inactiveThemeIcon.style.display = 'none'
+            } else {
+                activeThemeIcon.style.display = 'none'
+                inactiveThemeIcon.style.display = 'inline-block'
+            }
+        }
+
+        // Initialize theme
+        window.addEventListener('DOMContentLoaded', () => {
+            // Get stored theme or use dark as default
+            const currentTheme = getStoredTheme() || 'dark'
+            setTheme(currentTheme)
+            setStoredTheme(currentTheme)
+
+            // Add click handler for theme toggle
+            const themeToggle = document.querySelector('#bd-theme')
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const newTheme = getStoredTheme() === 'dark' ? 'light' : 'dark'
+                    setStoredTheme(newTheme)
+                    setTheme(newTheme)
+                })
+            }
+        })
+    })();
+</script>
+
+
+    <!-- Begin TekEkran Analytics -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDomains", ["*.www.ozar.net","*.ccpdemo.ozar.net","*.ccpdemo2.ozar.net","*.ozar.net","*.www.ccpdemo.ozar.net","*.www.ccpdemo2.ozar.net"]]);
+        _paq.push(["enableCrossDomainLinking"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//analitik.tekekran.net/mato/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><img src="//analitik.tekekran.net/mato/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="analitik" /></noscript>
+    <!-- End TekEkran Analytics Code -->
+
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-780829-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-780829-1');
+        </script>
+    
+</body>
+</html>

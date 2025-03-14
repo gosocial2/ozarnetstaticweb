@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Data Modeling Capabilities of Navicat in Action</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content="Explore Navicat 15's enhanced data modeling capabilities. Design generic models, convert to specific platforms, and streamline database creation.">
+
+    <link rel="author" href="https://www.ozar.net">
+    <link rel="publisher" href="Ozar"/>
+
+        <meta itemprop="name" content="Data Modeling Capabilities of Navicat in Action">
+    <meta itemprop="description" content="Unlock the power of Navicat's enhanced data modeling capabilities with version 15! Designed for seamless usability, Navicat has been a go-to for crafting visually appealing and semantically precise data models for nearly a decade. Discover the latest features in Navicat 15, released in November 2019, including the ability to design generic data models and effortlessly convert them to a specific database platform. This article guides you through creating a logical data model, predicts field types accurately, and provides unlimited undo/redo options, reducing development time. Learn how to design a simple data model, convert it to a MySQL-targeting physical model, and use Navicat to automatically generate tables and fields. Whether you're working with Navicat Data Modeler, Navicat Premium 15 Enterprise Edition, or specific MySQL or MariaDB editions, this tutorial is your key to efficient database design. Watch the video tutorial or follow the step-by-step textual instructions with screenshots. Master the art of">
+    <meta itemprop="image" content="https://cmseoign202409.local/res/kul/navicat-Database-Modeling-large.png">
+
+
+        <meta property="og:locale" content="en"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Databases Category - Data Modeling Capabilities of Navicat in Action"/>
+    <meta property="og:description" content="Unlock the power of Navicat's enhanced data modeling capabilities with version 15! Designed for seamless usability, Navicat has been a go-to for crafting visually appealing and semantically precise data models for nearly a decade. Discover the latest features in Navicat 15, released in November 2019, including the ability to design generic data models and effortlessly convert them to a specific database platform. This article guides you through creating a logical data model, predicts field types accurately, and provides unlimited undo/redo options, reducing development time. Learn how to design a simple data model, convert it to a MySQL-targeting physical model, and use Navicat to automatically generate tables and fields. Whether you're working with Navicat Data Modeler, Navicat Premium 15 Enterprise Edition, or specific MySQL or MariaDB editions, this tutorial is your key to efficient database design. Watch the video tutorial or follow the step-by-step textual instructions with screenshots. Master the art of"/>
+    <meta property="og:site_name" content="Ozar.net"/>
+
+    <meta property="og:url" content="https://cmseoign202409.local//blog/databases/data-modeling-capabilities-of-navicat-in-action"/>
+
+    <meta property="og:image" content="https://cmseoign202409.local/res/kul/navicat-Database-Modeling-large.png"/>
+
+        <meta name="twitter:card" content="Explore Navicat 15's enhanced data modeling capabilities. Design generic models, convert to specific platforms, and streamline database creation.">
+    <meta name="twitter:image" content="https://cmseoign202409.local/res/kul/navicat-Database-Modeling-large.png">
+    <meta name="twitter:domain" content="ozar.net">
+    <meta name="twitter:site" content="@ozarnet">
+    <meta name="twitter:creator" content="@skyhan">
+
+    <meta name="twitter:url" content="https://www.ozar.net/blog/databases/data-modeling-capabilities-of-navicat-in-action">
+    <meta name="twitter:title" content="Data Modeling Capabilities of Navicat in Action">
+    <meta name="twitter:description" content="Unlock the power of Navicat's enhanced data modeling capabilities with version 15! Designed for seamless usability, Navicat has been a go-to for crafting visually appealing and semantically precise data models for nearly a decade. Discover the latest features in Navicat 15, released in November 2019, including the ability to design generic data models and effortlessly convert them to a specific database platform. This article guides you through creating a logical data model, predicts field types accurately, and provides unlimited undo/redo options, reducing development time. Learn how to design a simple data model, convert it to a MySQL-targeting physical model, and use Navicat to automatically generate tables and fields. Whether you're working with Navicat Data Modeler, Navicat Premium 15 Enterprise Edition, or specific MySQL or MariaDB editions, this tutorial is your key to efficient database design. Watch the video tutorial or follow the step-by-step textual instructions with screenshots. Master the art of">
+
+        <link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" />
+    <meta name="DC.Title" content="Data Modeling Capabilities of Navicat in Action" />
+    <meta name="DC.Creator" content="Ozar" />
+    <meta name="DC.Type" content="software" />
+    <meta name="DC.Date" content="2024-11-24" />
+    <meta name="DC.Format" content="text/html" />
+    <meta name="DC.Language" content="en" />
+
+    <link rel="canonical" href="https://www.ozar.net/blog/databases/data-modeling-capabilities-of-navicat-in-action">
+    
+    <link rel="stylesheet" href="/assets/pico15/pico.css">
+    <link rel="stylesheet" href="/assets/pico15/ozel.css?v=3.71" />
+
+    <style>
+        @media (min-width: 992px) {
+            main .grid {
+                grid-column-gap: var(--spacing-company);
+                grid-template-columns: auto 30%;
+            }
+        }
+
+        form.grid {
+            grid-row-gap: 0;
+        }
+
+        /* Aside nav */
+        aside img {
+            margin-bottom: 0.25rem;
+        }
+
+        aside p {
+            margin-bottom: var(--spacing-company);
+            line-height: 1.25;
+        }
+    </style>
+
+    <!-- Render additional css -->
+    
+    
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://cmseoign202409.local/"
+                }
+, {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Blog",
+    "item": "https://cmseoign202409.local/blog"
+}
+        , {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Databases Category",
+    "item": "https://cmseoign202409.local/blog/databases"
+}
+        , {
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Data Modeling w/Navicat",
+    "item": "https://cmseoign202409.local/blog/databases/data-modeling-capabilities-of-navicat-in-action"
+}
+        ]
+        }
+    </script>
+
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Organization"},{"@type":"WebSite","about":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","name":"Ozar's Digital Products and Services Website","alternateName":"Ozar.net Website","url":"https:\/\/www.ozar.net","headline":"Tech-savvy becomes you with Ozar products and services","dateModified":"2024-08-31T20:09:08+0000","inLanguage":"en","publisher":"Ozar","provider":"Ozar.net","copyrightHolder":"Ozar","copyrightYear":2020,"sdPublisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https:\/\/www.ozar.net","logo":{"@type":"ImageObject","url":"https:\/\/www.ozar.net\/res\/ozar-logo.png","name":"Ozar Logo","image":"https:\/\/www.ozar.net\/res\/ozar-logo.png","@id":"https:\/\/www.ozar.net\/res\/ozar-logo.png"},"image":"https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https:\/\/gokhan.ozar.net"},"sameAs":["https:\/\/www.facebook.com\/entekegitim\/","https:\/\/twitter.com\/ozarnet","https:\/\/www.linkedin.com\/in\/gokhanozar\/"],"@id":"https:\/\/www.ozar.net#initiative"},"disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","sdDatePublished":"2024-08-31T20:09:08+0000","sameAs":"https:\/\/www.ozar.net","potentialAction":{"@type":"SearchAction","name":"Ozar Website Search Action","target":"https:\/\/www.ozar.net\/bul\/?aranan={search_term_string}","query":"required name=search_term_string","query-input":"required name=search_term_string"},"audience":{"@type":"Audience","name":"Database Developers","alternateName":"Database Designers","audienceType":"Tech People"},"@id":"https:\/\/www.ozar.net#website"},{"@type":"WebPage","name":"Data Modeling Capabilities of Navicat in Action","description":"Unlock the power of Navicat's enhanced data modeling capabilities with version 15! Designed for seamless usability, Navicat has been a go-to for crafting visually appealing and semantically precise data models for nearly a decade. Discover the latest features in Navicat 15, released in November 2019, including the ability to design generic data models and effortlessly convert them to a specific database platform. This article guides you through creating a logical data model, predicts field types accurately, and provides unlimited undo\/redo options, reducing development time. Learn how to design a simple data model, convert it to a MySQL-targeting physical model, and use Navicat to automatically generate tables and fields. Whether you're working with Navicat Data Modeler, Navicat Premium 15 Enterprise Edition, or specific MySQL or MariaDB editions, this tutorial is your key to efficient database design. Watch the video tutorial or follow the step-by-step textual instructions with screenshots. Master the art of","isPartOf":"https:\/\/www.ozar.net#website","dateModified":"2024-11-24T15:13:36+0000","inLanguage":"en","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","name":"url"}},"image":"https:\/\/www.ozar.net\/res\/kul\/navicat-Database-Modeling-large.png","keywords":"Navicat, data modeling, Navicat 15, logical data model, physical data model, database design, MySQL, MariaDB, database platform, tutorial, data modeling capabil","@id":"#webpage"}]}</script>
+</head>
+<body>
+    <!-- Hero -->
+    <div class="hero" data-theme="dark">
+<nav class="container-fluid flex-nav">
+
+    <ul id="logo-container">
+        <li id="ozarLogoHeading" class="logo">
+            <a href="/" class="contrast" title="Ozar Home Page"><span>Ozar</span></a>
+        </li>
+    </ul>
+
+    <div id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul id="nav-links">
+        <li>
+            <a href="/">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/about">
+                About
+            </a>
+        </li>
+        <li>
+            <a href="/products">
+                Products
+            </a>
+        </li>
+        <li>
+            <a href="/books">
+                Books
+            </a>
+        </li>
+        <li>
+            <a href="/blog">
+                Blog
+            </a>
+        </li>
+        <li>
+            <a href="/contact">
+                Contact
+            </a>
+        </li>
+
+        <li>
+            <details role="list" dir="rtl">
+                <summary aria-haspopup="listbox" role="link" class="contrast">Dil</summary>
+                <ul role="listbox">
+                                            <li>
+                                                            English                                                        </li>
+                                            <li>
+                                                        <a href="/tr" title="view_this_website_inTürkçe ">
+                                                                Türkçe                                                            </a>
+                                                </li>
+                                    </ul>
+            </details>
+        </li>
+        <li>
+            <details role="list" dir="rtl">
+                <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+                <ul role="listbox">
+                    <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                    <li><a href="#" data-theme-switcher="light">Light</a></li>
+                    <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                </ul>
+            </details>
+        </li>
+    </ul>
+
+</nav>
+<header class="container">
+    <hgroup>
+        <!-- <h1>Ozar</h1> -->
+        <h1>Data Modeling Capabilities of Navicat in Action</h1>
+        <h2>A UML-Like Design-First Approach</h2>
+    </hgroup>
+</header>
+
+</div>
+<!-- ./ Hero -->
+<!-- ./ Hero -->
+<!-- Main -->
+<main class="container" data-layout="subPageRightSidebarLayout2">
+    <div class="grid">
+
+        <section>
+            
+    <article class="box post" data-layout="subPageRightSidebarLayout2" data-page-view="viewPageWithRightSidebar2">
+        <header style="margin-top: 0; padding: 0;">
+
+            
+            
+                                    <a href="#" class="image featured">
+                        <img src="/res/kul/navicat-Database-Modeling-large.png?lastModif="
+                             alt="A UML-Like Design-First Approach">
+                    </a>
+                
+            
+            
+            
+        </header>
+          <a data-lightbox="image" href="/res/kul/blog/navicat/13-Finished-Logical-Data-Model-in-Navicat-1024x512.png" class="hoverBorder pull-left kl-blog-post-img kl-blog-post--default-view"><img src="/res/kul/blog/navicat/13-Finished-Logical-Data-Model-in-Navicat-1024x512.png" width="1024" height="512" alt="Finished Logical Data Model in Navicat" title="Finished Logical Data Model in Navicat"></a>    <!-- Blog Content -->
+    <p>Navicat comes with an incredibly responsive and elegant user interface design with improved usability, and it has been enabling users to get a visually appealing and semantically precise data models from their databases for almost a decade now.</p>
+<p>Released in November 2019, <strong>Navicat 15</strong> (and <strong>Data Modeler 3.0</strong>) has some nice surprises in store, with an even more improved data modeling capability. You can now design generic data models and then convert them for a specific database platform.</p>
+<p>Together with an accurate field type prediction feature and unlimited undo/redo capability, it reduces design and development time, and offers a quick and efficient way to create and edit your table/view structures.</p>
+<p>In this article, I will show you how to design a simple data model with two entities from scratch in Navicat 15, and then how to automatically create tables and fields from this model in a newly created blank MySQL database.<br>
+<span id="more-2721"></span><br>
+With a data modeling-capable Navicat 15 edition (see the list below), you can now design <em>database-platform-agnostic</em> logical data models, which you can, then, convert to what’s called physical models that aim a specific database platform.</p>
+<p>You can follow along this tutorial hands-on with a trial version of the following Navicat 15 editions:</p>
+<ul>
+<li><strong>Navicat Data Modeler 3.0</strong> or later</li>
+<li><strong>Navicat Premium 15 <em>Enterprise</em></strong> Edition</li>
+<li><strong>Navicat 15 for MySQL <em>Enterprise</em></strong> Edition</li>
+<li><strong>Navicat 15 for MariaDB <em>Enterprise</em></strong> Edition</li>
+</ul>
+
+	<iframe width="660" height="400" src="https://www.youtube.com/embed/GUjMfrwrtco?si=e3v4nlrx_UpspYI7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+<p>You can watch the video tutorial above or <a href="https://www.youtube.com/watch?v=GUjMfrwrtco" title="New Data Modeling Capabilities of Navicat 15 in Action on YouTube">view it on <strong>YouTube</strong></a>, or just follow the textual instructions with screenshot visuals below:</p>
+<p>I will start with a logical data model using Navicat Premium, and as soon as I am finished with it, I will convert it to a MySQL-targeting physical model, and finally I’ll have Navicat create the tables and columns from that physical data model. If you have a different relational database which is supported by Navicat, you can still adapt what you will learn in this tutorial, to your database.</p>
+<h3>Creating a New Model in Navicat</h3>
+<p><a href="/res/kul/blog/navicat/Create-a-new-data-model-in-Navicat.png"><img alt="" class="alignnone wp-image-10273 size-full" decoding="async" height="594" sizes="(max-width: 951px) 100vw, 951px" src="/res/kul/blog/navicat/Create-a-new-data-model-in-Navicat.png" width="951"/></a></p>
+<p>Once you have the main window of Navicat, first open a connection to your database server, then click the <strong>Model</strong> icon in the main toolbar. Next, go under the <strong>Objects</strong> tab, and right-click an empty area, and then select “New Model…” from the drop-down menu.</p>
+<p><a href="/res/kul/blog/navicat/2-Select-data-model-type-in-Navicat.jpg"><img alt="" class="alignnone wp-image-10275 size-full" decoding="async" height="579" loading="lazy" sizes="(max-width: 772px) 100vw, 772px" src="/res/kul/blog/navicat/2-Select-data-model-type-in-Navicat.jpg" width="772"/></a></p>
+<p>As of <strong>Navicat 15</strong>, the user is presented with 3 options to choose from for the model type:</p>
+<ol>
+<li><em><strong>Physical</strong></em> model which is how it’s already been since the last few versions of Navicat. This is the model type targeting s specific relational DB platform. However, as of version 15, you can now convert a physical model to a logical model or a conceptual model.</li>
+<li><em><strong>Logical </strong></em>models are general-purpose and what I call <em>database-agnostic</em>. Design them once, as generic models, then you can convert them to a physical model targeting a particular platform. I find this especially useful in projects where we have to work on multi-platform implementations of a given database-driven application. Or due to new business strategy, to fulfill a need to port the database from one platform to another.</li>
+<li><em><strong>Conceptual</strong></em> models represent a higher level of entity relationships, but they cannot contain column/field details.</li>
+</ol>
+<div class="wp-caption aligncenter" id="attachment_2728" style="width: 730px"><img alt="Screenshot: Country-City Conceptual data model in Navicat" aria-describedby="caption-attachment-2728" class="wp-image-2728" decoding="async" height="356" loading="lazy" sizes="(max-width: 720px) 100vw, 720px" src="/res/kul/blog/navicat/3-Country-City-Conceptual-data-model-in-Navicat.png" width="720"/><p class="wp-caption-text" id="caption-attachment-2728">A simple conceptual model in Navicat</p></div>
+<p>For the sake of simplicity and brevity, I will demonstrate designing only two entities in this tutorial, namely <em>Country</em> and <em>City</em>, and as you can easily guess, a <em>country</em> has a one-to-many relationship with <em>city</em>.</p>
+<h3>Designing the Country Entity in a Logical Model</h3>
+<p>After proceeding with the logical type, we need to start designing the entities that represent the database tables.</p>
+<p>When you want to create an entity in Navicat modeler, you can do so by either clicking the tiny table icon in the toolbar of the logical model window, or by right-clicking an empty space within the model design canvas, and then selecting New > Entity from the conceptual dropdown menu.</p>
+<p>I am giving this first one the name “Country”, and next thing I will do is to define its attributes (that will end up becoming the database table columns). To do so, I can either right click inside the white area of the box representing this entity, or double click any part of the box to bring up Navicat’s traditional column and property designer form window.</p>
+<p>Let me go the first way: right-click and then “Add Attribute”. This way I can simply type the attribute name I want directly in the box.</p>
+<p><img alt="5-Adding-first-attribute-to-Country-entity-in-Navicat" class="wp-image-10277 size-full alignnone" decoding="async" height="468" loading="lazy" src="/res/kul/blog/navicat/5-Adding-first-attribute-to-Country-entity-1.gif" width="618"/></p>
+<p>The first attribute I enter this way is iso_code for the country.</p>
+<p><img alt="" class="size-large wp-image-2733 aligncenter" decoding="async" height="654" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/6-Added-iso-code-to-the-Country-entity-1024x654.png" width="1024"/></p>
+<p>When I hit the Enter key, Navicat infers this attribute as a CHAR VARYING. If this model were rather a physical model, Navicat would most likely infer it as <strong>char</strong> or <strong>varchar</strong>. (We’ll also see, a bit later on, this becomes the case when converting the finished logical model to a physical model).</p>
+<p><img alt="Adding rest of the attributes for Country entity" class="size-large wp-image-2734 aligncenter" decoding="async" height="620" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/7-Adding-rest-of-the-attributes-for-Country-entity-1024x620.jpg" width="1024"/><br/>
+To add the rest of the attributes, I right-click an empty area within the entity and choose “Design Entity”. (Double-clicking anywhere on the entity itself has the exact same effect, for your information.) This will bring up Navicat’s typical table editor where you can specify all the columns (in this case, attributes), the data type, and length, also respective checkboxes to indicate whether the fields are nullable or not, and last but not least, the primary key(s).</p>
+<p><img alt="Adding rest of the attributes for Country entity - part 2" class="size-full wp-image-2735 aligncenter" decoding="async" height="529" loading="lazy" sizes="(max-width: 953px) 100vw, 953px" src="/res/kul/blog/navicat/7-2-Adding-rest-of-the-attributes-for-Country-entity-part-2.png" width="953"/></p>
+<p>Here I have changed the type of iso_code  from “CHAR VARYING” to just “CHAR” and fixed its length to 2, which means two characters. Also defined it as the primary key. I added country_name of length 60 as “CHAR VARYING” as I expect it to become a varchar(60) for my MySQL database, and I completed the design by adding two boolean attributes named “enabled” and “deleted” as BIT(1) and default values set to 0. All I need to do now is to click OK, to finish up my design of the country entity.</p>
+<p>So now, we get a sensible visual representation of the Country entity, and this is also a good time to save our changes, so I will go ahead and save this model.</p>
+<p><img alt="Screenshot: Saving the logical model in Navicat 15" class="size-large wp-image-2737 aligncenter" decoding="async" height="618" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/8-Saving-the-logical-model-in-Navicat-15-1024x618.png" width="1024"/></p>
+<h3>Designing the City Entity in a Logical Model</h3>
+<img alt="Starting the City entity in the logical model in Navicat 15" class="size-large wp-image-2738 aligncenter" decoding="async" height="604" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/9-Starting-the-City-entity-in-the-logical-model-in-Navicat-15-1024x604.png" width="1024"/>
+	<p>As my spoiler in the conceptual model has already been revealed by now, the second and the last entity for this model is City. The steps to create it are somewhat similar to what we have already done for the Country table.</p>
+<p><img alt="Defining the City Entity attributes" class="size-full wp-image-2739 aligncenter" decoding="async" height="523" loading="lazy" sizes="(max-width: 786px) 100vw, 786px" src="/res/kul/blog/navicat/10-Defining-the-City-Entity-attributes.png" width="786"/></p>
+<p>Notice the <code>country_code</code> attribute which is of type CHAR(2), because this will ultimately be a key column for the foreign key to country’s <code>iso_code</code>. To make this definition, while this pop-up designer window is still open, click “Relations”, next, above the relations tab view, click the tiny button indicating to add a link in the chain (or at least that’s what its little icon represents).</p>
+<p><img alt="Defining the FK relationship in Navicat Data Modeler" class="size-large wp-image-2740 aligncenter" decoding="async" height="585" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/11-Defining-the-FK-relationship-in-Navicat-Data-Modeler-1024x585.jpg" width="1024"/></p>
+<p>When defining a foreign key in Navicat, you need to specify referenced table, referenced attributes and referencing local attributes by clicking right under the corresponding column in the table view.</p>
+<p><img alt="Defining the FK relationship in Navicat Data Modeler - part 2" class="size-large wp-image-2742 aligncenter" decoding="async" height="583" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/11-2-Defining-the-FK-relationship-in-Navicat-Data-Modeler-part-2-1024x583.jpg" width="1024"/></p>
+<p>Our model is almost already except I think it could use some fine-tuning in the join type. Right-clicking the line connecting the two entities will allow us to specify the cardinality on each of the respective entities:</p>
+<p><img alt="Defining the entity relationship cardinality in Navicat" class="size-large wp-image-2743 aligncenter" decoding="async" height="584" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/12-Defining-the-entity-relationship-cardinality-in-Navicat-1024x584.png" width="1024"/></p>
+<p>A country can have <strong>zero or many</strong> cities, and a city can have <strong>zero or one country</strong>. After finishing up with the relationship definitions, our model will look like the one in the screenshot below:</p>
+<p><img alt="Finished Logical Data Model in Navicat" class="size-large wp-image-2744 aligncenter" decoding="async" height="512" loading="lazy" src="/res/kul/blog/navicat/13-Finished-Logical-Data-Model-in-Navicat-1024x512.png" width="1024"/></p>
+<h3>Converting the Model to a Physical Model</h3>
+<p><img alt="Converting Data Model in Navicat" class="size-large wp-image-2745 aligncenter" decoding="async" height="518" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/14-Converting-Data-Model-in-Navicat-1024x518.png" width="1024"/></p>
+<p>Now that our logical model is complete, it is now also ready for conversion. As previously stated, a logical model is a generic data model which can be used in any database Navicat is compatible with, and in this case I want to create a MySQL database out of this.</p>
+<p><img alt="Converting Data Model in Navicat-part2" class="size-full wp-image-2746 aligncenter" decoding="async" height="490" loading="lazy" sizes="(max-width: 661px) 100vw, 661px" src="/res/kul/blog/navicat/14-2-Converting-Data-Model-in-Navicat-part2.jpg" width="661"/></p>
+<p>So I’m setting the model type to Pysical and selecting MySQL as the target database.</p>
+<p><img alt="Correcting Inferred Column Types" class="size-large wp-image-2747 aligncenter" decoding="async" height="506" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/15-Correcting-Inferred-Column-Types-1024x506.png" width="1024"/></p>
+<p>The initial conversion from a logical model to a physical model in early versions of Navicat 15 has a couple of drawbacks in which some of the entity attributes do not quite have the right data type. (I have been using <em>Navicat Premium 15.0.10 for Mac</em> at the time of this writing). For example I had defined the ID attribute of the city entity as INTEGER(11), the enabled and the deleted attributes as BIT(1) respectively in both entities. They have been imported here as int(-1) and tinyint(-1) respectively.</p>
+<img alt="Correcting Inferred Column Types - Part2" class="size-full wp-image-2749 aligncenter" decoding="async" height="584" loading="lazy" sizes="(max-width: 865px) 100vw, 865px" src="/res/kul/blog/navicat/15-2-Correcting-Inferred-Column-Types-Part2.png" width="865"/>
+	<p>They are very easy to fix, though. Just double-click each of the tables, and with Navicat’s field editor, you can adjust the correct column type and data length. In this case I will set the id column to int(11) and remember to give it the “auto-increment” attribute, and then make both enabled and deleted bit(1) default 0, meanwhile deleting all the ‘-1’s in the decimal columns.</p>
+<p><img alt="Correcting Field Types in Navicat Physical Model-BEFORE" class="size-full wp-image-2750 aligncenter" decoding="async" height="559" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" src="/res/kul/blog/navicat/15-3-Correcting-Field-Types-in-Navicat-Physical-Model-BEFORE.jpg" width="900"/></p>
+<p><img alt="15-4-Correcting Field Types in Navicat Physical Model-AFTER" class="size-full wp-image-2751 aligncenter" decoding="async" height="559" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" src="/res/kul/blog/navicat/15-4-Correcting-Field-Types-in-Navicat-Physical-Model-AFTER.jpg" width="900"/></p>
+<p>Lastly the foreign keys need some fixing, too, as they have not been interpreted correctly. (People at Premiumsoft Cybertech, the makers of Navicat, would definitely fix this bug in an upcoming minor version, so you might possibly not even have to deal with this in a newer version.)</p>
+<p><img alt="Foreign Keys in Physical Model - BEFORE" class="wp-image-2753 size-full aligncenter" decoding="async" height="384" loading="lazy" sizes="(max-width: 962px) 100vw, 962px" src="/res/kul/blog/navicat/15-5-Foreign-Keys-in-Physical-Model-BEFORE.jpg" width="962"/></p>
+<p>With the foreign key definition I named “FK_City_4_Country”, city.country_code is supposed to be referencing country.iso_code – this is what we defined in the logical model, but the physical model seems to have mixed up this info during conversion – something we can fix here on this screen.</p>
+<p><img alt="Correcting Foreign Key definitions in Physical Model - 1" class="size-large wp-image-2754 aligncenter" decoding="async" height="532" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/15-6-Correcting-Foreign-Key-definitions-in-Physical-Model-1024x532.jpg" width="1024"/></p>
+<p>First I’ll make sure country_code is the only field under “Fields”. This is the referencing field of the city table.</p>
+<p><img alt="Correcting Foreign Key definition in Physical Model - 2" class="size-large wp-image-2755 aligncenter" decoding="async" height="504" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/15-7-Correcting-Foreign-Key-definition-in-Physical-Model-2-1024x504.jpg" width="1024"/></p>
+<p>Next, I will redefine referenced field as country.iso_code by clicking the “hoverable” small button under “Referenced Fields” and then selecting the correct field from the pop-up list box, and clicking “OK”.</p>
+<p><img alt="Correcting Foreign Key definition in Physical Model - 3" class="size-full wp-image-2756 aligncenter" decoding="async" height="271" loading="lazy" sizes="(max-width: 850px) 100vw, 850px" src="/res/kul/blog/navicat/15-8-Correcting-Foreign-Key-definition-in-Physical-Model-3.jpg" width="850"/></p>
+<p>Lastly I will select “RESTRICT” for the “On Delete” case, and “CASCADE” for “On Update”. This way, a country that has a defined city with its ISO code cannot be deleted without first deleting the city. But in cases where the iso_code is updated for a given country, all of its cities’ country code (which is the same as the iso_code) will automatically get updated in the database. I click OK to close this editor.</p>
+<p><img alt="The Completed Physical Model in Navicat Premium 15" class="size-large wp-image-2757 aligncenter" decoding="async" height="387" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/16-The-Completed-Physical-Model-in-Navicat-Premium-15-1024x387.png" width="1024"/></p>
+<p>Finally our physical model diagram is complete, and now I’ll save it as “Country City MySQL DB (Physical)” to be able to easily distinguish it on my models list in Navicat.</p>
+<h3>Creating the Database (Schema)</h3>
+<p>Now we have almost everything ready to create the database tables from the physical data model we have just created.  In order for Navicat to generate the table structure from the model, it needs an existing database schema to work on. This can either be a blank database, or even one with existing tables on it. (In the latter case, Navicat does its best to synchronize the changes between existing tables and columns in the database with ones defined in the data model.</p>
+<p>In this case, I will simply create a blank MySQL database called <em>“countrycitydb”</em> to produce the tables and columns for the first time right from the physical data model.</p>
+<p><img alt="17-Creating the country city schema in Navicat" class="size-full wp-image-2758 aligncenter" decoding="async" height="691" loading="lazy" sizes="(max-width: 833px) 100vw, 833px" src="/res/kul/blog/navicat/17-Creating-the-country-city-schema-in-Navicat.jpg" width="833"/></p>
+<h3>Creating Tables and Columns by Synchronizing the Data Model with the New Database</h3>
+<p><img alt="Sync Data Model to Database in Navicat" class="size-full wp-image-2759 aligncenter" decoding="async" height="465" loading="lazy" sizes="(max-width: 888px) 100vw, 888px" src="/res/kul/blog/navicat/18-Sync-Data-Model-to-Database-in-Navicat.jpg" width="888"/></p>
+<p>Now we can go back to our physical data model, then pull down the File menu, and then select <em><strong>“Synchronize to Database…”</strong></em>. That will open up Navicat’s <strong>database synchronization</strong> dialog window where you specify the source and target.</p>
+<p><img alt="Sync Data Model to Database in Navicat - Part 2" class="size-full wp-image-2760 aligncenter" decoding="async" height="695" loading="lazy" sizes="(max-width: 866px) 100vw, 866px" src="/res/kul/blog/navicat/18-2-Sync-Data-Model-to-Database-in-Navicat-Part-2.jpg" width="866"/></p>
+<p>If you are followingalong  this tutorial hands on, be sure to select “Default” from the pop-up menu in the “Source” column. As for the target, the connection and the database need to be also specified using their respective drop-down menus. Then click the “Compare” button at the bottom-right of this window.</p>
+<img alt="Sync Data Model to Database in Navicat - Part 3" class="size-full wp-image-2762 aligncenter" decoding="async" height="695" loading="lazy" sizes="(max-width: 866px) 100vw, 866px" src="/res/kul/blog/navicat/18-3-Sync-Data-Model-to-Database-in-Navicat-Part-3.jpg" width="866"/>
+<p>On the next screen, you can verify which objects will be created. If you uncheck any of the items in the “source” column, they will be omitted in the operation. Clicking “Deploy” on the bottom-right corner, will take us to the next screen where a preview of all SQL commands that will be executed, will be listed.</p>
+<p><img alt="Sync Data Model to Database in Navicat - Part 4" class="size-large wp-image-2763 aligncenter" decoding="async" height="620" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/18-4-Sync-Data-Model-to-Database-in-Navicat-Part-4-1024x620.png" width="1024"/></p>
+<p>This is perhaps the coolest feature of Navicat. At this point we can either finish the job by clicking “Execute” on the bottom-right, or copy the entire SQL code to use it elsewhere or Navicat’s query builder screens. That way, the user has all the flexibility if they have second-thoughts on the structure design and they would like to change it by modifying the SQL code.</p>
+<p>As I can verify the code on this screen is exactly what I want, so I’ll finish simply by clicking “Execute” to run this code.</p>
+<p><img alt="Sync Data Model to Database in Navicat - Part 5" class="size-large wp-image-2764 aligncenter" decoding="async" height="620" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/18-5-Sync-Data-Model-to-Database-in-Navicat-Part-5-1024x620.jpg" width="1024"/></p>
+<p>On this final screen, we can see the result of executed SQL commands as database queries. There is always the option of “Recompare” which would re-analyze the differences between the source (in our case, the data model) and the target – if any – and then present another chance to sync them up. However right now, the message log inside the window indicates that all commands have been successfully executed and there have been no errors, which means the database tables and columns have been created alright.</p>
+<p><img alt="Previewing the empty city table" class="size-large wp-image-2767 aligncenter" decoding="async" height="725" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/res/kul/blog/navicat/19-Previewing-the-empty-city-table-1024x725.jpg" width="1024"/></p>
+<p>For what it’s worth, you can quickly populate these two tables with some sample data using the SQL dumps which you can download using the links below, and then execute in Navicat.</p>
+<p><img alt="Importing sample data in Navicat" class="wp-image-2779 size-full aligncenter" decoding="async" height="464" loading="lazy" sizes="(max-width: 621px) 100vw, 621px" src="/res/kul/blog/navicat/20-Importing-sample-data-in-Navicat-1.jpg" width="621"/></p>
+<p>If you are new to Navicat, it is as simple as right-clicking the database under the connection, and select “Execute SQL file…” from the pop-up menu.</p>
+<img alt="Importing sample data in Navicat" class="size-full wp-image-2779 aligncenter" decoding="async" height="464" loading="lazy" sizes="(max-width: 621px) 100vw, 621px" src="/res/kul/blog/navicat/20-Importing-sample-data-in-Navicat-1.jpg" width="621"/> <img alt="" class="size-large wp-image-2782 aligncenter" decoding="async" height="522" loading="lazy" sizes="(max-width: 700px) 100vw, 700px" src="/res/kul/blog/navicat/21-Importing-sample-data-in-Navicat-from-SQL-file.png" width="700"/>
+<p>When we refresh the window (or just re-run the SELECT query), we’ll see the sample data adequately put in the city table.</p>
+<p><img alt="Imported sample data to CountryCity DB in Navicat" class="size-full wp-image-2783 aligncenter" decoding="async" height="636" loading="lazy" sizes="(max-width: 895px) 100vw, 895px" src="/res/kul/blog/navicat/22-Imported-sample-data-to-CountryCity-DB-in-Navicat.jpg" width="895"/></p>    </article>
+        </section>
+
+        <aside>
+                        <article class="box">
+
+    
+
+        
+</article>
+
+</div><!--//.col-->
+
+        </aside>
+
+    </div><!--//.grid-->
+</main>
+
+<!-- SVG Icons -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="white" style="display: none;">
+    <symbol id="twitterIcon" class="bi-twitter" viewBox="0 0 24 24">
+        <path
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+    </symbol>
+    <symbol id="youtubeIcon" class="bi-youtube" viewBox="0 0 24 24">
+        <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+    </symbol>
+</svg>
+
+<!-- Footer -->
+<footer id="footer" class="container">
+    <div class="grid">
+        <div class="col">
+            <section>
+
+                <h3 class="footer-subtopic">Recent Insights, News or Tutorials</h3>
+
+                <!-- DEBUG-VIEW START 2 APPPATH/Views/Themes/GOPico/FrontLayout/_olderPostsInFooter.php -->
+<ul class="dates">
+                <li>
+                <small><span class="date"><strong>07 Jan 2024</strong></span></small>
+                <h4>
+                    <a href="/blog/databases/how-to-drop-all-tables-of-a-mysql-mariadb-schema-at-once" title="Databases Category - How to Drop All Tables of a MySQL / MariaDB Schema At Once">
+                         How to Drop All Tables of a MySQL / MariaDB Schema At Once                    </a>
+                </h4>
+                <p style="margin-top: 0.1em">Master MySQL/MariaDB table drops with our tutorial. From command-line to scripts, handle foreign keys, backup data, and streamline database management.</p>
+            </li>
+                    <li>
+                <small><span class="date"><strong>01 Jan 2024</strong></span></small>
+                <h4>
+                    <a href="/blog/databases/data-modeling-capabilities-of-navicat-in-action" title="Databases Category - Data Modeling Capabilities of Navicat in Action">
+                         Data Modeling Capabilities of Navicat in Action                    </a>
+                </h4>
+                <p style="margin-top: 0.1em">Explore Navicat 15's enhanced data modeling capabilities. Design generic models, convert to specific platforms, and streamline database creation.</p>
+            </li>
+                    <li>
+                <small><span class="date"><strong>09 Jul 2023</strong></span></small>
+                <h4>
+                    <a href="/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4" title="CodeIgniter-related articles and tutorials - How to Migrate CodeIgniter 3 to CodeIgniter 4:">
+                         How to Migrate a CodeIgniter 3 Web App to CodeIgniter 4                    </a>
+                </h4>
+                <p style="margin-top: 0.1em">This guide details migrating from CodeIgniter3 to CodeIgniter4 using a `Book` example and introduces the CodeIgniter Wizard tool for automated code generation.</p>
+            </li>
+        </ul>
+<!-- DEBUG-VIEW ENDED 2 APPPATH/Views/Themes/GOPico/FrontLayout/_olderPostsInFooter.php -->
+                            </section>
+        </div><!-- // .col -->
+
+        <div class="col">
+            <section>
+                <h3 class="footer-subtopic">Related Websites</h3>
+
+                <ul class="divided">
+                    <li><a href="https://www.ozar.net/products/codeigniterwizard/?ref=tld">CodeIgniter Wizard's Dedicated
+                            Website</a></li>
+                    <li><a href="https://gozmosis.blogspot.com">GOZmosis Blog</a></li>
+
+                                    </ul>
+            </section>
+
+            <section>
+
+                <h3 class="footer-subtopic">Other Sites on Ozar.net</h3>
+
+                <ul class="divided">
+                    <li><a href="https://maclord.ozar.net/?ref=tld">Maclord - tips and tricks on using Apple
+                            products</a></li>
+                    <li><a href="https://devblog.ozar.net/?ref=tld">Ozar.net Developer Blog (is back)</a></li>
+                                    </ul>
+            </section>
+
+            <section>
+
+                <h3 class="footer-subtopic">Ozar also on</h3>
+
+                <p>Social Networks like</p>
+
+
+                
+                <a class="icon go-twitter" href="https://twitter.com/ozarnet">
+                    <svg class="bi-twitter2" width="60" height="60" fill="white">
+                        <use xlink:href="#twitterIcon"/>
+                    </svg>
+                    <span class="label">Twitter</span>
+                </a>
+                &nbsp; | &nbsp;
+                <a class="icon go-youtube"
+                   href="https://www.youtube.com/@ozardigital">
+                    <svg class="bi-youtube2" width="60" height="60" fill="white"
+                         style="margin-left: 0.3475em; margin-top: 0.35em;">
+                        <use xlink:href="#youtubeIcon"/>
+                    </svg>
+                    <span class="label">YouTube</span>
+                </a>
+
+                
+
+                
+            </section>
+        </div>
+    </div><!-- // .grid -->
+    <section id="copyright">
+        <nav class="container-fluid flex-nav">
+            <small>
+                <ul class="links">
+                    <li>&copy; 2017-2024 by Ozar. All rights reserved.</li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                    <li><a href="/disclaimer">Disclaimer</a></li>
+
+                    <li>Website CMS powered by <a href="/products">CodeIgniter Wizard</a></li>
+
+                </ul>
+            </small>
+        </nav>
+    </section>
+</footer>
+<!-- Minimal theme switcher -->
+<script src="/betik/minimal-theme-switcher.js" defer></script>
+
+
+    <script type="module">
+
+        var andac = '7cd3fb123f4472bc16db1bd0e164edbdf1082a1a714737009cd01d898164a51b';
+
+        function webpSupported() {
+            let elem = document.createElement('canvas');
+
+            if (!!(elem.getContext && elem.getContext('2d'))) {
+// was able or not to get WebP representation
+                return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+            } else {
+// very old browser like IE 8, canvas not supported
+                return false;
+            }
+        }
+
+        function checkWebp(feature) {
+            var kTestImages = {
+                lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+                lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
+                alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
+                animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
+            };
+            const img = new Image();
+            return new Promise(function (resolve, reject) {
+                img.onload = function () {
+                    resolve((img.width > 0) && (img.height > 0));
+                };
+                img.onerror = function () {
+                    reject(feature + ' not supported');
+                };
+                img.src = "data:image/webp;base64," + kTestImages[feature];
+            });
+        }
+
+        document.getElementById('nav-icon').addEventListener('click', function () {
+            this.classList.toggle('open');
+            document.getElementById('nav-links').classList.toggle('open');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            let webSupported = webpSupported();
+            if (!webSupported) {
+                checkWebp('lossy').then(function (supported) {
+                    webSupported = true;
+                    console.log("webp is supported alright!")
+                }, function () {
+                    webSupported = false;
+                    console.log("webp is not supported by your browser.")
+                });
+            }
+
+            const hero = document.querySelector('.hero');
+
+            const htmlElement = document.querySelector('html');
+            if (!webpSupported) {
+
+                const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '/res/pexels-bongkarn-thanyakij-3759098.jpg' : '/res/pexels-bongkarn-thanyakij-darker.jpg';
+                /*
+                if (htmlElement && htmlElement.getAttribute('data-theme') === 'light') {
+                imageUrl = '/res/pexels-bongkarn-thanyakij-3759098.jpg';
+                } */
+                if (hero) {
+                    hero.style.backgroundImage = "url(" + imageUrl + ")";
+                }
+            }
+                    });
+
+        
+    </script>
+
+
+    
+</body>
+</html>

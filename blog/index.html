@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Ozar Blog</title>
-    <meta
-            name="description"
-            content=""
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
 
-    <link rel="canonical" href="https://www.ozar.net/blog">
+    <meta name="description" content="">
 
     <link rel="author" href="https://www.ozar.net">
     <link rel="publisher" href="Ozar"/>
 
-    <meta property="og:locale" content="en"/>
+        <meta itemprop="name" content="Ozar Blog">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://www.ozar.net/res/kul/Ozar-blog-mid.jpg">
+
+
+        <meta property="og:locale" content="en"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Ozar Blog"/>
     <meta property="og:description" content=""/>
     <meta property="og:site_name" content="Ozar.net"/>
 
-    <meta property="og:url" content="https://www.ozar.net/blog/blog"/>
+    <meta property="og:url" content="https://www.ozar.net//blog"/>
 
-    <meta property="og:image" content="https://www.ozar.net/blog/res/kul/Ozar-blog-normal.jpg"/>
+    <meta property="og:image" content="https://www.ozar.net/res/kul/Ozar-blog-mid.jpg"/>
 
-    <meta name="twitter:card" content="">
-    <meta name="twitter:image" content="https://www.ozar.net/blog/res/kul/Ozar-blog-normal.jpg">
+        <meta name="twitter:card" content="">
+    <meta name="twitter:image" content="https://www.ozar.net/res/kul/Ozar-blog-mid.jpg">
     <meta name="twitter:domain" content="ozar.net">
     <meta name="twitter:site" content="@ozarnet">
     <meta name="twitter:creator" content="@skyhan">
@@ -34,56 +35,85 @@
     <meta name="twitter:title" content="Ozar Blog">
     <meta name="twitter:description" content="">
 
-    <!-- Pico.css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"/>
+        <link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" />
+    <meta name="DC.Title" content="Ozar Blog" />
+    <meta name="DC.Creator" content="Ozar" />
+    <meta name="DC.Type" content="software" />
+    <meta name="DC.Date" content="2025-03-13" />
+    <meta name="DC.Format" content="text/html" />
+    <meta name="DC.Language" content="en" />
 
-    <!-- Custom styles for this example -->
-    <link rel="stylesheet" href="/ozarnetstaticweb/stil/arasayfa.css?v=1712508535"/>
+    <link rel="canonical" href="https://www.ozar.net/blog">
 
-    <!-- Render additional css -->
-    <link rel="stylesheet" href="/ozarnetstaticweb/assets/css/goblog.css?v=1.1">
+    
+    <link rel="stylesheet" href="/stil/ozar2025/ler.css?v=0.8" />
+    <link rel="stylesheet" href="/stil/ozar2025/aras.css?v=0.6" />
+    <link rel="stylesheet" href="/stil/ozar2025/arasgrid.css?v=0.6" />
     <style>
-        #paginationNav {
-            margin: 2.5em 0 0 0;
+        /*
+        h4 {
+            color: var(--brand-orange);
         }
-
-        #paginationNav > ul {
-            margin: 0;
-        }
-
-        #paginationNav > ul > li {
-            display: inline-block;
-            font-style: italic;
-            margin: 0 0.35em 0 0.35em;
-        }
-
-        #paginationNav > ul > li > ul {
-            display: none;
-        }
-
-        #paginationNav > ul > li > a {
-            border-radius: 5px;
-            color: #5d5d5d;
-            text-decoration: none;
-            padding: 0.6em 1.2em 0.6em 1.2em;
-            -moz-transition: background-color .25s ease-in-out;
-            -webkit-transition: background-color .25s ease-in-out;
-            -ms-transition: background-color .25s ease-in-out;
-            transition: background-color .25s ease-in-out;
-            outline: 0;
-        }
-
-        #paginationNav > ul > li:hover > a, #paginationNav > ul > li.active > a {
-            background: #f3f3f3;
-        }
-
-        #paginationNav > ul > li.current > a {
-            background: #d52349;
-            color: #fff !important;
-            font-weight: 700;
-        }
+        */
     </style>
+    <link rel="stylesheet" href="/stil/ozar2025/goblog.css?v=0.1" />
+<style>
+    #paginationNav {
+        margin: 2.5em 0 0 0;
+    }
 
+    #paginationNav > ul {
+        margin: 0;
+    }
+
+    #paginationNav > ul > li {
+        display: inline-block;
+        font-style: italic;
+        margin: 0 0.35em 0 0.35em;
+    }
+
+    #paginationNav > ul > li > ul {
+        display: none;
+    }
+
+    #paginationNav > ul > li > a {
+        border-radius: 5px;
+        color: #5d5d5d;
+        text-decoration: none;
+        padding: 0.6em 1.2em 0.6em 1.2em;
+        -moz-transition: background-color .25s ease-in-out;
+        -webkit-transition: background-color .25s ease-in-out;
+        -ms-transition: background-color .25s ease-in-out;
+        transition: background-color .25s ease-in-out;
+        outline: 0;
+    }
+
+    #paginationNav > ul > li:hover > a, #paginationNav > ul > li.active > a {
+        background: #f3f3f3;
+    }
+
+    #paginationNav > ul > li.current > a {
+        background: #d52349;
+        color: #fff !important;
+        font-weight: 700;
+    }
+
+    /*
+    h4 {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+    }
+    */
+    .main-content p {
+        margin-bottom: 1rem;
+    }
+
+    article {
+        margin-bottom: 2rem;
+    }
+
+</style>
 
     <script type="application/ld+json">
         {
@@ -94,1118 +124,626 @@
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://www.ozar.net/blog"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Blog",
-                    "item": "https://www.ozar.net/blog/blog"
+                    "item": "https://www.ozar.net/"
                 }
-            ]
-        }
+        , {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Blog",
+    "item": "https://www.ozar.net/blog"
+}
+                ]
+                }
     </script>
 
-    <script type="application/ld+json">{
-        "@context": "https:\/\/schema.org",
-        "@graph": [
-            {
-                "@type": "Organization"
-            },
-            {
-                "@type": "WebSite",
-                "about": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                "name": "Ozar - Digital Products and Services Website",
-                "alternateName": "Ozar.net Website",
-                "url": "https:\/\/www.ozar.net",
-                "headline": "Tech-savvy becomes you with Ozar products and services",
-                "dateModified": "2023-07-24T23:43:06+0300",
-                "inLanguage": "en",
-                "publisher": "Ozar",
-                "provider": "Ozar.net",
-                "copyrightHolder": "Ozar",
-                "copyrightYear": 2020,
-                "sdPublisher": {
-                    "@type": "Organization",
-                    "name": "Ozar",
-                    "legalName": "Ozar",
-                    "alternateName": "Ozar.net",
-                    "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                    "url": "https:\/\/www.ozar.net",
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                        "name": "Ozar Logo",
-                        "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                        "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                    },
-                    "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                    "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                    "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                    "areaServed": "Worldwide",
-                    "foundingDate": 2020,
-                    "founder": {
-                        "@type": "Person",
-                        "name": "Gökhan Ozar",
-                        "@id": "https:\/\/gokhan.ozar.net"
-                    },
-                    "sameAs": [
-                        "https:\/\/twitter.com\/ozarnet"
-                    ],
-                    "@id": "https:\/\/www.ozar.net#initiative"
-                },
-                "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                "sdDatePublished": "2023-07-24T23:43:06+0300",
-                "sameAs": "https:\/\/www.ozar.net",
-                "@id": "https:\/\/www.ozar.net#website"
-            },
-            {
-                "@type": "WebPage",
-                "url": "https:\/\/www.ozar.net\/blog",
-                "name": "Ozar Blog",
-                "isPartOf": "https:\/\/www.ozar.net#website",
-                "dateModified": "2024-04-07T19:23:43+0300",
-                "inLanguage": "en",
-                "potentialAction": {
-                    "@type": "ReadAction",
-                    "target": {
-                        "@type": "EntryPoint",
-                        "name": "url",
-                        "url": "https:\/\/www.ozar.net\/blog"
-                    }
-                },
-                "image": "https:\/\/www.ozar.net\/res\/kul\/Ozar-blog-mid.jpg",
-                "@id": "https:\/\/www.ozar.net\/blog#webpage"
-            },
-            {
-                "@type": "Blog",
-                "author": {
-                    "@type": "Organization",
-                    "name": "Ozar",
-                    "legalName": "Ozar",
-                    "alternateName": "Ozar.net",
-                    "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                    "url": "https:\/\/www.ozar.net",
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                        "name": "Ozar Logo",
-                        "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                        "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                    },
-                    "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                    "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                    "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                    "areaServed": "Worldwide",
-                    "foundingDate": 2020,
-                    "founder": {
-                        "@type": "Person",
-                        "name": "Gökhan Ozar",
-                        "@id": "https:\/\/gokhan.ozar.net"
-                    },
-                    "sameAs": [
-                        "https:\/\/twitter.com\/ozarnet"
-                    ],
-                    "@id": "https:\/\/www.ozar.net#initiative"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "Ozar",
-                    "legalName": "Ozar",
-                    "alternateName": "Ozar.net",
-                    "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                    "url": "https:\/\/www.ozar.net",
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                        "name": "Ozar Logo",
-                        "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                        "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                    },
-                    "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                    "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                    "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                    "areaServed": "Worldwide",
-                    "foundingDate": 2020,
-                    "founder": {
-                        "@type": "Person",
-                        "name": "Gökhan Ozar",
-                        "@id": "https:\/\/gokhan.ozar.net"
-                    },
-                    "sameAs": [
-                        "https:\/\/twitter.com\/ozarnet"
-                    ],
-                    "@id": "https:\/\/www.ozar.net#initiative"
-                },
-                "about": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                "name": "Ozar - Digital Products and Services Blog",
-                "alternateName": "Ozar.net Blog",
-                "url": "https:\/\/www.ozar.net\/blog\/blog",
-                "headline": "News and stories from Ozar with articles on Development on macOS, PHP, Tech Books, and Web Development in reverse chronological order.",
-                "isPartOf": "https:\/\/www.ozar.net#website",
-                "isAccessibleForFree": true,
-                "blogPosts": [
-                    {
-                        "@type": "BlogPosting",
-                        "headline": "How to Migrate a CodeIgniter 3 App to CodeIgniter 4",
-                        "description": "This comprehensive guide illustrates how to migrate a CodeIgniter3 (CI3) application to CodeIgniter4 (CI4) using a concrete example of a `Book` entity. The step-by-step tutorial covers the installation of CI4, and the migration of database configuration, controller, model, view, and routes. The article stresses the importance of understanding the fundamental differences between CI3 and CI4 and the need to modify the auto-generated code to cater to specific needs. Furthermore, it introduces the CodeIgniter Wizard, a powerful Mac tool that can automatically create CI4 models, views, and controllers by reverse-engineering an existing database, highlighting its efficiency and time-saving benefits for developers while acknowledging the limitations it may have in generating customized code.",
-                        "about": "Explore the step-by-step migration process from CodeIgniter3 to CodeIgniter4, touching upon controllers, models, views, and routes. The tutorial also introduces the CodeIgniter Wizard, a significant time-saving tool for Mac users that automates CI4 code generation through reverse-engineering of existing databases, streamlining the migration process.",
-                        "datePublished": "2023-07-09T16:38:00+0300",
-                        "dateModified": "2023-07-09T16:39:26+0300",
-                        "isPartOf": "https:\/\/www.ozar.net#websiteBlog",
-                        "author": "Ozar",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Ozar",
-                            "legalName": "Ozar",
-                            "alternateName": "Ozar.net",
-                            "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                            "url": "https:\/\/www.ozar.net",
-                            "logo": {
-                                "@type": "ImageObject",
-                                "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "name": "Ozar Logo",
-                                "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                            "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                            "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                            "areaServed": "Worldwide",
-                            "foundingDate": 2020,
-                            "founder": {
-                                "@type": "Person",
-                                "name": "Gökhan Ozar",
-                                "@id": "https:\/\/gokhan.ozar.net"
-                            },
-                            "sameAs": [
-                                "https:\/\/twitter.com\/ozarnet"
-                            ],
-                            "@id": "https:\/\/www.ozar.net#initiative"
-                        },
-                        "url": "https:\/\/www.ozar.net\/blog\/blog\/web-development-php\/codeigniter\/how-to-migrate-ci3-to-ci4",
-                        "mainEntityOfPage": {
-                            "@type": "WebPage",
-                            "url": "https:\/\/www.ozar.net\/blog",
-                            "name": "Ozar Blog",
-                            "isPartOf": "https:\/\/www.ozar.net#website",
-                            "dateModified": "2024-04-07T19:23:43+0300",
-                            "inLanguage": "en",
-                            "potentialAction": {
-                                "@type": "ReadAction",
-                                "target": {
-                                    "@type": "EntryPoint",
-                                    "name": "url",
-                                    "url": "https:\/\/www.ozar.net\/blog"
-                                }
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/kul\/Ozar-blog-mid.jpg",
-                            "@id": "https:\/\/www.ozar.net\/blog#webpage"
-                        },
-                        "image": "https:\/\/www.ozar.net\/res\/kul\/UpgradingCI3-CI4-normal.jpg"
-                    },
-                    {
-                        "@type": "BlogPosting",
-                        "headline": "The Difference Between Entities and Models in CodeIgniter4.x",
-                        "description": "In many programming frameworks that use the Model-View-Controller (MVC) or Model-View-ViewModel (MVVM) paradigms and are database-driven using an Object-Relational Mapping (ORM) system, entities and models are often used interchangeably to represent the same concept - a class that represents a data entity in the database. However, in CodeIgniter 4.x, entities and models are distinct concepts with specific roles.\r\n\r\nEntities in CodeIgniter 4.x represent the application's data structure, including related business logic. They are typically lightweight data objects that are not aware of the data source and do not contain database-related logic. Instead, entities contain only the data-related logic that pertains to the application. Entities can contain properties, accessors, mutators, and other methods that operate on the data.\r\n\r\nOn the other hand, models in CodeIgniter 4.x are responsible for interacting with the database and performing CRUD (create, read, update, and delete) operations...",
-                        "about": "In many popular programming frameworks that use the Model-View-Controller (MVC) paradigms and are database-driven using an Object-Relational Mapping (ORM) system, entities and models are considered to be interchangeable terms referring to a class that represents a data entity in the database. However, CodeIgniter 4.x introduces a clear separation between entities and models - using two separate classes.",
-                        "datePublished": "2023-03-26T21:33:35+0300",
-                        "dateModified": "2023-03-26T21:27:10+0300",
-                        "isPartOf": "https:\/\/www.ozar.net#websiteBlog",
-                        "author": "Ozar",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Ozar",
-                            "legalName": "Ozar",
-                            "alternateName": "Ozar.net",
-                            "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                            "url": "https:\/\/www.ozar.net",
-                            "logo": {
-                                "@type": "ImageObject",
-                                "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "name": "Ozar Logo",
-                                "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                            "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                            "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                            "areaServed": "Worldwide",
-                            "foundingDate": 2020,
-                            "founder": {
-                                "@type": "Person",
-                                "name": "Gökhan Ozar",
-                                "@id": "https:\/\/gokhan.ozar.net"
-                            },
-                            "sameAs": [
-                                "https:\/\/twitter.com\/ozarnet"
-                            ],
-                            "@id": "https:\/\/www.ozar.net#initiative"
-                        },
-                        "url": "https:\/\/www.ozar.net\/blog\/blog\/web-development-php\/codeigniter\/difference-between-entities-and-models-in-codeigniter4",
-                        "mainEntityOfPage": {
-                            "@type": "WebPage",
-                            "url": "https:\/\/www.ozar.net\/blog",
-                            "name": "Ozar Blog",
-                            "isPartOf": "https:\/\/www.ozar.net#website",
-                            "dateModified": "2024-04-07T19:23:43+0300",
-                            "inLanguage": "en",
-                            "potentialAction": {
-                                "@type": "ReadAction",
-                                "target": {
-                                    "@type": "EntryPoint",
-                                    "name": "url",
-                                    "url": "https:\/\/www.ozar.net\/blog"
-                                }
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/kul\/Ozar-blog-mid.jpg",
-                            "@id": "https:\/\/www.ozar.net\/blog#webpage"
-                        },
-                        "image": "https:\/\/www.ozar.net\/res\/kul\/entity-relationship-model-normal.png"
-                    },
-                    {
-                        "@type": "BlogPosting",
-                        "headline": "CodeIgniter Wizard 2 Is Here",
-                        "description": "CodeIgniter Wizard 2 has been released with lots of new features added like auth, i18n, file uploads, automatic image resizing, etc.",
-                        "about": "CodeIgniter Wizard 2.0.2 has been released with a large number new features added to the application, the time needed for demos increased at least ten-fold. Authentication &amp; authorization, secure file uploads for the end user, automatic image resizing post-uploads, language localization and translation in the GUI with the ability to add unlimited number of languages and locales. Also subtle features such as auto-generation of slugs, UUIDs for primary keys, and more...",
-                        "datePublished": "2022-09-03T20:59:00+0300",
-                        "dateModified": "2022-09-03T21:29:47+0300",
-                        "isPartOf": "https:\/\/www.ozar.net#websiteBlog",
-                        "author": "Ozar",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Ozar",
-                            "legalName": "Ozar",
-                            "alternateName": "Ozar.net",
-                            "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                            "url": "https:\/\/www.ozar.net",
-                            "logo": {
-                                "@type": "ImageObject",
-                                "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "name": "Ozar Logo",
-                                "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                            "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                            "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                            "areaServed": "Worldwide",
-                            "foundingDate": 2020,
-                            "founder": {
-                                "@type": "Person",
-                                "name": "Gökhan Ozar",
-                                "@id": "https:\/\/gokhan.ozar.net"
-                            },
-                            "sameAs": [
-                                "https:\/\/twitter.com\/ozarnet"
-                            ],
-                            "@id": "https:\/\/www.ozar.net#initiative"
-                        },
-                        "url": "https:\/\/www.ozar.net\/blog\/blog\/web-development-php\/codeigniter\/wizard2-is-here",
-                        "mainEntityOfPage": {
-                            "@type": "WebPage",
-                            "url": "https:\/\/www.ozar.net\/blog",
-                            "name": "Ozar Blog",
-                            "isPartOf": "https:\/\/www.ozar.net#website",
-                            "dateModified": "2024-04-07T19:23:43+0300",
-                            "inLanguage": "en",
-                            "potentialAction": {
-                                "@type": "ReadAction",
-                                "target": {
-                                    "@type": "EntryPoint",
-                                    "name": "url",
-                                    "url": "https:\/\/www.ozar.net\/blog"
-                                }
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/kul\/Ozar-blog-mid.jpg",
-                            "@id": "https:\/\/www.ozar.net\/blog#webpage"
-                        },
-                        "image": "https:\/\/www.ozar.net\/res\/kul\/code_igniter_wizard_1280x720-normal.png"
-                    },
-                    {
-                        "@type": "BlogPosting",
-                        "headline": "How to Deploy a CodeIgniter 4 Project to Production",
-                        "description": "This article describes the common steps needed for your CodeIgniter 4 project to get ready for production deployment. Although CodeIgniter Wizard is extensively mentioned throughout article, the solutions described here can be applied to almost any CodeIgniter4 project.",
-                        "about": "This article describes the common steps needed for your CodeIgniter 4 project to get ready for production deployment. Although CodeIgniter Wizard is extensively mentioned throughout article, the solutions described here can be applied to almost any CodeIgniter4 project.\r\nCodeIgniter Wizard creates Composer-based CI4 projects with the base framework libraries and files residing in the vendor directory and it includes the .env, composer.json and composer.lock files in the root of …",
-                        "datePublished": "2022-05-05T00:00:00+0300",
-                        "dateModified": "2022-07-19T18:49:49+0300",
-                        "isPartOf": "https:\/\/www.ozar.net#websiteBlog",
-                        "author": "Ozar",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Ozar",
-                            "legalName": "Ozar",
-                            "alternateName": "Ozar.net",
-                            "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                            "url": "https:\/\/www.ozar.net",
-                            "logo": {
-                                "@type": "ImageObject",
-                                "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "name": "Ozar Logo",
-                                "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                            "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                            "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                            "areaServed": "Worldwide",
-                            "foundingDate": 2020,
-                            "founder": {
-                                "@type": "Person",
-                                "name": "Gökhan Ozar",
-                                "@id": "https:\/\/gokhan.ozar.net"
-                            },
-                            "sameAs": [
-                                "https:\/\/twitter.com\/ozarnet"
-                            ],
-                            "@id": "https:\/\/www.ozar.net#initiative"
-                        },
-                        "url": "https:\/\/www.ozar.net\/blog\/blog\/web-development-php\/codeigniter\/ci4-production-deployment",
-                        "mainEntityOfPage": {
-                            "@type": "WebPage",
-                            "url": "https:\/\/www.ozar.net\/blog",
-                            "name": "Ozar Blog",
-                            "isPartOf": "https:\/\/www.ozar.net#website",
-                            "dateModified": "2024-04-07T19:23:43+0300",
-                            "inLanguage": "en",
-                            "potentialAction": {
-                                "@type": "ReadAction",
-                                "target": {
-                                    "@type": "EntryPoint",
-                                    "name": "url",
-                                    "url": "https:\/\/www.ozar.net\/blog"
-                                }
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/kul\/Ozar-blog-mid.jpg",
-                            "@id": "https:\/\/www.ozar.net\/blog#webpage"
-                        },
-                        "image": "https:\/\/www.ozar.net\/res\/kul\/web-servers-hardware-large.jpg"
-                    },
-                    {
-                        "@type": "BlogPosting",
-                        "headline": "CodeIgniter Wizard v1.6 release following v.1.5 and v.1.5.1",
-                        "description": "In June 2021, several version updates have been made for CodeIgniter Wizard. The development of maintenance and feature releases were so intense that we were late to update our blog to announce them one-by-one.",
-                        "about": "In June 2021, several version updates have been made for CodeIgniter Wizard. The maintenance release development was so intense that we were late to update our blog to announce them one-by-one.Here is a breakdown of all updates of CodeIgniter Wizard published in the Mac App Store in July:\r\nThis version brings various improvements and bug fixes includingBrought back the ability to generate code output outside the Downloads folder with the manual handling option of disk write permissio...",
-                        "datePublished": "2021-07-21T20:00:00+0300",
-                        "dateModified": "2021-11-14T11:01:36+0300",
-                        "isPartOf": "https:\/\/www.ozar.net#websiteBlog",
-                        "author": "Ozar",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Ozar",
-                            "legalName": "Ozar",
-                            "alternateName": "Ozar.net",
-                            "description": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.",
-                            "url": "https:\/\/www.ozar.net",
-                            "logo": {
-                                "@type": "ImageObject",
-                                "url": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "name": "Ozar Logo",
-                                "image": "https:\/\/www.ozar.net\/res\/ozar-logo.png",
-                                "@id": "https:\/\/www.ozar.net\/res\/ozar-logo.png"
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/about-Ozar-1200x630.jpg",
-                            "disambiguatingDescription": "Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.",
-                            "knowsAbout": "Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python",
-                            "areaServed": "Worldwide",
-                            "foundingDate": 2020,
-                            "founder": {
-                                "@type": "Person",
-                                "name": "Gökhan Ozar",
-                                "@id": "https:\/\/gokhan.ozar.net"
-                            },
-                            "sameAs": [
-                                "https:\/\/twitter.com\/ozarnet"
-                            ],
-                            "@id": "https:\/\/www.ozar.net#initiative"
-                        },
-                        "url": "https:\/\/www.ozar.net\/blog\/blog\/web-development-php\/codeigniter-wizard16",
-                        "mainEntityOfPage": {
-                            "@type": "WebPage",
-                            "url": "https:\/\/www.ozar.net\/blog",
-                            "name": "Ozar Blog",
-                            "isPartOf": "https:\/\/www.ozar.net#website",
-                            "dateModified": "2024-04-07T19:23:43+0300",
-                            "inLanguage": "en",
-                            "potentialAction": {
-                                "@type": "ReadAction",
-                                "target": {
-                                    "@type": "EntryPoint",
-                                    "name": "url",
-                                    "url": "https:\/\/www.ozar.net\/blog"
-                                }
-                            },
-                            "image": "https:\/\/www.ozar.net\/res\/kul\/Ozar-blog-mid.jpg",
-                            "@id": "https:\/\/www.ozar.net\/blog#webpage"
-                        },
-                        "image": "https:\/\/www.ozar.net\/res\/industry-3087393_1920.jpg"
-                    }
-                ],
-                "@id": "https:\/\/www.ozar.net\/blog#news"
-            }
-        ]
-    }</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization"},{"@type":"WebSite","about":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","name":"Ozar's Digital Products and Services Website","alternateName":"Ozar.net Website","url":"https://www.ozar.net","headline":"Tech-savvy becomes you with Ozar products and services","dateModified":"2025-03-09T14:39:08+0300","inLanguage":"en","publisher":"Ozar","provider":"Ozar.net","copyrightHolder":"Ozar","copyrightYear":2020,"sdPublisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","sdDatePublished":"2025-03-09T14:39:08+0300","@id":"https://www.ozar.net#website"},{"@type":"WebPage","url":"https://www.ozar.net/blog","name":"Ozar Blog","isPartOf":"https://www.ozar.net#website","dateModified":"2025-03-13T07:01:55+0300","inLanguage":"en","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","name":"url","url":"https://www.ozar.net/blog"}},"image":"https://www.ozar.net/res/kul/Ozar-blog-mid.jpg","@id":"https://www.ozar.net/blog#webpage"},{"@type":"Blog","author":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"publisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"about":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","name":"Ozar's Digital Products and Services Blog","alternateName":"Ozar.net Blog","url":"https://www.ozar.net/blog/","headline":"News and stories from Ozar with articles on Development on macOS, PHP, Tech Books, and Web Development in reverse chronological order.","isPartOf":"https://www.ozar.net#website","isAccessibleForFree":true,"blogPosts":[{"@type":"BlogPosting","headline":"Meet CodeIgniter Wizard 3.x","description":"CodeIgniter Wizard 3.x brings enhanced authentication, improved UI, performance optimizations, and critical bug fixes for a superior PHP development experience.","about":"Announcing CodeIgniter Wizard 3.x: Enhanced features that supercharge your PHP development workflow. Are you looking for a way to drastically cut down on the time you spend on routine PHP coding tasks? Then get ready for the latest evolution of your favorite rapid web application development tool! We're thrilled to announce the arrival of <strong>CodeIgniter Wizard 3.x</strong>, packed with exciting new features, significant improvements, and essential bug fixes to elevate your CodeIgniter development...","datePublished":"2025-03-07T08:00:00+0300","dateModified":"2025-03-13T07:01:53+0300","isPartOf":"https://www.ozar.net#websiteBlog","author":"Ozar","publisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"url":"https://www.ozar.net/blog","mainEntityOfPage":{"@type":"WebPage","url":"https://www.ozar.net/blog","name":"Ozar Blog","isPartOf":"https://www.ozar.net#website","dateModified":"2025-03-13T07:01:55+0300","inLanguage":"en","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","name":"url","url":"https://www.ozar.net/blog"}},"image":"https://www.ozar.net/res/kul/Ozar-blog-mid.jpg","@id":"https://www.ozar.net/blog#webpage"},"image":"https://www.ozar.net/res/blog/CodeIgniter-WizardryV3.jpg"},{"@type":"BlogPosting","headline":"Git Branch Ahead of Which: Finding Order in Chaos","description":"Imagine being handed an unorganized Git repository for a project without any guidance or revisiting one of your own long-abandoned projects. The HEAD isn’t pointing to a working state, and the branches are a tangled mess with no clear indication of what’s ahead or behind. In this tutorial, you’ll learn how to identify which branch is ahead of which using Git commands like git log, git merge-base, git show-branch, and more. We’ll also explore scripts and tips to help you compare commit histories and regain control of your repo. Perfect for developers dealing with inherited projects, forgotten side hustles, or chaotic repos.","about":"Picture this: you’ve inherited a Git repository for a project with no documentation, no guidance, and no clue where to start. Or perhaps it’s an old side project of your own, one you hastily put aside and can barely remember. The HEAD isn’t pointing to a stable version, branches are everywhere, and the app itself is riddled with issues, refusing to run. Without a clear understanding of which branch is ahead or which commit might hold a functional state, you’re stuck.\n\nThis tutorial dives deep into solving..","datePublished":"2024-12-03T18:23:00+0300","dateModified":"2025-03-12T20:47:06+0300","isPartOf":"https://www.ozar.net#websiteBlog","author":"Ozar","publisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"url":"https://www.ozar.net/blog","mainEntityOfPage":{"@type":"WebPage","url":"https://www.ozar.net/blog","name":"Ozar Blog","isPartOf":"https://www.ozar.net#website","dateModified":"2025-03-13T07:01:55+0300","inLanguage":"en","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","name":"url","url":"https://www.ozar.net/blog"}},"image":"https://www.ozar.net/res/kul/Ozar-blog-mid.jpg","@id":"https://www.ozar.net/blog#webpage"},"image":"https://www.ozar.net/res/kul/git-branch-ahead-of-which-cover-normal.jpg"},{"@type":"BlogPosting","headline":"How to Drop All Tables of a MySQL / MariaDB Schema At Once","description":"Looking for a short way to drop all tables of a MySQL or MariaDB database? \r\n\r\nDiscover a comprehensive tutorial on efficiently dropping all tables in MySQL or MariaDB schemas. This step-by-step guide covers both command-line and scripted methods, ensuring a smooth process. Handle potential foreign-key constraints with ease, and safeguard your data with essential backup procedures. Simplify your database management and troubleshooting with this detailed tutorial.","about":"Dive into our tutorial for a seamless approach to dropping tables in MySQL/MariaDB schemas. From command-line intricacies to scripted solutions, manage foreign-key constraints effortlessly. Safeguard your data with proper backups, ensuring a trouble-free database management experience.","datePublished":"2024-01-07T00:00:00+0300","dateModified":"2025-03-13T07:01:54+0300","isPartOf":"https://www.ozar.net#websiteBlog","author":"Ozar","publisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"url":"https://www.ozar.net/blog","mainEntityOfPage":{"@type":"WebPage","url":"https://www.ozar.net/blog","name":"Ozar Blog","isPartOf":"https://www.ozar.net#website","dateModified":"2025-03-13T07:01:55+0300","inLanguage":"en","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","name":"url","url":"https://www.ozar.net/blog"}},"image":"https://www.ozar.net/res/kul/Ozar-blog-mid.jpg","@id":"https://www.ozar.net/blog#webpage"},"image":"https://www.ozar.net/res/kul/dropping-all-tables-cover-large.jpg"},{"@type":"BlogPosting","headline":"Data Modeling Capabilities of Navicat in Action","description":"Unlock the power of Navicat's enhanced data modeling capabilities with version 15! Designed for seamless usability, Navicat has been a go-to for crafting visually appealing and semantically precise data models for nearly a decade. Discover the latest features in Navicat 15, released in November 2019, including the ability to design generic data models and effortlessly convert them to a specific database platform. This article guides you through creating a logical data model, predicts field types accurately, and provides unlimited undo/redo options, reducing development time. Learn how to design a simple data model, convert it to a MySQL-targeting physical model, and use Navicat to automatically generate tables and fields. Whether you're working with Navicat Data Modeler, Navicat Premium 15 Enterprise Edition, or specific MySQL or MariaDB editions, this tutorial is your key to efficient database design. Watch the video tutorial or follow the step-by-step textual instructions with screenshots. Master the art of","about":"Navicat comes with an incredibly responsive and elegant user interface design with improved usability, and it has been enabling users to get a visually appealing and semantically precise data models from their databases for almost a decade now.Released in November 2019, Navicat 15 (and Data Modeler 3.0) has some nice surprises in store, with an even more improved data modeling capability. You can now design generic data models and then convert them for a specific database platform.","datePublished":"2024-01-01T14:33:00+0300","dateModified":"2025-03-13T07:01:52+0300","isPartOf":"https://www.ozar.net#websiteBlog","author":"Ozar","publisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"url":"https://www.ozar.net/blog","mainEntityOfPage":{"@type":"WebPage","url":"https://www.ozar.net/blog","name":"Ozar Blog","isPartOf":"https://www.ozar.net#website","dateModified":"2025-03-13T07:01:55+0300","inLanguage":"en","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","name":"url","url":"https://www.ozar.net/blog"}},"image":"https://www.ozar.net/res/kul/Ozar-blog-mid.jpg","@id":"https://www.ozar.net/blog#webpage"},"image":"https://www.ozar.net/res/kul/navicat-Database-Modeling-large.png"},{"@type":"BlogPosting","headline":"How to Migrate a CodeIgniter 3 Web App to CodeIgniter 4","description":"This comprehensive guide illustrates how to migrate a CodeIgniter3 (CI3) application to CodeIgniter4 (CI4) using a concrete example of a `Book` entity. The step-by-step tutorial covers the installation of CI4, and the migration of database configuration, controller, model, view, and routes. The article stresses the importance of understanding the fundamental differences between CI3 and CI4 and the need to modify the auto-generated code to cater to specific needs. Furthermore, it introduces the CodeIgniter Wizard, a powerful Mac tool that can automatically create CI4 models, views, and controllers by reverse-engineering an existing database, highlighting its efficiency and time-saving benefits for developers while acknowledging the limitations it may have in generating customized code.","about":"Explore the step-by-step migration process from CodeIgniter3 to CodeIgniter4, touching upon controllers, models, views, and routes. The tutorial also introduces the CodeIgniter Wizard, a significant time-saving tool for Mac users that automates CI4 code generation through reverse-engineering of existing databases, streamlining the migration process.","datePublished":"2023-07-09T16:38:00+0300","dateModified":"2025-03-13T07:01:55+0300","isPartOf":"https://www.ozar.net#websiteBlog","author":"Ozar","publisher":{"@type":"Organization","name":"Ozar","legalName":"Ozar","alternateName":"Ozar.net","description":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.\nOzar provides digital products, software services, training, eLearning course-ware in programming, IT, language skills improvement as well as translation services.","url":"https://www.ozar.net","logo":{"@type":"ImageObject","url":"https://www.ozar.net/res/ozar-logo.png","name":"Ozar Logo","image":"https://www.ozar.net/res/ozar-logo.png","@id":"https://www.ozar.net/res/ozar-logo.png"},"image":"https://www.ozar.net/res/about-Ozar-1200x630.jpg","disambiguatingDescription":"Ozar is a software development and services provider founded by Gökhan Ozar with expertise in Java, .NET and Apple platforms respectively, using programming languages such as Java, C#, Swift, PHP, JavaScript and Python.","knowsAbout":"Web development, web security, SEO, Development on Apple Platform as well as Java, .NET, C#, Swift, PHP, JavaScript, Python","areaServed":"Worldwide","foundingDate":2020,"founder":{"@type":"Person","name":"Gökhan Ozar","@id":"https://gokhan.ozar.net"},"sameAs":["https://x.com/ozarnet","https://www.youtube.com/@ozardigital"],"@id":"https://www.ozar.net#initiative"},"url":"https://www.ozar.net/blog","mainEntityOfPage":{"@type":"WebPage","url":"https://www.ozar.net/blog","name":"Ozar Blog","isPartOf":"https://www.ozar.net#website","dateModified":"2025-03-13T07:01:55+0300","inLanguage":"en","potentialAction":{"@type":"ReadAction","target":{"@type":"EntryPoint","name":"url","url":"https://www.ozar.net/blog"}},"image":"https://www.ozar.net/res/kul/Ozar-blog-mid.jpg","@id":"https://www.ozar.net/blog#webpage"},"image":"https://www.ozar.net/res/kul/UpgradingCI3-CI4-normal.jpg"}],"@id":"https://www.ozar.net/blog#news"}]}</script>
 </head>
-
 <body>
-<!-- Hero -->
-<div class="hero" data-theme="dark">
-    <nav class="container-fluid flex-nav">
+    <header class="main-header">
+    <div class="header-content nav-container">
+        <a href="/" title="Home">
+            <img id="logo" src="/res/ozar-logo-unischeme.png?v=1" alt="Ozar">
+        </a>
+        <nav>
+    <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/books">Books</a></li>
+        <li class="active"><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
 
-        <ul id="logo-container">
-            <li id="ozarLogoHeading" class="logo">
-                <a href="/ozarnetstaticweb/" class="contrast" title="Ozar Home Page"><span>Ozar</span></a>
-            </li>
-        </ul>
+<a class="skip-link screen-reader-text" href="#mainContent">Skip to content</a>
 
-        <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul id="nav-links">
-            <li>
-                <a href="/ozarnetstaticweb/">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/ozarnetstaticweb/about">
-                    About
-                </a>
-            </li>
-            <li>
-                <a href="/ozarnetstaticweb/products">
-                    Products
-                </a>
-            </li>
-            <li>
-                <a href="/ozarnetstaticweb/blog">
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a href="https://form.jotform.com/240975408349971">
-                    Contact
-                </a>
-            </li>
-
-            <li>
-                <details role="list" dir="rtl">
-                    <summary aria-haspopup="listbox" role="link" class="contrast">Dil</summary>
-                    <ul role="listbox">
-                        <li>
-                            English
-                        </li>
-                        <li>
-                            <a href="/ozarnetstaticweb/tr" title="view_this_website_in Türkçe ">
-                                Türkçe </a>
-                        </li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details role="list" dir="rtl">
-                    <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
-                    <ul role="listbox">
-                        <li><a href="#" data-theme-switcher="auto">Auto</a></li>
-                        <li><a href="#" data-theme-switcher="light">Light</a></li>
-                        <li><a href="#" data-theme-switcher="dark">Dark</a></li>
-                    </ul>
-                </details>
-            </li>
-        </ul>
-
-    </nav>
-    <header class="container">
-        <hgroup>
-            <!-- <h1>Ozar</h1> -->
-            <h1>Ozar Blog</h1>
-            <h2>News, Announcements &amp; Tutorials</h2>
-        </hgroup>
-    </header>
-
+<div class="header-controls">
+    <div class="language-selector">
+    <button class="language-toggle" aria-label="Select Language">
+        <span id="currentFlag">🇬🇧</span>
+        <span id="currentLang">EN</span>
+        <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+    <div class="language-dropdown" role="menu">
+                                <span class="language-option active" role="menuitem">
+                <span class="flag-icon">🇬🇧</span>
+                <span>English</span>
+            </span>
+                                             <a href="/fr"
+               class="language-option"
+               role="menuitem"
+               title="View Français version of this website">
+                <span class="flag-icon">🇫🇷</span>
+                <span>Français</span>
+            </a>
+                                            <a href="/tr"
+               class="language-option"
+               role="menuitem"
+               title="View Türkçe version of this website">
+                <span class="flag-icon">🇹🇷</span>
+                <span>Türkçe</span>
+            </a>
+                        </div>
 </div>
-<!-- ./ Hero --><!-- Main -->
-<main class="container" data-layout="subPageRightSidebarLayout">
-    <div class="grid">
+    
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button>
+</div>
 
-        <section>
 
-            <article>
-                <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"
-                   class="image featured">
-                    <img src="/ozarnetstaticweb/res/kul/migrating-from-ci3-to-ci4-large.jpg"
-                         alt="A Step-by-Step Tutorial for a CI3-toCI4 Upgrade"/>
-                </a>
-                <header>
+
+        <!-- <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button> -->
+        <a class="skip-link screen-reader-text" href="#mainContent">Skip to content</a>
+        
+    </div>
+</header>
+
+    <div class="page-header">
+        <div class="page-title">
                     <hgroup>
-                        <h3>
-                            <a class="section-title"
-                               href="/ozarnetstaticweb/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4">
-                                How to Migrate a CodeIgniter 3 App to CodeIgniter 4 </a>
-                        </h3>
-                        <h4>A Step-by-Step Tutorial for a CI3-toCI4 Upgrade</h4>
-                    </hgroup>
-
-                    <small>
-                        <i>
-                            published on
-                            <span id="articleDate">
-                                        9 Jul 2023                                    </span>
-                        </i>
-                        in <span class="blog-cat-pill">CodeIgniter</span><span class="blog-cat-pill"> PHP</span>
-                    </small>
-                </header>
-                <p>
-                    Explore the step-by-step migration process from CodeIgniter3 to CodeIgniter4, touching upon
-                    controllers, models, views, and routes. The tutorial also introduces the CodeIgniter Wizard, a
-                    significant time-saving tool for Mac users that automates CI4 code generation through
-                    reverse-engineering of existing databases, streamlining the migration process. </p>
-                <footer>
-                    <div class="grid">
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"
-                           class="button-sm icon solid fa-file-alt">Continue Reading »</a>
-
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4#comments"
-                           class="button-sm alt icon solid fa-comment">
-                            No comments yet </a>
-
-                    </div><!--/.grid -->
-                </footer>
-            </article>
+                <h1>Ozar Blog</h1>
+                <h2>News, Announcements &amp; Tutorials</h2>
+            </hgroup>
+                </div>
+    </div>
 
 
-            <article>
-                <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4"
-                   class="image featured">
-                    <img src="/ozarnetstaticweb/res/kul/entity-relationship-model-normal.png"
-                         alt="Understanding the Fundamental Concepts of Data Models of CI4"/>
-                </a>
-                <header>
-                    <hgroup>
-                        <h3>
-                            <a class="section-title"
-                               href="/ozarnetstaticweb/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4">
-                                The Difference Between Entities and Models in CodeIgniter4.x </a>
-                        </h3>
-                        <h4>Understanding the Fundamental Concepts of Data Models of CI4</h4>
-                    </hgroup>
-
-                    <small>
-                        <i>
-                            published on
-                            <span id="articleDate">
-                                        26 Mar 2023                                    </span>
-                        </i>
-                        in <span class="blog-cat-pill">CodeIgniter</span><span class="blog-cat-pill"> PHP</span>
-                    </small>
-                </header>
-                <p>
-                    In many popular programming frameworks that use the Model-View-Controller (MVC) paradigms and are
-                    database-driven using an Object-Relational Mapping (ORM) system, entities and models are considered
-                    to be interchangeable terms referring to a class that represents a data entity in the database.
-                    However, CodeIgniter 4.x introduces a clear separation between entities and models - using two
-                    separate classes. </p>
-                <footer>
-                    <div class="grid">
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4"
-                           class="button-sm icon solid fa-file-alt">Continue Reading »</a>
-
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4#comments"
-                           class="button-sm alt icon solid fa-comment">
-                            No comments yet </a>
-
-                    </div><!--/.grid -->
-                </footer>
-            </article>
+    <div class="page-grid">
+        <main id="mainContent" class="main-content" data-layout="subPageNoSidebarLayout">
+            
 
 
-            <article>
-                <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/wizard2-is-here" class="image featured">
-                    <picture>
-                        <source type="image/webp"
-                                srcset="/ozarnetstaticweb/res/kul/code_igniter_wizard_1280x720-normal.webp">
-                        <source type="image/jpeg"
-                                srcset="/ozarnetstaticweb/res/kul/code_igniter_wizard_1280x720-cover.png">
-                        <img src="/ozarnetstaticweb/res/kul/code_igniter_wizard_1280x720-cover.png"
-                             alt="CodeIgniter Wizard 2 updated with features better than ever"/>
+    <article class="excerpt-content">
+                    <a href="/blog/web-development-php/codeigniter/codeigniter-wizard-3" class="image featured">
+                                    <picture>
+                        <source type="image/webp" srcset="/res/blog/codeigniter_wizard_3x-cover-large.webp">
+                        <source type="image/jpeg" srcset="/res/blog/codeigniter_wizard_3x-cover-large.jpg">
+                        <img src="/res/blog/codeigniter_wizard_3x-cover-large.jpg" alt="CodeIgniter Wizard 3.x cover image"/>
                     </picture>
-                </a>
+                            </a>
                 <header>
-                    <hgroup>
-                        <h3>
-                            <a class="section-title"
-                               href="/ozarnetstaticweb/blog/web-development-php/codeigniter/wizard2-is-here">
-                                CodeIgniter Wizard 2 Is Here </a>
-                        </h3>
-                        <h4>With Long Awaited New Features Like Auth, File Uploads, I18n, Data Export, and More...</h4>
-                    </hgroup>
+            <hgroup>
+                <h3>
+                    <a class="section-title" href="/blog/web-development-php/codeigniter/codeigniter-wizard-3">
+                        Meet CodeIgniter Wizard 3.x                    </a>
+                </h3>
+                                    <h4>Supercharge Your Object-Oriented PHP Development</h4>
+                            </hgroup>
 
-                    <small>
-                        <i>
-                            published on
-                            <span id="articleDate">
-                                        3 Sep 2022                                    </span>
-                        </i>
-                        in <span class="blog-cat-pill">CodeIgniter</span><span
-                            class="blog-cat-pill"> Web Development</span><span class="blog-cat-pill"> PHP</span><span
-                            class="blog-cat-pill"> Mac Apps</span>
-                    </small>
-                </header>
-                <p>
-                    CodeIgniter Wizard 2.0.2 has been released with a large number new features added to the
-                    application, the time needed for demos increased at least ten-fold. Authentication &amp;
-                    authorization, secure file uploads for the end user, automatic image resizing post-uploads, language
-                    localization and translation in the GUI with the ability to add unlimited number of languages and
-                    locales. Also subtle features such as auto-generation of slugs, UUIDs for primary keys, and
-                    more... </p>
-                <footer>
-                    <div class="grid">
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/wizard2-is-here"
-                           class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+            <small>
+                <i>
+                    published on
+                    <span id="articleDate">
+                                        6 days ago                                    </span>
+                </i>
+                in 
+            </small>
 
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/wizard2-is-here#comments"
-                           class="button-sm alt icon solid fa-comment">
-                            1 comment </a>
+                    </header>
+        <p>
+            Announcing CodeIgniter Wizard 3.x: Enhanced features that supercharge your PHP development workflow. Are you looking for a way to drastically cut down on the time you spend on routine PHP coding tasks? Then get ready for the latest evolution of your favorite rapid web application development tool! We're thrilled to announce the arrival of <strong>CodeIgniter Wizard 3.x</strong>, packed with exciting new features, significant improvements, and essential bug fixes to elevate your CodeIgniter development...                    </p>
+        <footer>
 
-                    </div><!--/.grid -->
-                </footer>
-            </article>
+            <a href="/blog/web-development-php/codeigniter/codeigniter-wizard-3"
+               class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+
+            <a href="/blog/web-development-php/codeigniter/codeigniter-wizard-3#comments"
+               class="button-sm alt icon solid fa-comment">
+                No comments yet            </a>
+
+            
+        </footer>
 
 
-            <article>
+    </article>
+
+
+    <article class="excerpt-content">
+                    <a href="/blog/software-development/git-branch-ahead-of-which-finding-order-in-chaos" class="image featured">
+                                    <img src="/res/kul/git-branch-ahead-of-which-cover-large.jpg" alt="Navigating an Unknown Git Repository: Determining Which Branch Is Ahead"/>
+                            </a>
                 <header>
-                    <hgroup>
-                        <h3>
-                            <a class="section-title"
-                               href="/ozarnetstaticweb/blog/web-development-php/codeigniter/ci4-production-deployment">
-                                How to Deploy a CodeIgniter 4 Project to Production </a>
-                        </h3>
-                        <h4>Taking Your CodeIgniter 4 App Live: A Detailed Guide</h4>
-                    </hgroup>
+            <hgroup>
+                <h3>
+                    <a class="section-title" href="/blog/software-development/git-branch-ahead-of-which-finding-order-in-chaos">
+                        Git Branch Ahead of Which: Finding Order in Chaos                    </a>
+                </h3>
+                                    <h4>Navigating an Unknown Git Repository: Determining Which Branch Is Ahead</h4>
+                            </hgroup>
 
-                    <small>
-                        <i>
-                            published on
-                            <span id="articleDate">
-                                        5 May 2022                                    </span>
-                        </i>
-                        in <span class="blog-cat-pill">CodeIgniter</span><span
-                            class="blog-cat-pill"> Web Development</span><span class="blog-cat-pill"> PHP</span>
-                    </small>
-                </header>
-                <p>
-                    This article describes the common steps needed for your CodeIgniter 4 project to get ready for
-                    production deployment. Although CodeIgniter Wizard is extensively mentioned throughout article, the
-                    solutions described here can be applied to almost any CodeIgniter4 project.
-                    CodeIgniter Wizard creates Composer-based CI4 projects with the base framework libraries and files
-                    residing in the vendor directory and it includes the .env, composer.json and composer.lock files in
-                    the root of … </p>
-                <footer>
-                    <div class="grid">
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/ci4-production-deployment"
-                           class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+            <small>
+                <i>
+                    published on
+                    <span id="articleDate">
+                                        3 Dec 2024                                    </span>
+                </i>
+                in 
+            </small>
 
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter/ci4-production-deployment#comments"
-                           class="button-sm alt icon solid fa-comment">
-                            No comments yet </a>
+                    </header>
+        <p>
+            Picture this: you’ve inherited a Git repository for a project with no documentation, no guidance, and no clue where to start. Or perhaps it’s an old side project of your own, one you hastily put aside and can barely remember. The HEAD isn’t pointing to a stable version, branches are everywhere, and the app itself is riddled with issues, refusing to run. Without a clear understanding of which branch is ahead or which commit might hold a functional state, you’re stuck.
 
-                    </div><!--/.grid -->
-                </footer>
-            </article>
+This tutorial dives deep into solving..                    </p>
+        <footer>
+
+            <a href="/blog/software-development/git-branch-ahead-of-which-finding-order-in-chaos"
+               class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+
+            <a href="/blog/software-development/git-branch-ahead-of-which-finding-order-in-chaos#comments"
+               class="button-sm alt icon solid fa-comment">
+                No comments yet            </a>
+
+            
+        </footer>
 
 
-            <article>
+    </article>
+
+
+    <article class="excerpt-content">
                 <header>
-                    <hgroup>
-                        <h3>
-                            <a class="section-title"
-                               href="/ozarnetstaticweb/blog/web-development-php/codeigniter-wizard16">
-                                CodeIgniter Wizard v1.6 release following v.1.5 and v.1.5.1 </a>
-                        </h3>
-                        <h4>You might not know what we did last summer...</h4>
-                    </hgroup>
+            <hgroup>
+                <h3>
+                    <a class="section-title" href="/blog/databases/how-to-drop-all-tables-of-a-mysql-mariadb-schema-at-once">
+                        How to Drop All Tables of a MySQL / MariaDB Schema At Once                    </a>
+                </h3>
+                                    <h4>Bypassing the foreign key restrictions</h4>
+                            </hgroup>
 
-                    <small>
-                        <i>
-                            published on
-                            <span id="articleDate">
-                                        21 Jul 2021                                    </span>
-                        </i>
-                        in <span class="blog-cat-pill">Mac Apps</span><span class="blog-cat-pill"> PHP</span><span
-                            class="blog-cat-pill"> Web Development</span>
-                    </small>
-                </header>
-                <p>
-                    In June 2021, several version updates have been made for CodeIgniter Wizard. The maintenance release
-                    development was so intense that we were late to update our blog to announce them one-by-one.Here is
-                    a breakdown of all updates of CodeIgniter Wizard published in the Mac App Store in July:
-                    This version brings various improvements and bug fixes includingBrought back the ability to generate
-                    code output outside the Downloads folder with the manual handling option of disk write
-                    permissio... </p>
-                <footer>
-                    <div class="grid">
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter-wizard16"
-                           class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+            <small>
+                <i>
+                    published on
+                    <span id="articleDate">
+                                        7 Jan 2024                                    </span>
+                </i>
+                in 
+            </small>
 
-                        <a href="/ozarnetstaticweb/blog/web-development-php/codeigniter-wizard16#comments"
-                           class="button-sm alt icon solid fa-comment">
-                            No comments yet </a>
+                    </header>
+        <p>
+            Dive into our tutorial for a seamless approach to dropping tables in MySQL/MariaDB schemas. From command-line intricacies to scripted solutions, manage foreign-key constraints effortlessly. Safeguard your data with proper backups, ensuring a trouble-free database management experience.                    </p>
+        <footer>
 
-                    </div><!--/.grid -->
-                </footer>
+            <a href="/blog/databases/how-to-drop-all-tables-of-a-mysql-mariadb-schema-at-once"
+               class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+
+            <a href="/blog/databases/how-to-drop-all-tables-of-a-mysql-mariadb-schema-at-once#comments"
+               class="button-sm alt icon solid fa-comment">
+                No comments yet            </a>
+
+            
+        </footer>
+
+
+    </article>
+
+
+    <article class="excerpt-content">
+                <header>
+            <hgroup>
+                <h3>
+                    <a class="section-title" href="/blog/databases/data-modeling-capabilities-of-navicat-in-action">
+                        Data Modeling Capabilities of Navicat in Action                    </a>
+                </h3>
+                                    <h4>A UML-Like Design-First Approach</h4>
+                            </hgroup>
+
+            <small>
+                <i>
+                    published on
+                    <span id="articleDate">
+                                        1 Jan 2024                                    </span>
+                </i>
+                in 
+            </small>
+
+                    </header>
+        <p>
+            Navicat comes with an incredibly responsive and elegant user interface design with improved usability, and it has been enabling users to get a visually appealing and semantically precise data models from their databases for almost a decade now.Released in November 2019, Navicat 15 (and Data Modeler 3.0) has some nice surprises in store, with an even more improved data modeling capability. You can now design generic data models and then convert them for a specific database platform.                    </p>
+        <footer>
+
+            <a href="/blog/databases/data-modeling-capabilities-of-navicat-in-action"
+               class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+
+            <a href="/blog/databases/data-modeling-capabilities-of-navicat-in-action#comments"
+               class="button-sm alt icon solid fa-comment">
+                No comments yet            </a>
+
+            
+        </footer>
+
+
+    </article>
+
+
+    <article class="excerpt-content">
+                    <a href="/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4" class="image featured">
+                                    <img src="/res/kul/migrating-from-ci3-to-ci4-large.jpg" alt="A Step-by-Step Tutorial for a CI3-toCI4 Upgrade"/>
+                            </a>
+                <header>
+            <hgroup>
+                <h3>
+                    <a class="section-title" href="/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4">
+                        How to Migrate a CodeIgniter 3 Web App to CodeIgniter 4                    </a>
+                </h3>
+                                    <h4>A Step-by-Step Tutorial for a CI3-toCI4 Upgrade</h4>
+                            </hgroup>
+
+            <small>
+                <i>
+                    published on
+                    <span id="articleDate">
+                                        9 Jul 2023                                    </span>
+                </i>
+                in 
+            </small>
+
+                    </header>
+        <p>
+            Explore the step-by-step migration process from CodeIgniter3 to CodeIgniter4, touching upon controllers, models, views, and routes. The tutorial also introduces the CodeIgniter Wizard, a significant time-saving tool for Mac users that automates CI4 code generation through reverse-engineering of existing databases, streamlining the migration process.                    </p>
+        <footer>
+
+            <a href="/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"
+               class="button-sm icon solid fa-file-alt">Continue Reading »</a>
+
+            <a href="/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4#comments"
+               class="button-sm alt icon solid fa-comment">
+                No comments yet            </a>
+
+            
+        </footer>
+
+
+    </article>
+
+
+
+<nav aria-label="Page navigation">
+	<ul class="pagination">
+		
+					<li class="active">
+				<a href="https://www.ozar.net/blog?page=1">
+					1				</a>
+			</li>
+					<li >
+				<a href="https://www.ozar.net/blog?page=2">
+					2				</a>
+			</li>
+					<li >
+				<a href="https://www.ozar.net/blog?page=3">
+					3				</a>
+			</li>
+		
+					<li>
+				<a href="https://www.ozar.net/blog?page=4" aria-label="Next">
+					<span aria-hidden="true">Next</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.ozar.net/blog?page=4" aria-label="Last">
+					<span aria-hidden="true">Last</span>
+				</a>
+			</li>
+			</ul>
+</nav>
+
+        </main>
+        <aside id="rightSideBar">
+            <div class="breadcrumbs">
+                <a href="/">Home</a> <span class="delimeter"> / </span>
+                Blog
+            </div>
+
+                        
+    <article class="box">
+        <h3>Blog Categories</h3>
+        <p style="margin-top: 0em; margin-bottom: 0.75em">The official Ozar blog covers tech topics such as</p>
+        <ul class="divided">
+                            <li>
+                    <a class="section-title" href="/blog/web-development-php/codeigniter">
+                                                CodeIgniter                                            </a>
+                </li>
+                            <li>
+                    <a class="section-title" href="/blog/databases">
+                                                Databases                                            </a>
+                </li>
+                            <li>
+                    <a class="section-title" href="/blog/development-on-macos">
+                                                Development on macOS                                            </a>
+                </li>
+                            <li>
+                    <a class="section-title" href="/blog/mac-apps">
+                                                Mac Apps                                            </a>
+                </li>
+                            <li>
+                    <a class="section-title" href="/blog/web-development-php">
+                                                PHP                                            </a>
+                </li>
+                            <li>
+                    <a class="section-title" href="/blog/software-development">
+                                                Software Development                                            </a>
+                </li>
+                            <li>
+                    <a class="section-title" href="/blog/tech-books">
+                                                Tech Books                                            </a>
+                </li>
+                            <li>
+                    <a class="section-title" href="/blog/web-development-php">
+                                                Web Development                                            </a>
+                </li>
+                    </ul>
             </article>
 
+    <article class="box">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2035820168336712"
+                crossorigin="anonymous"></script>
+        <!-- OzarNetBlogSidebar -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2035820168336712"
+             data-ad-slot="4836370304"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </article>
 
-            <nav id="paginationNav" aria-label="Page navigation" class="box">
-                <ul class="pagination">
-                    <li>
-                        Page
-                    </li>
+    <article class="box">
 
-                    <li class="active">
-                        <a href="https://www.ozar.net/blog/blog?page=1">
-                            1 </a>
-                    </li>
-                    <li>
-                        <a href="https://www.ozar.net/blog/blog?page=2">
-                            2 </a>
-                    </li>
-                    <li>
-                        <a href="https://www.ozar.net/blog/blog?page=3">
-                            3 </a>
-                    </li>
+        <h3>Recent News and Articles</h3>
+        
+        <p style="margin-top: 0em; margin-bottom: 0.75em">From our latest stories, news, and tutorials...</p>
+        <ul class="divided">
+            <li>
+                <a class="section-title" href="/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4" title="CodeIgniter-related articles and tutorials - How to Migrate CodeIgniter 3 to CodeIgniter 4:">
+                    Migrating CI3 to CI4</a>
+            </li>
+            <li>
+                <a class="section-title" href="/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4" title="CodeIgniter-related articles and tutorials - The Difference between Entities and Models in CodeIgniter 4.x">
+                    Entities vs Models in CI4</a>
+            </li>
+            <li>
+                <a class="section-title" href="/blog/web-development-php/codeigniter/wizard2-is-here" title="CodeIgniter-related articles and tutorials - CodeIgniter Wizard 2 Is Here">
+                    CodeIgniter Wizard 2 Is Here</a>
+            </li>
+            <li>
+                <a class="section-title" href="/blog/web-development-php/codeigniter/ci4-production-deployment" title="A Step-by-Step Guide on How to Deploy CodeIgniter 4 Projects to Production">
+                    Deploying Your CI 4 app to Production</a>
+            </li>
 
-                </ul>
-            </nav>
-        </section>
+            <li>
+                <a class="section-title" href="/blog/mac-apps/parallel-search-now-speaks-french" title="Mac Apps - Parallel Search now speaks French">
+                    Parallel Search in French</a>
+            </li>
 
-        <aside>
+            <li>
+                <a class="section-title" href="/blog/mac-apps/introducing-parallel-search" title="Mac Apps - Introducing Parallel Search Deluxe for Mac">
+                    Introducing Parallel Search</a>
+            </li>
+            <li>
+                <a class="section-title" href="/blog/web-development-php/how-to-install-php8-macos-big-sur-with-homebrew" title="Web Development / PHP - How to Install PHP 8 to macOS Using Homebrew">
+                    Install PHP 8 on macOS  w/Homebrew</a>
+            </li>
 
-            <article class="box">
-                <h3>Blog Categories</h3>
-                <p style="margin-top: -1em; margin-bottom: 0.75em">The official Ozar blog covers tech topics such as</p>
-                <ul class="divided">
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/dealing-with-databases">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/web-development-php/codeigniter">
-                            CodeIgniter </a>
-                    </li>
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/development-on-macos">
-                            Development on macOS </a>
-                    </li>
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/mac-apps">
-                            Mac Apps </a>
-                    </li>
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/web-development-php">
-                            PHP </a>
-                    </li>
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/tech-books">
-                            Tech Books </a>
-                    </li>
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/web-development-php">
-                            Web Development </a>
-                    </li>
-                </ul>
-            </article>
+            <li>
+                <a class="section-title" href="/blog/tech-books/beginning-coding-with-javascript-interactive-book-published-in-turkish" title="Tech Books - Beginning Coding and Programming with JavaScript">
+                    Beginning Coding and Programming JS</a>
+            </li>
+        </ul>
+    </article>
 
 
 
-            <article class="box">
-
-                <h3>Recent News and Articles</h3>
-
-                <p style="margin-top: -1em; margin-bottom: 0.75em">From our latest stories, news, and tutorials...</p>
-                <ul class="divided">
-                    <li>
-                        <a class="section-title"
-                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/how-to-migrate-ci3-to-ci4"
-                           title="CodeIgniter-related articles and tutorials - How to Migrate CodeIgniter 3 to CodeIgniter 4:">
-                            Migrating CI3 to CI4</a>
-                    </li>
-                    <li>
-                        <a class="section-title"
-                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/difference-between-entities-and-models-in-codeigniter4"
-                           title="CodeIgniter-related articles and tutorials - The Difference between Entities and Models in CodeIgniter 4.x">
-                            Entities vs Models in CI4</a>
-                    </li>
-                    <li>
-                        <a class="section-title"
-                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/wizard2-is-here"
-                           title="CodeIgniter-related articles and tutorials - CodeIgniter Wizard 2 Is Here">
-                            CodeIgniter Wizard 2 Is Here</a>
-                    </li>
-                    <li>
-                        <a class="section-title"
-                           href="/ozarnetstaticweb/blog/web-development-php/codeigniter/ci4-production-deployment"
-                           title="A Step-by-Step Guide on How to Deploy CodeIgniter 4 Projects to Production">
-                            Deploying Your CI 4 app to Production</a>
-                    </li>
-
-                    <li>
-                        <a class="section-title"
-                           href="/ozarnetstaticweb/blog/mac-apps/parallel-search-now-speaks-french"
-                           title="Mac Apps - Parallel Search now speaks French">
-                            Parallel Search in French</a>
-                    </li>
-
-                    <li>
-                        <a class="section-title" href="/ozarnetstaticweb/blog/mac-apps/introducing-parallel-search"
-                           title="Mac Apps - Introducing Parallel Search Deluxe for Mac">
-                            Introducing Parallel Search</a>
-                    </li>
-                    <li>
-                        <a class="section-title"
-                           href="/ozarnetstaticweb/blog/web-development-php/how-to-install-php8-macos-big-sur-with-homebrew"
-                           title="Web Development / PHP - How to Install PHP 8 to macOS Using Homebrew">
-                            Install PHP 8 on macOS w/Homebrew</a>
-                    </li>
-
-                    <li>
-                        <a class="section-title"
-                           href="/ozarnetstaticweb/blog/tech-books/beginning-coding-with-javascript-interactive-book-published-in-turkish"
-                           title="Tech Books - Beginning Coding and Programming with JavaScript">
-                            Beginning Coding and Programming JS</a>
-                    </li>
-                </ul>
-            </article>
-
-
+    <article class="box">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2035820168336712"
+                crossorigin="anonymous"></script>
+        <!-- OzarNetBlogSidebar -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2035820168336712"
+             data-ad-slot="4836370304"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </article>
 
 
 
         </aside>
     </div>
-</main>
-<!-- ./ Main -->
 
-<!-- SVG Icons -->
-<svg xmlns="http://www.w3.org/2000/svg" fill="white" style="display: none;">
-    <symbol id="twitterIcon" class="bi-twitter" viewBox="0 0 24 24">
-        <path
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-    </symbol>
-    <symbol id="youtubeIcon" class="bi-youtube" viewBox="0 0 24 24">
-        <path
-                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-    </symbol>
-</svg>
+    <footer class="site-footer">
+        <footer class="site-footer">
 
-<!-- Footer -->
-<footer id="footer" class="container">
-    <div class="grid">
-        <div class="col">
-            <section>
-
-                <h3 class="footer-subtopic">Older News</h3>
-
-                <ul class="dates">
-                    <li>
-                        <small><span class="date"><strong>21 Jul 2021</strong></span></small>
-                        <h4 style="margin-bottom: 0.1em; font-size: 1.1em"><a
-                                href="/ozarnetstaticweb/blog/web-development-php/codeigniter-wizard16"
-                                title="Mac Apps - CodeIgniter Wizard v1.6 release following v.1.5 and v.1.5.1">CodeIgniter
-                            Wizard v1.6 release following v.1.5 and v.1.5.1</a></h4>
-                        <p style="margin-top: 0.1em">A breakdown summary of all the latest updates for CodeIgniter
-                            Wizard by version 1.6 pushed to the Mac App Store</p>
-                    </li>
-                    <li>
-                        <small><span class="date"><strong>19 Jul 2021</strong></span></small>
-                        <h4 style="margin-bottom: 0.1em; font-size: 1.1em"><a
-                                href="/ozarnetstaticweb/blog/mac-apps/parallel-search-now-speaks-french"
-                                title="Mac Apps - Parallel Search now speaks French">Parallel Search now speaks
-                            French</a></h4>
-                        <p style="margin-top: 0.1em">Parallel Search Deluxe 1.0.3 has just been released, and the app
-                            has now been completely localized for the French Language.</p>
-                    </li>
-                    <li>
-                        <small><span class="date"><strong>22 May 2021</strong></span></small>
-                        <h4 style="margin-bottom: 0.1em; font-size: 1.1em"><a
-                                href="/ozarnetstaticweb/blog/web-development-php/codeigniter-wizard-144-released"
-                                title="Web Development / PHP - CodeIgniter Wizard 1.4.4 Released">CodeIgniter Wizard
-                            1.4.4 Released</a></h4>
-                        <p style="margin-top: 0.1em">CodeIgniter 1.4.4 released to support CodeIgniter 4.1.2 also
-                            bringing a number of various improvements and bug fixes.</p>
-                    </li>
-                </ul>
-            </section>
-        </div><!-- // .col -->
-        <div class="col">
-            <article id="about">
-                <h3 class="footer-subtopic">About Ozar</h3>
-                <a href="#" class="image featured">
-                    <picture>
-                        <source type="image/webp" srcset="/ozarnetstaticweb/res/ozar-infographics.webp">
-                        <source type="image/jpeg" srcset="/ozarnetstaticweb/res/ozar-infographics.jpg">
-                        <img src="/ozarnetstaticweb/res/ozar-infographics.jpg" alt="Photo of computer in Ozar Office"
-                             width="750"
-                             height="360" style="margin-bottom: 1em">
-                    </picture>
-                </a>
-                <p>
-                    Serving world-wide with digital products with productivity apps on major platforms, and with
-                    knowledge-sharing blogs.
-                </p>
-                <a href="/ozarnetstaticweb/about">» Find More About Us</a>
-                <a href="https://twitter.com/ozarnet?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                   data-show-count="false">Follow @ozarnet on Twitter</a>
-            </article>
-        </div><!-- // .col -->
-    </div><!-- // .grid -->
-    <div class="grid">
-        <div class="col">
-            <section>
-                <h3 class="footer-subtopic">Related Websites</h3>
-
-                <ul class="divided">
-                    <li><a href="https://gosocial2.github.io/ozarnetstaticweb/products/codeigniterwizard/?ref=tld">CodeIgniter Wizard's
-                        Dedicated
-                        Website</a></li>
-                    <li><a href="https://gozmosis.blogspot.com">GOZmosis Blog</a></li>
-
-                </ul>
-            </section>
-        </div><!-- // .col -->
-        <div class="col">
-            <section>
-
-                <h3 class="footer-subtopic">Other Sites on Ozar.net</h3>
-
-                <ul class="divided">
-                    <li><a href="https://maclord.ozar.net/?ref=tld">Maclord - tips and tricks on using Apple
-                        products</a></li>
-                    <li><a href="https://devblog.ozar.net/?ref=tld">Ozar.net Developer Blog (is back)</a></li>
-                </ul>
-            </section>
-        </div><!-- // .col -->
-        <div class="col">
-            <section>
-
-                <h3 class="footer-subtopic">Ozar @ Social Networks</h3>
-
-
-                <a class="icon go-twitter" href="https://twitter.com/ozarnet">
-                    <svg class="bi-twitter2" width="60" height="60" fill="white">
-                        <use xlink:href="#twitterIcon"/>
-                    </svg>
-                    <span class="label">Twitter</span>
-                </a>
-                &nbsp; | &nbsp;
-                <a class="icon go-youtube"
-                   href="https://www.youtube.com/@ozardigital">
-                    <svg class="bi-youtube2" width="60" height="60" fill="white"
-                         style="margin-left: 0.3475em; margin-top: 0.35em;">
-                        <use xlink:href="#youtubeIcon"/>
-                    </svg>
-                    <span class="label">YouTube</span>
-                </a>
-
-
-            </section>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/books">Books</a></li>
+                <li><a href="/blog">Blog</a></li>
+<!--                <li><a href="/support">Support</a></li>-->
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/sitemap">Sitemap</a></li>
+            </ul>
         </div>
-    </div><!-- // .grid -->
-    <section id="copyright">
-        <nav class="container-fluid flex-nav">
-            <small>
-                <ul class="links">
-                    <li>&copy; 2017-2024 by Ozar. All rights reserved.</li>
-                    <li><a href="/ozarnetstaticweb/privacy">Privacy Policy</a></li>
-                    <li><a href="/ozarnetstaticweb/terms">Terms of Use</a></li>
-                    <li><a href="/ozarnetstaticweb/disclaimer">Disclaimer</a></li>
 
-                    <li>Website CMS powered by <a href="/ozarnetstaticweb/products">CodeIgniter Wizard</a></li>
+        <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Use</a></li>
+                <li><a href="/disclaimer">Disclaimer</a></li>
+            </ul>
 
-                </ul>
-            </small>
-        </nav>
-    </section>
+            <h3 style="margin-top: 3rem">Ozar on Social Media</h3>
+            <div class="social-links">
+                <a href="https://x.com/ozarnet" class="social-link" aria-label="Follow Ozar on X (Twitter)">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@ozardigital" class="social-link"
+                   aria-label="Subscribe on YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                              d="M23.5 6.2c-.3-1-1-1.8-2-2C19.8 4 12 4 12 4s-7.8 0-9.5.2c-1 .2-1.7 1-2 2C0 8 0 12 0 12s0 4 .5 5.8c.3 1 1 1.8 2 2C4.2 20 12 20 12 20s7.8 0 9.5-.2c1-.2 1.7-1 2-2 .5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z" />
+                    </svg>
+                </a>
+                            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Latest Updates</h3>
+            <div class="social-feed">
+                <!-- Static Tweet Implementation -->
+                <div class="tweet-card">
+                    <div class="tweet-header">
+                        <svg class="social-icon" width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        <span class="tweet-author">Ozar.Net</span>
+                        <a href="https://x.com/ozarnet" class="tweet-handle" target="_blank">@ozarnet</a>
+                    </div>
+                    <div class="tweet-content">
+
+                        <a href="https://x.com/ozarnet/status/1898752136512479699?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1898752136512479699%7Ctwgr%5E7fa91fb6c3fb6bb9f58f06867676b6279dabc8db%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2Fozarnet%2Fstatus%2F1898752136512479699" target="_blank">
+                            <p>The Power of AI + CodeIgniter Wizard = New Ozar.net.</p>
+                        </a>
+                        <div class="tweet-tags">
+                            <a href="https://x.com/ozarnet/status/1898752136512479699" target="_blank">#codeigniter</a>
+                            <a href="https://x.com/hashtag/codeigniterwizard" target="_blank">#codeigniterwizard</a>
+                        </div>
+                    </div>
+
+                    <div class="tweet-footer">
+                        <a href="https://x.com/ozarnet/status/1898752136512479699" class="tweet-date" target="_blank">9 Mar 2025</a>
+                    </div>
+                </div>
+                <!-- End Static Tweet -->
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>Backend CMS powered by <a href="/products/#CIWizSection">CodeIgniter Wizard</a>. &copy; 2020-2025 Ozar. All rights reserved.</p>
+    </div>
 </footer>
-<!-- Minimal theme switcher -->
-<script src="/ozarnetstaticweb/betik/minimal-theme-switcher.js" defer></script>
 
+<script src="/betik/ler.js?v=0.1" defer></script>    </footer>
 
-<script type="module">
+    
+    <!-- Begin TekEkran Analytics -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDomains", ["*.www.ozar.net","*.ccpdemo.ozar.net","*.ccpdemo2.ozar.net","*.ozar.net","*.www.ccpdemo.ozar.net","*.www.ccpdemo2.ozar.net"]]);
+        _paq.push(["enableCrossDomainLinking"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//analitik.tekekran.net/mato/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><img src="//analitik.tekekran.net/mato/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="analitik" /></noscript>
+    <!-- End TekEkran Analytics Code -->
 
-    var andac = '5d1b9eab65a10558cf1eb38ea9e26cb4';
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-780829-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    function webpSupported() {
-        let elem = document.createElement('canvas');
+            gtag('config', 'UA-780829-1');
+        </script>
+    
+    
+    <script type="module">
+        var andac = '024cd2509a3366dff6e5f7bd06ed1e4b2aaac4d60a9f556dcf58018955236522';
 
-        if (!!(elem.getContext && elem.getContext('2d'))) {
-// was able or not to get WebP representation
-            return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-        } else {
-// very old browser like IE 8, canvas not supported
-            return false;
-        }
-    }
+        document.addEventListener('DOMContentLoaded', function () {
 
-    function checkWebp(feature) {
-        var kTestImages = {
-            lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
-            lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
-            alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
-            animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
-        };
-        const img = new Image();
-        return new Promise(function (resolve, reject) {
-            img.onload = function () {
-                resolve((img.width > 0) && (img.height > 0));
-            };
-            img.onerror = function () {
-                reject(feature + ' not supported');
-            };
-            img.src = "data:image/webp;base64," + kTestImages[feature];
-        });
-    }
-
-    document.getElementById('nav-icon').addEventListener('click', function () {
-        this.classList.toggle('open');
-        document.getElementById('nav-links').classList.toggle('open');
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-
-        let webSupported = webpSupported();
-        if (!webSupported) {
-            checkWebp('lossy').then(function (supported) {
-                webSupported = true;
-                console.log("webp is supported alright!")
-            }, function () {
-                webSupported = false;
-                console.log("webp is not supported by your browser.")
-            });
-        }
-
-        const hero = document.querySelector('.hero');
-
-        const htmlElement = document.querySelector('html');
-        if (!webpSupported) {
-
-            const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '/ozarnetstaticweb/res/pexels-bongkarn-thanyakij-3759098.jpg' : '/ozarnetstaticweb/res/pexels-bongkarn-thanyakij-darker.jpg';
-            /*
-            if (htmlElement && htmlElement.getAttribute('data-theme') === 'light') {
-            imageUrl = '/res/pexels-bongkarn-thanyakij-3759098.jpg';
-            } */
-            if (hero) {
-                hero.style.backgroundImage = "url(" + imageUrl + ")";
+            let webSupported = webpSupported();
+            if (!webSupported) {
+                checkWebp('lossy').then(function (supported) {
+                    webSupported = true;
+                    console.log("webp is supported alright!")
+                }, function () {
+                    webSupported = false;
+                    console.log("webp is not supported by your browser.")
+                });
             }
-        }
-    });
 
+            const hero = document.querySelector('.hero');
 
-</script>
+            const htmlElement = document.querySelector('html');
+            if (!webpSupported) {
 
+                const imageUrl = htmlElement && htmlElement.getAttribute('data-theme') === 'light' ? '/res/pexels-bongkarn-thanyakij-3759098.jpg' : '/res/pexels-bongkarn-thanyakij-darker.jpg';
+                /*
+                if (htmlElement && htmlElement.getAttribute('data-theme') === 'light') {
+                imageUrl = '/res/pexels-bongkarn-thanyakij-3759098.jpg';
+                } */
+                if (hero) {
+                    hero.style.backgroundImage = "url(" + imageUrl + ")";
+                }
+            }
+                    });
 
+        
+    </script>
 </body>
 </html>
